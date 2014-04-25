@@ -1,0 +1,53 @@
+#!/usr/bin/python
+# Course export parsing script to create modulestore
+#
+# Author: Kevin Kao
+
+import sys, os
+import json
+import xml.etree.ElementTree as ET
+
+# Helper function to build file paths
+# baseFolder: the folder to start with
+# folderHierarchy: the list of folders to traverse in order to build path
+def buildPath(baseFolder, folderHierarchy=[]):
+	assert not baseFolder == None
+	path = baseFolder
+	for folder in folderHierarchy:
+		path = path + folder + "/"
+	return path
+
+def main():
+	arglen = len(sys.argv)
+	arglist = sys.argv[1:]
+	modulestore = file("test_modulestore.json", "w")
+
+	# first argument should be path to root folder
+	if arglen == 1:
+		print "Invalid arguments. " \
+			"Usage: ./parse root_folder_of_course_export"
+		exit(1)
+
+	# grab root folder of course export
+	course_export = arglist[0]
+	root_folder = os.path.dirname(os.path.realpath(__file__)) + "/" + arglist[0]
+	if not os.path.exists(root_folder):
+		print "Invalid file path: " + root_folder	
+		exit(1)
+
+	# parse for course information first
+	tree = ET.parse(course_export + "course.xml")
+	root = tree.getroot()
+	course = root.attrib["course"]
+	org = root.attrib["org"]
+	print root.attrib
+
+	# parse 'about' folder of course export
+	f = open(buildPath(course_export, ["about"]) + "overview.html", "r")
+	entry_dict = { "_id": {"tag": None, "org": org, "course": course, "category": "about", \
+				"name": "overview", "revision": None }, "data": None }
+	entry_dict["data"] = f.read()
+	entry = json.dumps(entry_dict)
+	modulestore.write(entry)	
+
+if __name__ == '__main__': main()
