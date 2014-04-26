@@ -7,16 +7,42 @@ import sys, os
 import json
 import xml.etree.ElementTree as ET
 
+# NOTES: ElementTree.parse only takes in a file path in the following form:
+# 			folder/folder/file
+# Do not place an additional "/" in front of the first folder (i.e. don't use buildPath)
+
 # Helper function to build file paths
 # baseFolder: the folder to start with
 # folderHierarchy: the list of folders to traverse in order to build path
+# 
+# Outputted file path should be of the form: baseFolder/folder1/folder2/folder3/
 def buildPath(baseFolder, folderHierarchy=[]):
 	assert not baseFolder == None
 	path = baseFolder
+
 	for folder in folderHierarchy:
+		if path[len(path)-1] == "/":
+			path = path[0:len(path)-1]
+		if not folder[0] == "/":
+			folder = "/" + folder
 		path = path + folder + "/"
+
+	if path[0] == "/":
+		path = path[1:len(path)]
+	if not path[len(path)-1] == "/":
+		path = path + "/"
 	return path
 
+# Outputted file path should be of the form baseFolder/folder1/folder2/finalFile
+def buildPathWithFile(baseFolder, folderHierarchy, finalFile):
+	assert not finalFile == None
+	return buildPath(baseFolder, folderHierarchy) + finalFile
+
+# Abstraction purposes
+def toJSON(entry_dict):
+	return json.dumps(entry_dict, sort_keys=True, indent=4, separators=(',', ': '))
+
+###### MAIN METHOD #####
 def main():
 	arglen = len(sys.argv)
 	arglist = sys.argv[1:]
@@ -29,8 +55,8 @@ def main():
 		exit(1)
 
 	# grab root folder of course export
-	course_export = arglist[0]
-	root_folder = os.path.dirname(os.path.realpath(__file__)) + "/" + arglist[0]
+	course_export = buildPath(arglist[0])
+	root_folder = os.path.dirname(os.path.realpath(__file__)) + "/" + course_export
 	if not os.path.exists(root_folder):
 		print "Invalid file path: " + root_folder	
 		exit(1)
@@ -40,14 +66,37 @@ def main():
 	root = tree.getroot()
 	course = root.attrib["course"]
 	org = root.attrib["org"]
-	print root.attrib
+	tag = "i4x"
 
 	# parse 'about' folder of course export
 	f = open(buildPath(course_export, ["about"]) + "overview.html", "r")
-	entry_dict = { "_id": {"tag": None, "org": org, "course": course, "category": "about", \
-				"name": "overview", "revision": None }, "data": None }
-	entry_dict["data"] = f.read()
-	entry = json.dumps(entry_dict)
-	modulestore.write(entry)	
+	entry_dict = { "_id" : {"tag" : tag, "org" : org, "course" : course, "category" : "about", \
+				"name" : "overview", "revision" : None }, "definition" : { "children" : [], \
+				"data": None }, "metadata" : {} }
+	entry_dict["definition"]["data"] = f.read()
+	entry = toJSON(entry_dict)
+	modulestore.write(entry + "\n")	
+
+	# parse 'chapter' folder of course export
+	files = os.listdir(buildPath(course_export, ["chapter"]))
+	for xml in files:
+		tree = ET.parse(buildPath(course_export, ["chapter"]) + xml)
+		root = tree.getroot()
+		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "chapter", \
+					"name" : xml.replace(".xml", ""), "revision" : None }, "definition" : { \
+					"children" : [], "data": {} }, "metadata" : { "start" : None, "xml_attributes" : \
+					{ "filename" : [] }, "display_name" : "" } }
+		if "start" in root.attrib:
+			entry_dict["metadata"]["start"] = root.attrib["start"]
+		entry_dict["metadata"]["xml_attributes"]["filename"].append("chapter/" + xml)
+		entry_dict["metadata"]["xml_attributes"]["display_name"] =  root.attrib["display_name"]
+		for sequential in root:
+			if "url_name" in sequential.attrib:
+				child = tag + "://" + tag + "/" + course + "/sequential/" + sequential.attrib["url_name"]
+				entry_dict["definition"]["children"].append(child)
+		entry = toJSON(entry_dict)
+		modulestore.write(entry + "\n")
+
+	#print files
 
 if __name__ == '__main__': main()
