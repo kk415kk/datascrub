@@ -1,7 +1,15 @@
 #!/usr/bin/python
-# Course export parsing script to create modulestore
+# Course export parsing script to create 'modulestore' file by scraping course export data 
+# from edX; to be used to sync with Stanford's data scrubbing scripts if you don't want to
+# spin up your own OpenEdX instance just to get modulestore information
 #
+# Developed in Python 2.7. Please report any bugs to the author.
+# 
 # Author: Kevin Kao
+# Email: kkao@berkeley.edu
+# Date: 4/26/14
+# Version: 0.01 alpha
+
 
 import sys, os
 import json
@@ -25,6 +33,8 @@ def buildPath(baseFolder, folderHierarchy=[]):
 			path = path[0:len(path)-1]
 		if not folder[0] == "/":
 			folder = "/" + folder
+		if folder[len(folder)-1] == "/":
+			folder = folder[0:len(folder)-1]
 		path = path + folder + "/"
 
 	if path[0] == "/":
@@ -36,7 +46,17 @@ def buildPath(baseFolder, folderHierarchy=[]):
 # Outputted file path should be of the form baseFolder/folder1/folder2/finalFile
 def buildPathWithFile(baseFolder, folderHierarchy, finalFile):
 	assert not finalFile == None
+	if finalFile[0] == "/":
+		finalFile = finalFile[1:len(finalFile)]
 	return buildPath(baseFolder, folderHierarchy) + finalFile
+
+# Removes all slashes from file path
+def clean(word):
+	if word[0] == "/":
+		word = word[1:len(word)]
+	if word[len(word)-1] == "/":
+		word = word[0:len(word)-1]
+	return word
 
 # Abstraction purposes
 def toJSON(entry_dict):
@@ -84,7 +104,7 @@ def main():
 		root = tree.getroot()
 		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "chapter", \
 					"name" : xml.replace(".xml", ""), "revision" : None }, "definition" : { \
-					"children" : [], "data": {} }, "metadata" : { "start" : None, "xml_attributes" : \
+					"children" : [], "data": {} }, "metadata" : { "start" : "", "xml_attributes" : \
 					{ "filename" : [] }, "display_name" : "" } }
 		if "start" in root.attrib:
 			entry_dict["metadata"]["start"] = root.attrib["start"]
@@ -92,10 +112,78 @@ def main():
 		entry_dict["metadata"]["xml_attributes"]["display_name"] =  root.attrib["display_name"]
 		for sequential in root:
 			if "url_name" in sequential.attrib:
-				child = tag + "://" + tag + "/" + course + "/sequential/" + sequential.attrib["url_name"]
+				child = tag + "://" + org + "/" + course + "/sequential/" + sequential.attrib["url_name"]
 				entry_dict["definition"]["children"].append(child)
 		entry = toJSON(entry_dict)
 		modulestore.write(entry + "\n")
+
+	# parse 'course' folder of course export
+	# also involves 'policies' folder
+	# incomplete metadata and definition
+	files = os.listdir(buildPath(course_export, ["course"]))
+	if len(files) != 1:
+		print "Strange error with multiple files in course folder. Please contact author of script."
+		print "Include the list of files with your email: "
+		print files
+		exit(1)
+	tree = ET.parse(buildPathWithFile(course_export, ["course"], files[0]))
+	root = tree.getroot()
+	data_dict = { "textbooks" : [], "grading_policy" : {}, "wiki_slug" : "" }
+	entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "course", \
+				"name" : files[0].replace(".xml", ""), "revision" : None }, "definition" : { \
+				"children" : [], "data": data_dict }, "metadata" : { "start" : "", "xml_attributes" : \
+				{ "filename" : [] }, "display_name" : "", "advanced_modules" : [], "tabs" : []} } 
+	if "start" in root.attrib:
+		entry_dict["metadata"]["start"] = root.attrib["start"]
+	entry_dict["metadata"]["xml_attributes"]["filename"].append("chapter/" + xml)
+	entry_dict["metadata"]["xml_attributes"]["display_name"] =  root.attrib["display_name"]
+	
+	# store chapters and wiki slug into entry
+	for chapter in root:
+		if chapter.tag == "chapter":
+			child = tag + "://" + org + "/" + course + "/chapter/" + chapter.attrib["url_name"]
+			entry_dict["definition"]["children"].append(child)
+		if chapter.tag == "wiki" and "slug" in chapter.attrib:
+			entry_dict["definition"]["data"]["wiki_slug"] = chapter.attrib["slug"]
+
+	# let's take care of the policy.json in policies folder first
+	files = os.listdir(buildPath(course_export, ["policies", course_export]))
+	for json_file in files:
+		# policy.json stores information about tabs/metadata
+		json_data = open(buildPathWithFile(course_export, ["policies", course_export], json_file), 'r')
+		if json_file == "policy.json":
+			COURSE_INFO = json.load(json_data)
+			key = "course" + "/" + clean(course_export)
+			entry_dict["metadata"]["tabs"] = COURSE_INFO[key]["tabs"]
+			entry_dict["metadata"]["discussion_topics"] = COURSE_INFO[key]["discussion_topics"]
+		# grading_policy stores information
+		elif json_file == "grading_policy.json":
+			GRADER_CONTENTS = json.load(json_data)
+			entry_dict["definition"]["data"]["grading_policy"]["GRADE_CUTOFFS"] \
+				= GRADER_CONTENTS["GRADE_CUTOFFS"]
+			entry_dict["definition"]["data"]["grading_policy"]["GRADER"] \
+                = GRADER_CONTENTS["GRADER"]
+		else:
+			print "Unexpected file: " + str(json_file)
+			print "Please contact author of script and include name of the file."
+			exit(1)
+		json_data.close()
+	entry = toJSON(entry_dict)
+	modulestore.write(entry + "\n")
+
+	# parse 'html' folder of course export
+	files = os.listdir(buildPath(course_export, ["html"]))
+	for html_file in files:
+		if html_file.endswith('.html'):
+			f = open(buildPathWithFile(course_export, ["html"], html_file), "r")
+			entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "html", \
+                    "name" : html_file.replace(".html", ""), "revision" : None }, "definition" : { \
+                    "data": "" }, "metadata" : { "xml_attributes" : \
+                    { "filename" : [ "html/" + html_file.replace(".html",".xml") ] }, "display_name" : "" } }
+			entry_dict["definition"]["data"] = f.read()
+			entry_dict["metadata"]["display_name"] = ""
+			entry = toJSON(entry_dict)
+			modulestore.write(entry + "\n")
 
 	#print files
 
