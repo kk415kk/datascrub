@@ -11,8 +11,7 @@
 # Version: 0.01 alpha
 
 
-import sys, os
-import json
+import sys, os, glob, json
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
 
@@ -82,6 +81,8 @@ def write(output_file, entry):
 
 ###### MAIN METHOD #####
 def main():
+	print "Starting modulestore generator..."
+
 	arglen = len(sys.argv)
 	arglist = sys.argv[1:]
 	modulestore = file("test_modulestore.json", "w")
@@ -121,20 +122,25 @@ def main():
 		exit(1)
 
 	# parse for course information first
+	sys.stdout.write("Parsing course information for ")
 	tree = ET.parse(course_export + "course.xml")
 	root = tree.getroot()
 	course = root.attrib["course"]
 	org = root.attrib["org"]
 	tag = "i4x"
+	sys.stdout.write(str(course) + "...\t")
 
 	# parse 'about' folder of course export
+	sys.stdout.write("Parsing 'about' folder...\t")
 	f = open(buildPath(course_export, ["about"]) + "overview.html", "r")
 	entry_dict = { "_id" : {"tag" : tag, "org" : org, "course" : course, "category" : "about", \
 				"name" : "overview", "revision" : None }, "definition" : { "children" : [], \
 				"data": f.read() }, "metadata" : {} }
 	write(modulestore, entry_dict)
+	sys.stdout.write("success!\n")
 
 	# parse 'chapter' folder of course export
+	sys.stdout.write("Parsing 'chapter' folder...\t")
 	files = os.listdir(buildPath(course_export, ["chapter"]))
 	for chapter_file in files:
 		tree = ET.parse(buildPath(course_export, ["chapter"]) + chapter_file)
@@ -161,12 +167,13 @@ def main():
 
 			child = tag + "://" + org + "/" + course + "/sequential/" + sequential.attrib["url_name"]
 			entry_dict["definition"]["children"].append(child)
-
 		write(modulestore, entry_dict)
+	sys.stdout.write("success!\n")
 
 	# parse 'course' folder of course export
 	# also involves 'policies' folder
 	# incomplete metadata and definition
+	sys.stdout.write("Parsing 'course' folder...\t")
 	files = os.listdir(buildPath(course_export, ["course"]))
 
 	if len(files) != 1:
@@ -194,8 +201,10 @@ def main():
 			entry_dict["definition"]["children"].append(child)
 		if chapter.tag == "wiki" and "slug" in chapter.attrib:
 			entry_dict["definition"]["data"]["wiki_slug"] = chapter.attrib["slug"]
+	sys.stdout.write("success!\n")
 
 	# let's take care of the policy.json in policies folder first
+	sys.stdout.write("Parsing 'policies' folder...\t")
 	files = os.listdir(buildPath(course_export, ["policies", course_export]))
 	for json_file in files:
 		# policy.json stores information about tabs/metadata
@@ -218,8 +227,10 @@ def main():
 			exit(1)
 		json_data.close()
 	write(modulestore, entry_dict)
+	sys.stdout.write("success!\n")
 
 	# parse 'sequential' folder of course export
+	sys.stdout.write("Parsing 'sequential' folder...\t")
 	files = os.listdir(buildPath(course_export, ["sequential"]))
 	for sequential_file in files:
 		tree = ET.parse(buildPathWithFile(course_export, ["sequential"], sequential_file))
@@ -244,11 +255,13 @@ def main():
 			# update content_linker
 			content_linker["sequentials"][sequential][1].append(vertical.attrib["url_name"])
 			content_linker["verticals"][vertical.attrib["url_name"]] = [ None, [], sequential]
-
 		write(modulestore, entry_dict)
+	sys.stdout.write("success!\n")
 
+	
 	# parse 'vertical' folder of course export
 	# verticals have no file name (???)
+	sys.stdout.write("Parsing 'vertical' folder...\t")
 	files = os.listdir(buildPath(course_export, ["vertical"]))
 	for vertical_file in files:
 		tree = ET.parse(buildPathWithFile(course_export, ["vertical"], vertical_file))
@@ -283,10 +296,12 @@ def main():
 			if not module_type in module_list: 
 				module_list.append(module_type)
 		write(modulestore, entry_dict)
+	sys.stdout.write("success!\n")
 
 	# parse each module type's folder of course export
 	# have to determine how to read "data" in for diff. module types
 	for module in module_list:
+		sys.stdout.write("Parsing module '" + str(module) + "'...\t")
 		try:
 			module_type = str(module)
 			files = os.listdir(buildPath(course_export, [module_type]))
@@ -296,16 +311,20 @@ def main():
 					name = module_file.replace(".xml", "")
 					
 					data = ""
+					tree = ET.parse(buildPathWithFile(course_export, [module_type], module_file))
+					root = tree.getroot()
+
 					if module_type == "problem":
-						tree = ET.parse(buildPathWithFile(course_export, [module_type], module_file))
-						root = tree.getroot()
 						data = ET.tostring(root)
 					elif module_type == "video":
-						# do something
+						# xml attributes will be parsed below
 						pass
 					elif module_type == "html":
-						# do something
-						pass
+						# add html contents to data
+						filePath = buildPathWithFile(course_export, [module_type], name + ".html")
+						if os.path.isfile(filePath):
+							html_data = open(filePath)
+							data = html_data.read()
 					else:
 						pass
 
@@ -318,7 +337,12 @@ def main():
 		                    "name" : name, "revision" : None }, "definition" : { \
 		                    "data": data }, "metadata" : { "xml_attributes" : \
 		                    { "filename" : [ module_type + "/" + module_file ] }, "display_name" : display_name } }
-					write(modulestore, entry_dict)					
+		            
+					for attribute in root.attrib:
+						entry_dict["metadata"]["xml_attributes"][attribute] = root.attrib[attribute]
+					
+					write(modulestore, entry_dict)
+			sys.stdout.write("success!\n")					
 		except OSError:
 			print "No '" + module_type + "' folder in this course..."
 			pass
