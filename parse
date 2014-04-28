@@ -14,6 +14,7 @@
 import sys, os
 import json
 import xml.etree.ElementTree as ET
+from xml.etree.ElementTree import tostring
 
 # SETTINGS
 PRETTIFY_JSON = False
@@ -287,12 +288,27 @@ def main():
 	# have to determine how to read "data" in for diff. module types
 	for module in module_list:
 		try:
-			files = os.listdir(buildPath(course_export, [str(module)]))
 			module_type = str(module)
+			files = os.listdir(buildPath(course_export, [module_type]))
+			
 			for module_file in files:
 				if module_file.endswith('.xml'):
 					name = module_file.replace(".xml", "")
 					
+					data = ""
+					if module_type == "problem":
+						tree = ET.parse(buildPathWithFile(course_export, [module_type], module_file))
+						root = tree.getroot()
+						data = ET.tostring(root)
+					elif module_type == "video":
+						# do something
+						pass
+					elif module_type == "html":
+						# do something
+						pass
+					else:
+						pass
+
 					# display_name of a module is the display_name of its vertical
 					vertical = content_linker[module_type][name][1]
 					display_name = content_linker["verticals"][vertical][0]
@@ -300,7 +316,7 @@ def main():
 					f = open(buildPathWithFile(course_export, [module_type], module_file), "r")
 					entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : module_type, \
 		                    "name" : name, "revision" : None }, "definition" : { \
-		                    "data": {} }, "metadata" : { "xml_attributes" : \
+		                    "data": data }, "metadata" : { "xml_attributes" : \
 		                    { "filename" : [ module_type + "/" + module_file ] }, "display_name" : display_name } }
 					write(modulestore, entry_dict)					
 		except OSError:
