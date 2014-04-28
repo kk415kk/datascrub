@@ -13,7 +13,8 @@ roadmap
 ---
 * adding a "prettified" json parameter to be passed in (currently has to be modified in script)
 * updating "data" fields of modules dynamically (known types: html, problem, video)
+* adding support for multiple course exports
 
-bugs
+bug tracker
 ---
 
