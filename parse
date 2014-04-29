@@ -116,7 +116,7 @@ def main():
 
 	# grab root folder of course export
 	course_export = buildPath(arglist[0])
-	root_folder = os.path.dirname(os.path.realpath(__file__)) + "/" + course_export
+	root_folder = os.path.dirname( os.getcwd() + "/" + course_export )
 	if not os.path.exists(root_folder):
 		print "Invalid file path: " + root_folder	
 		exit(1)
