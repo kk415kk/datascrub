@@ -77,7 +77,7 @@ def course_axis_write(row):
 	for i in range(len(row)):
 		if i != len(row)-1:
 			try:
-				entry = entry + str(row[i]) + ", "
+				entry = entry + str(row[i]) + "; "
 			except UnicodeEncodeError:
 				pass
 		else: 
