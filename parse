@@ -212,6 +212,7 @@ def main():
 	except:
 		print "Something went wrong with the parsing of 'policy' folder. Please contact author."
 		exit(1)
+
 	for json_file in files:
 		# policy.json stores information about tabs/metadata
 		json_data = open(buildPathWithFile(course_export, ["policies", alt_course_name], json_file), 'r')
@@ -245,7 +246,7 @@ def main():
 		sequential = sequential_file.replace(".xml", "")
 		display_name = root.attrib["display_name"]
 
-		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "course", \
+		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "sequential", \
 				"name" : sequential, "revision" : None }, "definition" : { \
 				"children" : [], "data": {} }, "metadata" : { "start" : "", "xml_attributes" : \
 				{ "filename" : ["sequential/" + sequential_file] }, "display_name" : display_name } }
@@ -276,7 +277,7 @@ def main():
 		vertical = vertical_file.replace(".xml", "")
 		display_name = root.attrib["display_name"]
 
-		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "course", \
+		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "vertical", \
 				"name" : vertical, "revision" : None }, "definition" : { \
 				"children" : [], "data": {} }, "metadata" : { "start" : "", "xml_attributes" : \
 				{ "filename" : ["vertical/" + vertical_file] }, "display_name" : display_name } }
