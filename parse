@@ -208,14 +208,13 @@ def main():
 	# let's take care of the policy.json in policies folder first
 	sys.stdout.write("Parsing 'policies' folder...\t")
 	try:
-		policy_folder = os.listdir(buildPath(course_export, ["policies"]))[0]
+		files = os.listdir(buildPath(course_export, ["policies", alt_course_name]))
 	except:
-		print "Something went wrong while parsing the 'policy' folder"
+		print "Something went wrong with the parsing of 'policy' folder. Please contact author."
 		exit(1)
-	files = os.listdir(buildPath(course_export, ["policies", policy_folder]))
 	for json_file in files:
 		# policy.json stores information about tabs/metadata
-		json_data = open(buildPathWithFile(course_export, ["policies", policy_folder], json_file), 'r')
+		json_data = open(buildPathWithFile(course_export, ["policies", alt_course_name], json_file), 'r')
 		if json_file == "policy.json":
 			COURSE_INFO = json.load(json_data)
 			key = "course" + "/" + clean(alt_course_name)
