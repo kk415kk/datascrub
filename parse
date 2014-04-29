@@ -72,6 +72,21 @@ def toJSON(entry_dict):
 def write(output_file, entry):
 	output_file.write(toJSON(entry) + "\n")
 
+def course_axis_write(row):
+	entry = ""
+	for i in range(len(row)):
+		if i != len(row)-1:
+			try:
+				entry = entry + str(row[i]) + ", "
+			except UnicodeEncodeError:
+				pass
+		else: 
+			try:
+				entry = entry + str(row[i])
+			except UnicodeEncodeError:
+				pass
+	return entry
+
 #############################################################################
 # To better understand parser:
 #	- a COURSE has a list of CHAPTERS --> ('course' folder)
@@ -346,7 +361,5 @@ def main():
 		except OSError:
 			print "No '" + module_type + "' folder in this course..."
 			pass
-
-	#print files
 
 if __name__ == '__main__': main()
