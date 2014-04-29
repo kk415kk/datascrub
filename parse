@@ -182,6 +182,8 @@ def main():
 		print files
 		exit(1)
 
+	alt_course_name = files[0].replace(".xml", "")
+
 	tree = ET.parse(buildPathWithFile(course_export, ["course"], files[0]))
 	root = tree.getroot()
 	data_dict = { "textbooks" : [], "grading_policy" : {}, "wiki_slug" : "" }
@@ -205,13 +207,18 @@ def main():
 
 	# let's take care of the policy.json in policies folder first
 	sys.stdout.write("Parsing 'policies' folder...\t")
-	files = os.listdir(buildPath(course_export, ["policies", course_export]))
+	try:
+		policy_folder = os.listdir(buildPath(course_export, ["policies"]))[0]
+	except:
+		print "Something went wrong while parsing the 'policy' folder"
+		exit(1)
+	files = os.listdir(buildPath(course_export, ["policies", policy_folder]))
 	for json_file in files:
 		# policy.json stores information about tabs/metadata
-		json_data = open(buildPathWithFile(course_export, ["policies", course_export], json_file), 'r')
+		json_data = open(buildPathWithFile(course_export, ["policies", policy_folder], json_file), 'r')
 		if json_file == "policy.json":
 			COURSE_INFO = json.load(json_data)
-			key = "course" + "/" + clean(course_export)
+			key = "course" + "/" + clean(alt_course_name)
 			entry_dict["metadata"]["tabs"] = COURSE_INFO[key]["tabs"]
 			entry_dict["metadata"]["discussion_topics"] = COURSE_INFO[key]["discussion_topics"]
 		# grading_policy stores information
