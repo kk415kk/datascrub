@@ -143,7 +143,7 @@ def main():
 	course = root.attrib["course"]
 	org = root.attrib["org"]
 	tag = "i4x"
-	sys.stdout.write(str(course) + "...\t")
+	sys.stdout.write(str(course) + "...\n")
 
 	# parse 'about' folder of course export
 	sys.stdout.write("Parsing 'about' folder...\t")
