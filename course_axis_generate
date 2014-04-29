@@ -304,6 +304,7 @@ def main():
 			entry_dict["definition"]["children"].append(child)
 			
 			# update content_linker
+			content_linker["verticals"][vertical][0] = display_name
 			content_linker["verticals"][vertical][1].append(module_name)
 			if not module_type in content_linker:
 				content_linker[module_type] = {}
@@ -348,6 +349,7 @@ def main():
 					# display_name of a module is the display_name of its vertical
 					vertical = content_linker[module_type][name][1]
 					display_name = content_linker["verticals"][vertical][0]
+					content_linker[module_type][name][0] = display_name
 
 					f = open(buildPathWithFile(course_export, [module_type], module_file), "r")
 					entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : module_type, \
