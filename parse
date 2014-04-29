@@ -244,7 +244,9 @@ def main():
 		root = tree.getroot()
 
 		sequential = sequential_file.replace(".xml", "")
-		display_name = root.attrib["display_name"]
+		display_name = sequential
+		if display_name in root.attrib:
+			display_name = root.attrib["display_name"]
 
 		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "sequential", \
 				"name" : sequential, "revision" : None }, "definition" : { \
@@ -275,7 +277,9 @@ def main():
 		root = tree.getroot()
 
 		vertical = vertical_file.replace(".xml", "")
-		display_name = root.attrib["display_name"]
+		display_name = vertical
+		if "display_name" in root.attrib:
+			display_name = root.attrib["display_name"]
 
 		entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "vertical", \
 				"name" : vertical, "revision" : None }, "definition" : { \
