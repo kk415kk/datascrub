@@ -61,17 +61,6 @@ def clean(word):
 		word = word[0:len(word)-1]
 	return word
 
-# Abstraction purposes to output "prettified" JSON form of modulestore
-def toJSON(entry_dict):
-	if PRETTIFY_JSON:
-		return json.dumps(entry_dict, sort_keys=True, indent=4, separators=(',', ': '))
-	else:
-		return json.dumps(entry_dict, sort_keys=True)
-
-# Writes the entry as JSON to the output file on disk
-def write(output_file, entry):
-	output_file.write(toJSON(entry) + "\n")
-
 #############################################################################
 # To better understand parser:
 #	- a COURSE has a list of CHAPTERS --> ('course' folder)
@@ -83,9 +72,10 @@ def write(output_file, entry):
 def main():
 	print "Starting modulestore generator..."
 
+	output = []
+
 	arglen = len(sys.argv)
 	arglist = sys.argv[1:]
-	modulestore = file("test_modulestore.json", "w")
 
 	#########################################################################################
 	## This dictionary is used for linking purposes
@@ -136,7 +126,7 @@ def main():
 	entry_dict = { "_id" : {"tag" : tag, "org" : org, "course" : course, "category" : "about", \
 				"name" : "overview", "revision" : None }, "definition" : { "children" : [], \
 				"data": f.read() }, "metadata" : {} }
-	write(modulestore, entry_dict)
+	output.append( entry_dict)
 	sys.stdout.write("success!\n")
 
 	# parse 'chapter' folder of course export
@@ -167,7 +157,7 @@ def main():
 
 			child = tag + "://" + org + "/" + course + "/sequential/" + sequential.attrib["url_name"]
 			entry_dict["definition"]["children"].append(child)
-		write(modulestore, entry_dict)
+		output.append( entry_dict)
 	sys.stdout.write("success!\n")
 
 	# parse 'course' folder of course export
@@ -233,7 +223,7 @@ def main():
 			print "Please contact author of script and include name of the file."
 			exit(1)
 		json_data.close()
-	write(modulestore, entry_dict)
+	output.append( entry_dict)
 	sys.stdout.write("success!\n")
 
 	# parse 'sequential' folder of course export
@@ -264,7 +254,7 @@ def main():
 			# update content_linker
 			content_linker["sequentials"][sequential][1].append(vertical.attrib["url_name"])
 			content_linker["verticals"][vertical.attrib["url_name"]] = [ None, [], sequential]
-		write(modulestore, entry_dict)
+		output.append( entry_dict)
 	sys.stdout.write("success!\n")
 
 	
@@ -307,7 +297,7 @@ def main():
 			# add to list of module_types if not there
 			if not module_type in module_list: 
 				module_list.append(module_type)
-		write(modulestore, entry_dict)
+		output.append( entry_dict)
 	sys.stdout.write("success!\n")
 
 	# parse each module type's folder of course export
@@ -354,10 +344,17 @@ def main():
 					for attribute in root.attrib:
 						entry_dict["metadata"]["xml_attributes"][attribute] = root.attrib[attribute]
 					
-					write(modulestore, entry_dict)
+					output.append( entry_dict)
 			sys.stdout.write("success!\n")					
 		except OSError:
 			print "No '" + module_type + "' folder in this course..."
 			pass
+
+	outfile = file("test_modulestore.json", "w")
+
+	if PRETTIFY_JSON:
+		json.dump( output, outfile, sort_keys=True, indent=4, separators=(',', ': '))
+	else:
+		json.dump( output, outfile, sort_keys=True)
 
 if __name__ == '__main__': main()
