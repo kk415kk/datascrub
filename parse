@@ -12,51 +12,14 @@
 # Version: 0.01b
 
 
-import sys, os, glob, json, tarfile, zipfile
+import sys, os, glob, json, tarfile, shutil
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
 
 # SETTINGS
 PRETTIFY_JSON = False
 EXTRACT_TO = "unzipped_exports"
-
-# NOTES: ElementTree.parse only takes in a file path in the following form:
-# 			folder/folder/file
-# Do not place an additional "/" in front of the first folder (i.e. don't use buildPath)
-
-# Helper function to build file paths
-# baseFolder: the folder to start with
-# folderHierarchy: the list of folders to traverse in order to build path
-# 
-# Outputted file path should be of the form: EXTRACT_TO/baseFolder/folder1/folder2/folder3/
-def buildPath(baseFolder, folderHierarchy=[]):
-	assert not baseFolder == None
-	path = EXTRACT_TO
-	if baseFolder[0] != "/":
-		path += "/"
-	path = path + baseFolder
-
-	for folder in folderHierarchy:
-		if path[len(path)-1] == "/":
-			path = path[0:len(path)-1]
-		if not folder[0] == "/":
-			folder = "/" + folder
-		if folder[len(folder)-1] == "/":
-			folder = folder[0:len(folder)-1]
-		path = path + folder + "/"
-
-	if path[0] == "/":
-		path = path[1:len(path)]
-	if not path[len(path)-1] == "/":
-		path = path + "/"
-	return path
-
-# Outputted file path should be of the form EXTRACT_TO/baseFolder/folder1/folder2/finalFile
-def buildPathWithFile(baseFolder, folderHierarchy, finalFile):
-	assert not finalFile == None
-	if finalFile[0] == "/":
-		finalFile = finalFile[1:len(finalFile)]
-	return buildPath(baseFolder, folderHierarchy) + finalFile
+OPTION = False
 
 # Removes all slashes from file path
 def clean(word):
@@ -65,6 +28,23 @@ def clean(word):
 	if word[len(word)-1] == "/":
 		word = word[0:len(word)-1]
 	return word
+
+def info(help=False):
+	if not help:
+		print "Invalid arguments. " \
+			"Usage: ./parse [arg || -m arg1 arg2 ...]"
+	else:
+		print "=========== HELP =========="
+	print "[Options]:"
+	print "-m args\t: Used to specify multiple file paths to single course export folders"
+	print "-h\t: Used for help page"
+	print "NOTE: If no options are specified, the script defaults to -az\n"
+	print "Example usages:"
+	print "./parse folder"
+	print "./parse -m folder/courseExport1.zip folder/courseExport2.zip ..."
+
+	if help:
+		print "==========================="
 
 #############################################################################
 # To better understand parser:
@@ -75,18 +55,28 @@ def clean(word):
 
 ###### MAIN METHOD #####
 def main():
-	print "Starting modulestore generator..."
-
 	output = []
-	outfile = file("test_modulestore.json", "w")
 	arglen = len(sys.argv)
 	arglist = sys.argv[1:]
 
-	# first argument should be path to root folder of all course exports
-	if arglen != 2:
-		print "Invalid arguments. " \
-			"Usage: ./parse root_folder_of_course_export"
+	# parse arguments
+	if arglen < 2:
+		info()
 		exit(1)
+	elif arglen == 2:
+		if arglist[0] == "-m":
+			info()
+			exit(1)
+		if arglist[0] == "-h" or arglist[0] == "--help":
+			info(True)
+			exit(0)
+		pass
+	else:
+		assert arglist[0] == "-m"
+		global OPTION
+		OPTION = True
+
+	print "Starting modulestore generator..."
 
 	# make a directory for tar files to be extracted to
 	try:
@@ -94,27 +84,43 @@ def main():
 	except OSError:
 		pass
 
-	# navigate to root folder of course
-	course_exports = clean(arglist[0])
-	root_folder = os.path.dirname(os.getcwd() + "/" + course_exports)
-	if not os.path.exists(root_folder):
-		print "Invalid file path: " + root_folder	
-		exit(1)
+	# if no options are specified, then try to extract all folders in the specified file path
+	if not OPTION:
+		course_exports = clean(arglist[0])
+		root_folder = os.path.join(os.getcwd(), course_exports)
+		if not os.path.exists(root_folder):
+			print "Invalid file path: " + root_folder	
+			exit(1)
 
-	# extract tarfiles to folder_of_parser/EXTRACT_TO
-	files = os.listdir(os.getcwd() + "/" + course_exports)
+		# extract tarfiles to folder_of_parser/EXTRACT_TO
+		files = os.listdir(os.getcwd() + "/" + course_exports)
 
-	for archive in files:
-		path_to_archive = os.getcwd() + "/" + course_exports + "/" + archive
-		if archive.endswith(".tar.gz") or archive.endswith(".zip"):
-			print "Extracting course " + str(archive) + "..."
+		for archive in files:
+			path_to_archive = os.getcwd() + "/" + course_exports + "/" + archive
+			if archive.endswith(".tar.gz") or archive.endswith(".zip"):
+				print "Extracting course " + str(archive) + "..."
+				archive = tarfile.open(path_to_archive, 'r:gz')
+				archive.extractall(os.getcwd() + "/" + EXTRACT_TO);
+	else:
+	# if option -m arg1 arg2 ... was specified, try to extract all course exports from each file path
+		for path_to_archive in arglist[1:]:
+			if not os.path.exists(os.path.join(os.getcwd(), clean(path_to_archive))):
+				print "Invalid file path: " + path_to_archive
+				exit(1)
+			if os.path.isdir(path_to_archive):
+				print "Invalid file path: " + path_to_archive
+				print "File path should be to a specific .zip file, not a folder. Perhaps you meant to run without the -m parameter?"
+				print "Run ./parse --help for help"
+				exit(1)
+			print "Extracting course " + path_to_archive + "..."
 			archive = tarfile.open(path_to_archive, 'r:gz')
-			archive.extractall(os.getcwd() + "/" + EXTRACT_TO);
+			archive.extractall(os.getcwd() + "/" + EXTRACT_TO)
 
 	courses = os.listdir(os.getcwd() + "/" +  EXTRACT_TO)
-	print os.getcwd() + "/" +  EXTRACT_TO
+	outfile = file("test_modulestore.json", "w")
+
 	for course_export in courses:
-		if os.path.isdir(os.path.dirname( os.getcwd() + "/" + course_export)):
+		if os.path.isdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export)):
 			#########################################################################################
 			## This dictionary is used for linking purposes
 			## INFORMATION:
@@ -137,7 +143,7 @@ def main():
 			module_list = []
 
 			# grab root folder of course export
-			root_folder = os.path.dirname( os.getcwd() + "/" + EXTRACT_TO + "/" + course_export )
+			root_folder = os.path.dirname(os.path.join(os.getcwd(), EXTRACT_TO, course_export))
 
 			if not os.path.exists(root_folder):
 				print "Invalid file path: " + root_folder	
@@ -145,7 +151,7 @@ def main():
 
 			# parse for course information first
 			sys.stdout.write("Parsing course information for ")
-			tree = ET.parse(buildPathWithFile(course_export, [], "course.xml"))
+			tree = ET.parse(os.path.join(EXTRACT_TO, course_export, "course.xml"))
 			root = tree.getroot()
 			course = root.attrib["course"]
 			org = root.attrib["org"]
@@ -154,7 +160,7 @@ def main():
 
 			# parse 'about' folder of course export
 			sys.stdout.write("Parsing 'about' folder...\t")
-			f = open(buildPath(course_export, ["about"]) + "overview.html", "r")
+			f = open(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "about", "overview.html"), "r")
 			entry_dict = { "_id" : {"tag" : tag, "org" : org, "course" : course, "category" : "about", \
 						"name" : "overview", "revision" : None }, "definition" : { "children" : [], \
 						"data": f.read() }, "metadata" : {} }
@@ -163,9 +169,9 @@ def main():
 
 			# parse 'chapter' folder of course export
 			sys.stdout.write("Parsing 'chapter' folder...\t")
-			files = os.listdir(buildPath(course_export, ["chapter"]))
+			files = os.listdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "chapter"))
 			for chapter_file in files:
-				tree = ET.parse(buildPath(course_export, ["chapter"]) + chapter_file)
+				tree = ET.parse(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "chapter", chapter_file))
 				root = tree.getroot()
 
 				chapter = chapter_file.replace(".xml", "")
@@ -196,7 +202,7 @@ def main():
 			# also involves 'policies' folder
 			# incomplete metadata and definition
 			sys.stdout.write("Parsing 'course' folder...\t")
-			files = os.listdir(buildPath(course_export, ["course"]))
+			files = os.listdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "course"))
 
 			if len(files) != 1:
 				print "Strange error with multiple files in course folder. Please contact author of script."
@@ -206,7 +212,7 @@ def main():
 
 			alt_course_name = files[0].replace(".xml", "")
 
-			tree = ET.parse(buildPathWithFile(course_export, ["course"], files[0]))
+			tree = ET.parse(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "course", files[0]))
 			root = tree.getroot()
 			data_dict = { "textbooks" : [], "grading_policy" : {}, "wiki_slug" : "" }
 			entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "course", \
@@ -230,14 +236,14 @@ def main():
 			# let's take care of the policy.json in policies folder first
 			sys.stdout.write("Parsing 'policies' folder...\t")
 			try:
-				files = os.listdir(buildPath(course_export, ["policies", alt_course_name]))
+				files = os.listdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "policies", alt_course_name))
 			except:
 				print "Something went wrong with the parsing of 'policy' folder. Please contact author."
 				exit(1)
 
 			for json_file in files:
 				# policy.json stores information about tabs/metadata
-				json_data = open(buildPathWithFile(course_export, ["policies", alt_course_name], json_file), 'r')
+				json_data = open(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "policies", alt_course_name, json_file), 'r')
 				if json_file == "policy.json":
 					COURSE_INFO = json.load(json_data)
 					key = "course" + "/" + clean(alt_course_name)
@@ -260,9 +266,9 @@ def main():
 
 			# parse 'sequential' folder of course export
 			sys.stdout.write("Parsing 'sequential' folder...\t")
-			files = os.listdir(buildPath(course_export, ["sequential"]))
+			files = os.listdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "sequential"))
 			for sequential_file in files:
-				tree = ET.parse(buildPathWithFile(course_export, ["sequential"], sequential_file))
+				tree = ET.parse(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "sequential", sequential_file))
 				root = tree.getroot()
 
 				sequential = sequential_file.replace(".xml", "")
@@ -293,9 +299,9 @@ def main():
 			# parse 'vertical' folder of course export
 			# verticals have no file name (???)
 			sys.stdout.write("Parsing 'vertical' folder...\t")
-			files = os.listdir(buildPath(course_export, ["vertical"]))
+			files = os.listdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "vertical"))
 			for vertical_file in files:
-				tree = ET.parse(buildPathWithFile(course_export, ["vertical"], vertical_file))
+				tree = ET.parse(os.path.join(os.getcwd(), EXTRACT_TO, course_export, "vertical", vertical_file))
 				root = tree.getroot()
 
 				vertical = vertical_file.replace(".xml", "")
@@ -338,14 +344,14 @@ def main():
 				sys.stdout.write("Parsing module '" + str(module) + "'...\t")
 				try:
 					module_type = str(module)
-					files = os.listdir(buildPath(course_export, [module_type]))
+					files = os.listdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export, module_type))
 					
 					for module_file in files:
 						if module_file.endswith('.xml'):
 							name = module_file.replace(".xml", "")
 							
 							data = ""
-							tree = ET.parse(buildPathWithFile(course_export, [module_type], module_file))
+							tree = ET.parse(os.path.join(os.getcwd(), EXTRACT_TO, course_export, module_type, module_file))
 							root = tree.getroot()
 
 							if module_type == "problem":
@@ -355,7 +361,7 @@ def main():
 								pass
 							elif module_type == "html":
 								# add html contents to data
-								filePath = buildPathWithFile(course_export, [module_type], name + ".html")
+								filePath = os.path.join(os.getcwd(), EXTRACT_TO, course_export, module_type, name + ".html")
 								if os.path.isfile(filePath):
 									html_data = open(filePath)
 									data = html_data.read()
@@ -367,7 +373,7 @@ def main():
 							display_name = content_linker["verticals"][vertical][0]
 							content_linker[module_type][name][0] = display_name
 
-							f = open(buildPathWithFile(course_export, [module_type], module_file), "r")
+							f = open(os.path.join(os.getcwd(), EXTRACT_TO, course_export, module_type, module_file), "r")
 							entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : module_type, \
 				                    "name" : name, "revision" : None }, "definition" : { \
 				                    "data": data }, "metadata" : { "xml_attributes" : \
@@ -386,5 +392,10 @@ def main():
 				json.dump( output, outfile, sort_keys=True, indent=4, separators=(',', ': ') )
 			else:
 				json.dump( output, outfile, sort_keys=True )
+
+	# remove unzipped course export folder from disk to clear space	
+	sys.stdout.write("Clearing space from extracted course exports...\t")
+	shutil.rmtree(os.path.join(os.getcwd(), EXTRACT_TO))
+	print "success!\n"
 
 if __name__ == '__main__': main()
