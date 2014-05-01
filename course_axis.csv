@@ -1,510 +1,381 @@
-0, ddeb1ba80daa4e06b287fcace9ed5b73, discussion, , , , Double-slit experiment (part 1), /discussion/ddeb1ba80daa4e06b287fcace9ed5b73.xml, , 
-0, 4d5aa8605375462ab5d37d31288d7c78, discussion, , , , Wrapping up, /discussion/4d5aa8605375462ab5d37d31288d7c78.xml, , 
-0, 640c6123b4824afc9b21fb05e643cfda, discussion, , , , Simon's algorithm (part 2), /discussion/640c6123b4824afc9b21fb05e643cfda.xml, , 
-0, 097b7124f5674ee6860aeda0e5bcd823, discussion, , , , Problems 3-4, /discussion/097b7124f5674ee6860aeda0e5bcd823.xml, , 
-0, 65869eb75810418580078b570424c3c8, discussion, , , , Discussion question, /discussion/65869eb75810418580078b570424c3c8.xml, , 
-0, 82b801527fec44ed8980dbfed4e4408d, discussion, , , , Problems 1-6, /discussion/82b801527fec44ed8980dbfed4e4408d.xml, , 
-0, 721439a019c448aeb59af5009671c36e, discussion, , , , Problems 6-7, /discussion/721439a019c448aeb59af5009671c36e.xml, , 
-0, 5882440de08040f1a2c640d90d96f043, discussion, , , , Problems 9-10, /discussion/5882440de08040f1a2c640d90d96f043.xml, , 
-0, a3a11d21ef5d4003a1840d006ffc96ac, discussion, , , , Problem 4, /discussion/a3a11d21ef5d4003a1840d006ffc96ac.xml, , 
-0, c7aeba4d590a43709a9333aed0d1cd0c, discussion, , , , Problem 5, /discussion/c7aeba4d590a43709a9333aed0d1cd0c.xml, , 
-0, 3faf2d5f576f49cb97e8963eaeff64d1, discussion, , , , Problems 6-8, /discussion/3faf2d5f576f49cb97e8963eaeff64d1.xml, , 
-0, 71d1d347c0594eada789def561151151, discussion, , , , Double-slit experiment (part 2), /discussion/71d1d347c0594eada789def561151151.xml, , 
-0, 02c20c8b023e445fb74367a652cd92f3, discussion, , , , k-level systems, bra-ket notation, /discussion/02c20c8b023e445fb74367a652cd92f3.xml, , 
-0, 3fe6e860800740a59208732ed67ab76f, discussion, , , , Bell and EPR, /discussion/3fe6e860800740a59208732ed67ab76f.xml, , 
-0, ccede56ed67c4ddeab4bbefb8497d4da, discussion, , , , Problem 3, /discussion/ccede56ed67c4ddeab4bbefb8497d4da.xml, , 
-0, cc956af7f81248c7834261aa72831735, discussion, , , , Spin as a qubit, /discussion/cc956af7f81248c7834261aa72831735.xml, , 
-0, 96bbb8fb0fec4e9a98c405d53f36a365, discussion, , , , Teleportation (part 2), /discussion/96bbb8fb0fec4e9a98c405d53f36a365.xml, , 
-0, be125a2d77b54e028093eff82b23e8f2, discussion, , , , QFTn (part 2), /discussion/be125a2d77b54e028093eff82b23e8f2.xml, , 
-0, 54b2540a364b478e9d7d8743484e244e, discussion, , , , Reversible computation (part 1), /discussion/54b2540a364b478e9d7d8743484e244e.xml, , 
-0, 7472f6d9e6d04bec9de10bdf055ed0f2, discussion, , , , n-th roots of unity, /discussion/7472f6d9e6d04bec9de10bdf055ed0f2.xml, , 
-0, 2088bc1b2c944a8e8a49654a40f11538, discussion, , , , Classical control, /discussion/2088bc1b2c944a8e8a49654a40f11538.xml, , 
-0, b57469c4098f465e9f0fbadb4935402f, discussion, , , , Problems 1-2, /discussion/b57469c4098f465e9f0fbadb4935402f.xml, , 
-0, d179dc998ab74ae0bf01fb6751fc6198, discussion, , , , Spin resonance, /discussion/d179dc998ab74ae0bf01fb6751fc6198.xml, , 
-0, bb7142aa36d64a258e68d4cbb5900160, discussion, , , , Measurement, /discussion/bb7142aa36d64a258e68d4cbb5900160.xml, , 
-0, 90b592e82def46d7861912fed4ddcb32, discussion, , , , Limits of quantum computers, /discussion/90b592e82def46d7861912fed4ddcb32.xml, , 
-0, ca009ae8b82c47de90fa88d2eb7c9ca7, discussion, , , , Single qubit gates, /discussion/ca009ae8b82c47de90fa88d2eb7c9ca7.xml, , 
-0, 5070cb523a8d46df81f4d6875eb5850d, discussion, , , , BQP, /discussion/5070cb523a8d46df81f4d6875eb5850d.xml, , 
-0, 2e75f52a0c244b3abdd78f70e4cfb4dc, discussion, , , , Course schedule, /discussion/2e75f52a0c244b3abdd78f70e4cfb4dc.xml, , 
-0, aadad64c6d684f44af967b43881c7ab2, discussion, , , , Double-slit experiment (part 3), /discussion/aadad64c6d684f44af967b43881c7ab2.xml, , 
-0, 7b15a33907dd4312894258f1d2b0ed6a, discussion, , , , Problem 8, /discussion/7b15a33907dd4312894258f1d2b0ed6a.xml, , 
-0, f73fd16f379149ea97ad0795b83acc72, discussion, , , , Problem 1, /discussion/f73fd16f379149ea97ad0795b83acc72.xml, , 
-0, 930125d25432425ba504e6aa347fee7e, discussion, , , , Problems 1-3, /discussion/930125d25432425ba504e6aa347fee7e.xml, , 
-0, 3774a909d30442feb54683aa6a1cdc2f, discussion, , , , /discussion/3774a909d30442feb54683aa6a1cdc2f.xml, , 
-0, b4f11a947fae474093a630a0f4629268, discussion, , , , Teleportation (part 1), /discussion/b4f11a947fae474093a630a0f4629268.xml, , 
-0, e073e58babd34d209f981b41fbd85576, discussion, , , , Pauli spin matrices, /discussion/e073e58babd34d209f981b41fbd85576.xml, , 
-0, 3b1a82f9b4f943e88cb9e8cc221966fd, discussion, , , , Recommended reading, /discussion/3b1a82f9b4f943e88cb9e8cc221966fd.xml, , 
-0, 5d4ff6116a044dfc835fed968e52d1a8, discussion, , , , Problems 17-18, /discussion/5d4ff6116a044dfc835fed968e52d1a8.xml, , 
-0, b2335b488e1f4b6282ac698857a296c7, discussion, , , , Problems 9-10, /discussion/b2335b488e1f4b6282ac698857a296c7.xml, , 
-0, 12229ed4a8894c909428b5723ecf9102, discussion, , , , Problems 8-10, /discussion/12229ed4a8894c909428b5723ecf9102.xml, , 
-0, 510a2ac7973f479e83e05e523cdc0f07, discussion, , , , Fourier sampling (part 1), /discussion/510a2ac7973f479e83e05e523cdc0f07.xml, , 
-0, b76520aae7454c96a1d7956b721e2247, discussion, , , , Needle in a haystack, /discussion/b76520aae7454c96a1d7956b721e2247.xml, , 
-0, c28152c4ccd143a3ba33a2e7796b1407, discussion, , , , Qubits, /discussion/c28152c4ccd143a3ba33a2e7796b1407.xml, , 
-0, cc794af31f564d1ca2769e8f25186907, discussion, , , , Observables (part 1), /discussion/cc794af31f564d1ca2769e8f25186907.xml, , 
-0, 9d756d87af584210bb2874c390fa477b, discussion, , , , Problem 7, /discussion/9d756d87af584210bb2874c390fa477b.xml, , 
-0, fd84a9e6aee14d3ab6d4d81bbda8042a, discussion, , , , Particle in a box, /discussion/fd84a9e6aee14d3ab6d4d81bbda8042a.xml, , 
-0, f0a1ec956d78426d91d2c7765249bdd7, discussion, , , , Adiabatic quantum computation, /discussion/f0a1ec956d78426d91d2c7765249bdd7.xml, , 
-0, a9a1b0fc03b24835a05bde5f575cd23c, discussion, , , , Useful links, /discussion/a9a1b0fc03b24835a05bde5f575cd23c.xml, , 
-0, 93c424ce07934f7a8ef0e5ef0a0190ba, discussion, , , , Problem 12, /discussion/93c424ce07934f7a8ef0e5ef0a0190ba.xml, , 
-0, 7bec4e04b181407997969b7ff23a6f92, discussion, , , , Problems 7-8, /discussion/7bec4e04b181407997969b7ff23a6f92.xml, , 
-0, d00d76d57ddd437a9448cc9b9a4652c7, discussion, , , , Bell state circuit, /discussion/d00d76d57ddd437a9448cc9b9a4652c7.xml, , 
-0, 16744f6bdec74fce9b6a758e3ef55dc9, discussion, , , , Fourier sampling (part 2), /discussion/16744f6bdec74fce9b6a758e3ef55dc9.xml, , 
-0, 96c3c03a9bd54f5f82284dbd4fbe25e7, discussion, , , , Problems 5-7, /discussion/96c3c03a9bd54f5f82284dbd4fbe25e7.xml, , 
-0, 14aaeafcbfa941d29fbb4dc4d33eac23, discussion, , , , Time evolution of a quantum system, /discussion/14aaeafcbfa941d29fbb4dc4d33eac23.xml, , 
-0, 4d1c91c22467434aafef4c7e76cef424, discussion, , , , Problem 14, /discussion/4d1c91c22467434aafef4c7e76cef424.xml, , 
-0, d394c37a9407460ba9db70aa954198e0, discussion, , , , Implementing qubits, /discussion/d394c37a9407460ba9db70aa954198e0.xml, , 
-0, a005c5a1b27e4aa494328485984a5a9f, discussion, , , , Problem 5, /discussion/a005c5a1b27e4aa494328485984a5a9f.xml, , 
-0, a9042ce4ea08428497c174b8fa173f60, discussion, , , , Bloch sphere, /discussion/a9042ce4ea08428497c174b8fa173f60.xml, , 
-0, fa47097215e042fb8314acdf3ecde2b1, discussion, , , , Observables (part 2), /discussion/fa47097215e042fb8314acdf3ecde2b1.xml, , 
-0, 3bf9a052a2c144bfb4bf58736c016dd9, discussion, , , , Problems 4-6, /discussion/3bf9a052a2c144bfb4bf58736c016dd9.xml, , 
-0, b5a8710ea3fa4757a973f9e7660c1ab9, discussion, , , , Discussion question, /discussion/b5a8710ea3fa4757a973f9e7660c1ab9.xml, , 
-0, d5e83c053a9a4d9b8779e9e7ba5fdbe8, discussion, , , , Problems 12-13, /discussion/d5e83c053a9a4d9b8779e9e7ba5fdbe8.xml, , 
-0, 81880bed37c041479df788b993bc434b, discussion, , , , Two qubit gates and tensor products, /discussion/81880bed37c041479df788b993bc434b.xml, , 
-0, 26502e0194274e1da016bdfb47d98cf4, discussion, , , , Entanglement, /discussion/26502e0194274e1da016bdfb47d98cf4.xml, , 
-0, 2f43f09f562f4127bb4ab376fa649e21, discussion, , , , Problems 7-8, /discussion/2f43f09f562f4127bb4ab376fa649e21.xml, , 
-0, 98a83a7ba45747f3b6bf8dfced3b4b44, discussion, , , , Problem 9, /discussion/98a83a7ba45747f3b6bf8dfced3b4b44.xml, , 
-0, 98f600afe61448b09f6529c0d4a79e67, discussion, , , , Problems 1-2, /discussion/98f600afe61448b09f6529c0d4a79e67.xml, , 
-0, 8539a814a6eb498a9a5a35711fe4939c, discussion, , , , Problems 11-12, /discussion/8539a814a6eb498a9a5a35711fe4939c.xml, , 
-0, 078dabd2438b4a479ac69e60a4416bb7, discussion, , , , EPR Paradox, /discussion/078dabd2438b4a479ac69e60a4416bb7.xml, , 
-0, f5a53741281f43959f4160612aa6afc8, discussion, , , , Problems 7-8, /discussion/f5a53741281f43959f4160612aa6afc8.xml, , 
-0, 0a444111843a4a71ba2ff9f39f9f81f1, discussion, , , , /discussion/0a444111843a4a71ba2ff9f39f9f81f1.xml, , 
-0, d1d462cdb2694ed4b0ba084af6b7faee, discussion, , , , Double slit experiment, /discussion/d1d462cdb2694ed4b0ba084af6b7faee.xml, , 
-0, 4ac83001448346519f8aab0c0b18f67c, discussion, , , , n qubit systems, /discussion/4ac83001448346519f8aab0c0b18f67c.xml, , 
-0, 6e1cf55d25ea477d870624d5b15f412f, discussion, , , , Problem 6, /discussion/6e1cf55d25ea477d870624d5b15f412f.xml, , 
-0, be01665a3b954c84b3c2c39fab254d33, discussion, , , , No cloning theorem, /discussion/be01665a3b954c84b3c2c39fab254d33.xml, , 
-0, b04dc98f50404c83be9466e27b1a1260, discussion, , , , Prerequisites, /discussion/b04dc98f50404c83be9466e27b1a1260.xml, , 
-0, 63ccf5b82c7c45939f7ced1aaf7fe6dc, discussion, , , , Two qubits, /discussion/63ccf5b82c7c45939f7ced1aaf7fe6dc.xml, , 
-0, 64c82d575fcc4fdbb86aa09f6fe11e61, discussion, , , , Reversible computation (part 2), /discussion/64c82d575fcc4fdbb86aa09f6fe11e61.xml, , 
-0, d6288daecad24f658d9159d5f6060ac7, discussion, , , , Problems 11-13, /discussion/d6288daecad24f658d9159d5f6060ac7.xml, , 
-0, f26d0f74c9eb40c59477ea8af17e0906, discussion, , , , Period finding, /discussion/f26d0f74c9eb40c59477ea8af17e0906.xml, , 
-0, 53663c5bd514456fb479640990a911d6, discussion, , , , Problems 8-10, /discussion/53663c5bd514456fb479640990a911d6.xml, , 
-0, 336884484cc44712a07f15e37205932a, discussion, , , , Problems 10-11, /discussion/336884484cc44712a07f15e37205932a.xml, , 
-0, cc6cbbb35fa149579cedcd27df9c3d16, discussion, , , , Overview, /discussion/cc6cbbb35fa149579cedcd27df9c3d16.xml, , 
-0, 0a21703f25624409b8ed8a064cee45db, discussion, , , , Bell and local realism, /discussion/0a21703f25624409b8ed8a064cee45db.xml, , 
-0, 5f29c31b2b9a4080b9c95532eed1d8f4, discussion, , , , Grover's algorithm, /discussion/5f29c31b2b9a4080b9c95532eed1d8f4.xml, , 
-0, 854ae22044dd4218b4ddc59271c7fc1c, discussion, , , , Uncertainty principle, /discussion/854ae22044dd4218b4ddc59271c7fc1c.xml, , 
-0, 22304bd357ce447aa8e847e5e9e3930d, discussion, , , , Extended Church-Turing thesis, /discussion/22304bd357ce447aa8e847e5e9e3930d.xml, , 
-0, 5d6b88b0652c44c8a191563c7f990d3c, discussion, , , , Stern-Gerlach, /discussion/5d6b88b0652c44c8a191563c7f990d3c.xml, , 
-0, 8e6a31ec133d4d6e8e6910bbc4836a8d, discussion, , , , Shor's factoring algorithm, /discussion/8e6a31ec133d4d6e8e6910bbc4836a8d.xml, , 
-0, 3bbc5a094f41439fba6b4bdb8de1c5f2, discussion, , , , Problems 13-14, /discussion/3bbc5a094f41439fba6b4bdb8de1c5f2.xml, , 
-0, 5af0b20e5d5c4457a765b99381db53ae, discussion, , , , Larmor precession, /discussion/5af0b20e5d5c4457a765b99381db53ae.xml, , 
-0, a88c81278e6d4ab09fff70caa42415f3, discussion, , , , Problems 9-11, /discussion/a88c81278e6d4ab09fff70caa42415f3.xml, , 
-0, 597af1c539e24b7a8bdd3a4548d74a42, discussion, , , , QFTn (part 1), /discussion/597af1c539e24b7a8bdd3a4548d74a42.xml, , 
-0, e3e0bea1d9b74ca28f6d339f28d732c5, discussion, , , , Problems 1-5, /discussion/e3e0bea1d9b74ca28f6d339f28d732c5.xml, , 
-0, adf5aa99977947e0a864d82c3318d872, discussion, , , , Grading policy, /discussion/adf5aa99977947e0a864d82c3318d872.xml, , 
-0, 686c3b1f64584fc990c1f542488c771d, discussion, , , , Geometric representation (part 1), /discussion/686c3b1f64584fc990c1f542488c771d.xml, , 
-0, 6406063de16b487ab13bee1f11a55410, discussion, , , , Problem 4, /discussion/6406063de16b487ab13bee1f11a55410.xml, , 
-0, 3b576678c7fb42c5b63f463846da0d77, discussion, , , , Problems 11-13, /discussion/3b576678c7fb42c5b63f463846da0d77.xml, , 
-0, 8eedb093ec2c4f24b92d6dafe5647f34, discussion, , , , Problem 9, /discussion/8eedb093ec2c4f24b92d6dafe5647f34.xml, , 
-0, c20bf0a0bf2b44ac8e699efb12039e1a, discussion, , , , Properties, /discussion/c20bf0a0bf2b44ac8e699efb12039e1a.xml, , 
-0, 0070836ad8f8437483b66b2e611fdbfc, discussion, , , , Geometric representation (part 2), /discussion/0070836ad8f8437483b66b2e611fdbfc.xml, , 
-0, 59d988f218324638b634ce8a76d35c83, discussion, , , , QFT circuit, /discussion/59d988f218324638b634ce8a76d35c83.xml, , 
-0, e0ec57ef39594089b459763faf497368, discussion, , , , Rotational invariance of Bell state, /discussion/e0ec57ef39594089b459763faf497368.xml, , 
-0, 5d97cbc078ae41a8bd911c1c8a2054b1, discussion, , , , Problem 13, /discussion/5d97cbc078ae41a8bd911c1c8a2054b1.xml, , 
-0, 0101051542e14536bcd20188a1741b07, discussion, , , , Implementing Grover's algorithm, /discussion/0101051542e14536bcd20188a1741b07.xml, , 
-0, ef74f6b65fe74b0382ba1fc15757cc96, discussion, , , , Problems 1-6, /discussion/ef74f6b65fe74b0382ba1fc15757cc96.xml, , 
-0, a9e92f085a18428fa75adbd75591255c, discussion, , , , Unitary transforms, /discussion/a9e92f085a18428fa75adbd75591255c.xml, , 
-0, 82614a57b791478a826d611eadf8dc37, discussion, , , , Continuous quantum states, /discussion/82614a57b791478a826d611eadf8dc37.xml, , 
-0, 3b0184ffdd0147248e4d10fe79d05358, discussion, , , , CHSH Inequality, /discussion/3b0184ffdd0147248e4d10fe79d05358.xml, , 
-0, 627145f24e5e4242b1b8b908a53c6a9b, discussion, , , , Problems 2-3, /discussion/627145f24e5e4242b1b8b908a53c6a9b.xml, , 
-0, cc3147aa34e74f5680647969785469a9, discussion, , , , Universal family of gates, /discussion/cc3147aa34e74f5680647969785469a9.xml, , 
-0, a17a6acf2a3e4e00a27f58dcac7185ab, discussion, , , , Problems 15-16, /discussion/a17a6acf2a3e4e00a27f58dcac7185ab.xml, , 
-0, d8172c21c7af4862b264870d6fdcdb1d, discussion, , , , Simon's algorithm (part 1), /discussion/d8172c21c7af4862b264870d6fdcdb1d.xml, , 
-0, de87272c87cd4b8f81e12f5d3cb8ea58, html, , , , Problem 5, /html/de87272c87cd4b8f81e12f5d3cb8ea58.xml, , 
-0, 363bc00d2e9a4f3d91efcafdfd7a7fe1, html, , , , Discussion question, /html/363bc00d2e9a4f3d91efcafdfd7a7fe1.xml, , 
-0, 47b1181e2432433abc8e2ad1e2f5ddda, html, , , , Discussion question, /html/47b1181e2432433abc8e2ad1e2f5ddda.xml, , 
-0, 340cc4fb581440fda28fce8ac6b3a0c3, html, , , , Cover page, /html/340cc4fb581440fda28fce8ac6b3a0c3.xml, , 
-0, d756936d87984860a38c9196a9867a1d, html, , , , Properties, /html/d756936d87984860a38c9196a9867a1d.xml, , 
-0, 0a07d5eeca9c4d6d91d6ba1f1b9d9cc3, html, , , , Instructions for entering math expressions, /html/0a07d5eeca9c4d6d91d6ba1f1b9d9cc3.xml, , 
-0, 01e59242de884d5f9b84d38f284eee02, html, , , , Problem 3, /html/01e59242de884d5f9b84d38f284eee02.xml, , 
-0, d953291f98b2441581a04247a598759c, html, , , , Problem 15, /html/d953291f98b2441581a04247a598759c.xml, , 
-0, 3579514874604b80831ae6c6395664c2, html, , , , Instructions for entering math expressions, /html/3579514874604b80831ae6c6395664c2.xml, , 
-0, b113a0a6a1194133a539989d1ae5a323, html, , , , Problems 1-6, /html/b113a0a6a1194133a539989d1ae5a323.xml, , 
-0, a0f939049c51456681a1bdf8d0bc5eb3, html, , , , Useful links, /html/a0f939049c51456681a1bdf8d0bc5eb3.xml, , 
-0, e5e605d499844d369dc56bc9eb6e8f66, html, , , , Supplementary materials, /html/e5e605d499844d369dc56bc9eb6e8f66.xml, , 
-0, f0c3e7a22e4642a7904ee6d053c788f7, html, , , , Problems 4-5, /html/f0c3e7a22e4642a7904ee6d053c788f7.xml, , 
-0, 58e816b0384e4c8d835bf4d31198058b, html, , , , Cover page, /html/58e816b0384e4c8d835bf4d31198058b.xml, , 
-0, 202197b45fdc43689edf6429d40bd709, html, , , , Problems 11-12, /html/202197b45fdc43689edf6429d40bd709.xml, , 
-0, 088584d2ef7a4eebacfd20f137c42b7e, html, , , , Course staff, /html/088584d2ef7a4eebacfd20f137c42b7e.xml, , 
-0, 046975a88fbe489593e13bbe2282eea8, html, , , , Problems 1-6, /html/046975a88fbe489593e13bbe2282eea8.xml, , 
-0, 9325e19c1de94d96b4d0a5bc91d4127b, html, , , , Problems 1-5, /html/9325e19c1de94d96b4d0a5bc91d4127b.xml, , 
-0, 387e003756f84fb18ac868b41b02dbfe, html, , , , Course schedule, /html/387e003756f84fb18ac868b41b02dbfe.xml, , 
-0, 0d08dbc9acb4467fa13aea438a21a2bb, html, , , , Problem 4, /html/0d08dbc9acb4467fa13aea438a21a2bb.xml, , 
-0, 8a33bb02c6b741f7816dc6bdc8576c11, html, , , , Problems 9-10, /html/8a33bb02c6b741f7816dc6bdc8576c11.xml, , 
-0, bab24d78957a4174b89c325fd1204a7c, html, , , , Grading policy, /html/bab24d78957a4174b89c325fd1204a7c.xml, , 
-0, 925a111bf74f4ca78276f2a33870fffb, html, , , , Problem 7, /html/925a111bf74f4ca78276f2a33870fffb.xml, , 
-0, 8aef0f49d3ab4e5ba61cfa65dd03a16d, html, , , , Prerequisites, /html/8aef0f49d3ab4e5ba61cfa65dd03a16d.xml, , 
-0, 68e1587a2b6e4b1bb5c074131d697bf8, html, , , , Problems 9-10, /html/68e1587a2b6e4b1bb5c074131d697bf8.xml, , 
-0, 4a7874d6e4274f51a07b80a4e9d039ca, html, , , , Problems 1-3, /html/4a7874d6e4274f51a07b80a4e9d039ca.xml, , 
-0, cfe191e6a0ba4b7186811d5f60d613fa, html, , , , Problems 1-2, /html/cfe191e6a0ba4b7186811d5f60d613fa.xml, , 
-0, 18caf3ca788b423ba72a1e0308dc25c8, html, , , , Recommended reading, /html/18caf3ca788b423ba72a1e0308dc25c8.xml, , 
-0, 1fd434db4c1e461f8cad560ba4e29cef, html, , , , Problems 11-13, /html/1fd434db4c1e461f8cad560ba4e29cef.xml, , 
-0, 5f77e6d62847483abfd337a1fea77b65, html, , , , Problem 6, /html/5f77e6d62847483abfd337a1fea77b65.xml, , 
-0, 106ab455963d4f6180b041fb33702b39, chapters, , , , Week 2: Entanglement and Bell's experiment, /chapters/106ab455963d4f6180b041fb33702b39.xml, , 
-0, 13bd7e1903bd4737abe8a1582aecb68b, chapters, , , , Week 6: Shor's factoring algorithm, /chapters/13bd7e1903bd4737abe8a1582aecb68b.xml, , 
-0, 93598e6def12435ebebd84a8a1f0ff37, chapters, , , , Overview, /chapters/93598e6def12435ebebd84a8a1f0ff37.xml, , 
-0, feb2a8c32a1d4d8685ae1ce477745ea9, chapters, , , , Week 10: Final Exam, /chapters/feb2a8c32a1d4d8685ae1ce477745ea9.xml, , 
-0, 9d412b875dd44ce5b2e42425190ae618, chapters, , , , Week 3: Quantum circuits and teleportation, /chapters/9d412b875dd44ce5b2e42425190ae618.xml, , 
-0, ca5ec888b0ff4220b790680e4ab9c36c, chapters, , , , Week 9: Implementing qubits and gates, /chapters/ca5ec888b0ff4220b790680e4ab9c36c.xml, , 
-0, 5bee615c42d04028947796abca3895ce, chapters, , , , Week 5: Midterm Exam, /chapters/5bee615c42d04028947796abca3895ce.xml, , 
-0, 64150f742df24d44b3a38ee686ada65f, chapters, , , , Week 1: Qubits, /chapters/64150f742df24d44b3a38ee686ada65f.xml, , 
-0, 781b15b58ed247f4bef55587a326e915, chapters, , , , Week 8: Continuous quantum systems and quantum complexity theory, /chapters/781b15b58ed247f4bef55587a326e915.xml, , 
-0, 1b623759a35f43778782d267f3d3dddf, chapters, , , , Week 4: Early quantum algorithms, /chapters/1b623759a35f43778782d267f3d3dddf.xml, , 
-0, c4ebc1bd43144a0395eca18d4810ed31, chapters, , , , /chapters/c4ebc1bd43144a0395eca18d4810ed31.xml, , 
-0, eea22e20a7764f9f9353a39ff66422f0, verticals, , , , Universal family of gates, /verticals/eea22e20a7764f9f9353a39ff66422f0.xml, , 
-0, b1fe43c697254161a46952d623dcc5dd, verticals, , , , n-th roots of unity, /verticals/b1fe43c697254161a46952d623dcc5dd.xml, , 
-0, 12778539303d440ca1b5ac66bcacbc16, verticals, , , , Problem 14, /verticals/12778539303d440ca1b5ac66bcacbc16.xml, , 
-0, 2e8cb0189f45413baf4268a49716d32e, verticals, , , , Problem 5, /verticals/2e8cb0189f45413baf4268a49716d32e.xml, , 
-0, 1604ebdb97024d7fb44eede2b920067f, verticals, , , , Two qubit gates and tensor products, /verticals/1604ebdb97024d7fb44eede2b920067f.xml, , 
-0, c43446b63eee44ca922993f22dd86704, verticals, , , , Classical control, /verticals/c43446b63eee44ca922993f22dd86704.xml, , 
-0, 6bc42a0534114577a0da89d409759793, verticals, , , , Shor's factoring algorithm, /verticals/6bc42a0534114577a0da89d409759793.xml, , 
-0, ce7ebccaca444204bfb10c665b253893, verticals, , , , Single qubit gates, /verticals/ce7ebccaca444204bfb10c665b253893.xml, , 
-0, 9efd23dd42c24cb58250cd5bf686673e, verticals, , , , Problems 8-10, /verticals/9efd23dd42c24cb58250cd5bf686673e.xml, , 
-0, d055e96e92bf498bb790838892088484, verticals, , , , Problems 7-8, /verticals/d055e96e92bf498bb790838892088484.xml, , 
-0, b00874177af5421cabaea4df738b568e, verticals, , , , Reversible computation (part 2), /verticals/b00874177af5421cabaea4df738b568e.xml, , 
-0, 0bfc50b3b68449ae88ca368cca6393d8, verticals, , , , Problems 9-10, /verticals/0bfc50b3b68449ae88ca368cca6393d8.xml, , 
-0, f2a014ed68a94c93b372001cbce67d81, verticals, , , , Geometric representation (part 1), /verticals/f2a014ed68a94c93b372001cbce67d81.xml, , 
-0, db2737ec218841c1a7889fc5f706b9e4, verticals, , , , Properties, /verticals/db2737ec218841c1a7889fc5f706b9e4.xml, , 
-0, 1e151dc394d548c7a6eba16be6d6a064, verticals, , , , Grading policy, /verticals/1e151dc394d548c7a6eba16be6d6a064.xml, , 
-0, bded091d076a4ab792592154271c6550, verticals, , , , Reversible computation (part 1), /verticals/bded091d076a4ab792592154271c6550.xml, , 
-0, cb4dd7ed7ddc4f6db1be6f8619bc5106, verticals, , , , Problems 10-11, /verticals/cb4dd7ed7ddc4f6db1be6f8619bc5106.xml, , 
-0, df7eb2cca52842ddbf8d34957b10ef91, verticals, , , , Problem 4, /verticals/df7eb2cca52842ddbf8d34957b10ef91.xml, , 
-0, 0802a0ffc59c44fc976b8290deec6e56, verticals, , , , Needle in a haystack, /verticals/0802a0ffc59c44fc976b8290deec6e56.xml, , 
-0, 9d2428f68b454a17b80c6ac5eed67c97, verticals, , , , Problems 1-5, /verticals/9d2428f68b454a17b80c6ac5eed67c97.xml, , 
-0, e4335cdc0a9a462db43859b52de33318, verticals, , , , k-level systems, bra-ket notation, /verticals/e4335cdc0a9a462db43859b52de33318.xml, , 
-0, 540a32f28dc64f80800e5e7153fd35cd, verticals, , , , n qubit systems, /verticals/540a32f28dc64f80800e5e7153fd35cd.xml, , 
-0, 943b1279967f46d4b31fb3aa4ace2219, verticals, , , , Stern-Gerlach, /verticals/943b1279967f46d4b31fb3aa4ace2219.xml, , 
-0, 3a3565317ef449bdab0d4c0ed3a0c7c6, verticals, , , , Overview, /verticals/3a3565317ef449bdab0d4c0ed3a0c7c6.xml, , 
-0, 0624dd41678644cd9213ccdfa3d8cd06, verticals, , , , Problems 7-8, /verticals/0624dd41678644cd9213ccdfa3d8cd06.xml, , 
-0, 25a2f72a176f4349a7d3d9990026afed, verticals, , , , Problems 6-8, /verticals/25a2f72a176f4349a7d3d9990026afed.xml, , 
-0, 5c02a535ac2d44beb4eb93d628d5f918, verticals, , , , Cover page, /verticals/5c02a535ac2d44beb4eb93d628d5f918.xml, , 
-0, 49563eb3bb3741078bd8610fd4ab7e2c, verticals, , , , Double slit experiment, /verticals/49563eb3bb3741078bd8610fd4ab7e2c.xml, , 
-0, 7695dcf361c948de9ee0288f616c7249, verticals, , , , Problem 6, /verticals/7695dcf361c948de9ee0288f616c7249.xml, , 
-0, d1044f3db0c8435382c5970bbd149738, verticals, , , , Problem 13, /verticals/d1044f3db0c8435382c5970bbd149738.xml, , 
-0, ab8a341bb10e47218bc4768eb8c0cbe4, verticals, , , , Entanglement, /verticals/ab8a341bb10e47218bc4768eb8c0cbe4.xml, , 
-0, f298633bc128481f95b0304f25530876, verticals, , , , Problem 3, /verticals/f298633bc128481f95b0304f25530876.xml, , 
-0, 032a396c03e64b6fa0b27cc942767d53, verticals, , , , Discussion question, /verticals/032a396c03e64b6fa0b27cc942767d53.xml, , 
-0, 3e8ffdc54def4920a4d362bbb437ed93, verticals, , , , Discussion question, /verticals/3e8ffdc54def4920a4d362bbb437ed93.xml, , 
-0, 4d24f997455b4837ba0975192ad260f6, verticals, , , , Bloch sphere, /verticals/4d24f997455b4837ba0975192ad260f6.xml, , 
-0, a18c0c6ca71943cd87f40de940ed5640, verticals, , , , Continuous quantum states, /verticals/a18c0c6ca71943cd87f40de940ed5640.xml, , 
-0, f2244cac4f7b412da8f412ce063f5022, verticals, , , , Problem 14, /verticals/f2244cac4f7b412da8f412ce063f5022.xml, , 
-0, 7691a61888ea44c7bc31ce6961c816ab, verticals, , , , Problem 7, /verticals/7691a61888ea44c7bc31ce6961c816ab.xml, , 
-0, 0dc23caffbb541de9a60b6d9a5b4673f, verticals, , , , Bell state circuit, /verticals/0dc23caffbb541de9a60b6d9a5b4673f.xml, , 
-0, 91beb12307a44db1ae22010702925737, verticals, , , , Unitary transforms, /verticals/91beb12307a44db1ae22010702925737.xml, , 
-0, 915431032f0e4af88135bee53218a3e3, verticals, , , , /verticals/915431032f0e4af88135bee53218a3e3.xml, , 
-0, ce746ff1250a4c7ab19baa8248abf9ae, verticals, , , , Problem 15, /verticals/ce746ff1250a4c7ab19baa8248abf9ae.xml, , 
-0, 8a2c945fbdda4aeba2365c7e5b72c871, verticals, , , , Problem 8, /verticals/8a2c945fbdda4aeba2365c7e5b72c871.xml, , 
-0, 0f3d1bcab7e8402c825e08ca39650b69, verticals, , , , Problems 11-13, /verticals/0f3d1bcab7e8402c825e08ca39650b69.xml, , 
-0, 47e65e3f0524438f8ec8f91a3d125f38, verticals, , , , Bell and local realism, /verticals/47e65e3f0524438f8ec8f91a3d125f38.xml, , 
-0, 71f67201068f4eee97da9157863eb721, verticals, , , , Problems 15-16, /verticals/71f67201068f4eee97da9157863eb721.xml, , 
-0, 6f7af07004274ea6b59804d8a3c9c206, verticals, , , , Problems 1-3, /verticals/6f7af07004274ea6b59804d8a3c9c206.xml, , 
-0, 882ee20895294c73b68270e2f973fe36, verticals, , , , Useful links, /verticals/882ee20895294c73b68270e2f973fe36.xml, , 
-0, fbeba85e52394ea184c930254ec24a75, verticals, , , , Problem 12, /verticals/fbeba85e52394ea184c930254ec24a75.xml, , 
-0, b8c337278ad24125b1e080f6a6c7967e, verticals, , , , Uncertainty principle, /verticals/b8c337278ad24125b1e080f6a6c7967e.xml, , 
-0, 14efa8b415544f2bb5910a56bebaa280, verticals, , , , Problems 4-5, /verticals/14efa8b415544f2bb5910a56bebaa280.xml, , 
-0, 4795a2cb23b948b29055735eea62799c, verticals, , , , Problem 4, /verticals/4795a2cb23b948b29055735eea62799c.xml, , 
-0, 87ac1370f4534cc28671d534ae2f536e, verticals, , , , Problems 1-6, /verticals/87ac1370f4534cc28671d534ae2f536e.xml, , 
-0, 011ecda6f43e4c7ca389fd26862639ec, verticals, , , , Period finding, /verticals/011ecda6f43e4c7ca389fd26862639ec.xml, , 
-0, 7b341dbde1d04cf3ac2b0258add70ad6, verticals, , , , Instructions for entering math expressions, /verticals/7b341dbde1d04cf3ac2b0258add70ad6.xml, , 
-0, de72f3b5d5654ff4993db4a98cf31272, verticals, , , , Problems 1-6, /verticals/de72f3b5d5654ff4993db4a98cf31272.xml, , 
-0, e49fe8498b35441b942e4a25a9ef7c60, verticals, , , , Rotational invariance of Bell state, /verticals/e49fe8498b35441b942e4a25a9ef7c60.xml, , 
-0, 107513263cb24cbbba609754c886d82a, verticals, , , , Time evolution of a quantum system, /verticals/107513263cb24cbbba609754c886d82a.xml, , 
-0, 762ea1071f8c4827a0a302e9346b97b2, verticals, , , , Problem 2, /verticals/762ea1071f8c4827a0a302e9346b97b2.xml, , 
-0, e11c022068524c3f90f878fd604ba210, verticals, , , , Problem 6, /verticals/e11c022068524c3f90f878fd604ba210.xml, , 
-0, d57a84896d69484cb11d0ad48c874245, verticals, , , , Fourier sampling (part 2), /verticals/d57a84896d69484cb11d0ad48c874245.xml, , 
-0, b283b0dfb7dc4bce8b210a60b6fe74d7, verticals, , , , Prerequisites, /verticals/b283b0dfb7dc4bce8b210a60b6fe74d7.xml, , 
-0, 7f8f921c3b744d70b3d21f1226c78f28, verticals, , , , Cover page, /verticals/7f8f921c3b744d70b3d21f1226c78f28.xml, , 
-0, 19e1a912184748c7a118b7de0e752844, verticals, , , , Problems 2-3, /verticals/19e1a912184748c7a118b7de0e752844.xml, , 
-0, c7e77c25cc75449a906cc017c3ef6a85, verticals, , , , /verticals/c7e77c25cc75449a906cc017c3ef6a85.xml, , 
-0, 9cd949bfaa13466aa62c8f9ce7c63bb0, verticals, , , , Overview, /verticals/9cd949bfaa13466aa62c8f9ce7c63bb0.xml, , 
-0, 3459d86f0d9e4703841926b40ed3d8ff, verticals, , , , Two qubits, /verticals/3459d86f0d9e4703841926b40ed3d8ff.xml, , 
-0, 3a8c058e05134d0ab2e658590bcc8a24, verticals, , , , Larmor precession, /verticals/3a8c058e05134d0ab2e658590bcc8a24.xml, , 
-0, 0d0837360dcd41b9b45dcae6e0e30695, verticals, , , , Teleportation (part 1), /verticals/0d0837360dcd41b9b45dcae6e0e30695.xml, , 
-0, a136a632936a4302acb5308402f617bb, verticals, , , , Simon's algorithm (part 1), /verticals/a136a632936a4302acb5308402f617bb.xml, , 
-0, 7a1d420d37f94420ad6b5c1b9ba582d2, verticals, , , , QFTn (part 1), /verticals/7a1d420d37f94420ad6b5c1b9ba582d2.xml, , 
-0, 9aacb681a309404fb5fcc0c7e2010a1e, verticals, , , , Problem 3, /verticals/9aacb681a309404fb5fcc0c7e2010a1e.xml, , 
-0, 39509af04984480fb5447b9a8ce6b2de, verticals, , , , Problem 5, /verticals/39509af04984480fb5447b9a8ce6b2de.xml, , 
-0, 2d6b681be83d4f0ca77572576ff8e68d, verticals, , , , Qubits, /verticals/2d6b681be83d4f0ca77572576ff8e68d.xml, , 
-0, 941c8301776840a1a83a35e44d48da2d, verticals, , , , Problem 5, /verticals/941c8301776840a1a83a35e44d48da2d.xml, , 
-0, 9dfed997370f41d8b12ff76d65939c52, verticals, , , , Double-slit experiment (part 2), /verticals/9dfed997370f41d8b12ff76d65939c52.xml, , 
-0, dc743c5a035b4c73a89fe2e9b46afec2, verticals, , , , Problems 5-7, /verticals/dc743c5a035b4c73a89fe2e9b46afec2.xml, , 
-0, de3715a898d74734b87cc99af61efbe9, verticals, , , , QFTn (part 2), /verticals/de3715a898d74734b87cc99af61efbe9.xml, , 
-0, 52193fcf8326495992452fe52f96d9e5, verticals, , , , Problems 7-8, /verticals/52193fcf8326495992452fe52f96d9e5.xml, , 
-0, 6e379118913d437185769a1961104e17, verticals, , , , Particle in a box, /verticals/6e379118913d437185769a1961104e17.xml, , 
-0, 98d9c87810aa44dcb49a3b57504f4b0d, verticals, , , , Problems 1-2, /verticals/98d9c87810aa44dcb49a3b57504f4b0d.xml, , 
-0, e9804d8291a54ec4a9060d72f0db4343, verticals, , , , Bell and EPR, /verticals/e9804d8291a54ec4a9060d72f0db4343.xml, , 
-0, 1ace68d85ef945ea815d0f0aa3abfaf3, verticals, , , , Instructions for entering math expressions, /verticals/1ace68d85ef945ea815d0f0aa3abfaf3.xml, , 
-0, 50ce6ad1727b48cf9ea68b88634360d6, verticals, , , , Implementing qubits, /verticals/50ce6ad1727b48cf9ea68b88634360d6.xml, , 
-0, 15ed7734203048b18cd78e73fee1b739, verticals, , , , Problem 1, /verticals/15ed7734203048b18cd78e73fee1b739.xml, , 
-0, 2143a309d059403c8a57d62f7b38362e, verticals, , , , Problem 1, /verticals/2143a309d059403c8a57d62f7b38362e.xml, , 
-0, d9adbcb527224e95872e0f4e8b049448, verticals, , , , Spin resonance, /verticals/d9adbcb527224e95872e0f4e8b049448.xml, , 
-0, 7f48f5038893497b92a3c5fb3e89d0b3, verticals, , , , CHSH Inequality, /verticals/7f48f5038893497b92a3c5fb3e89d0b3.xml, , 
-0, f1bff624e9b242938eac8dae7a82670e, verticals, , , , Adiabatic quantum computation, /verticals/f1bff624e9b242938eac8dae7a82670e.xml, , 
-0, 78db077754ac431e837ac0ce711283e5, verticals, , , , Problems 11-12, /verticals/78db077754ac431e837ac0ce711283e5.xml, , 
-0, ed2389c3e2d7477fa19c0e287ba6f614, verticals, , , , Problems 17-18, /verticals/ed2389c3e2d7477fa19c0e287ba6f614.xml, , 
-0, 51f97e672e9f450d8f0afe9f72902dda, verticals, , , , Problems 6-7, /verticals/51f97e672e9f450d8f0afe9f72902dda.xml, , 
-0, efa04de8348f4cc499cfb400892cb32b, verticals, , , , QFT circuit, /verticals/efa04de8348f4cc499cfb400892cb32b.xml, , 
-0, ab790ebab56d48aba80ab85d90ca12fc, verticals, , , , Problems 11-13, /verticals/ab790ebab56d48aba80ab85d90ca12fc.xml, , 
-0, 29ce9da3e8214694b3e9fcbbfeb0d91d, verticals, , , , Grover's algorithm, /verticals/29ce9da3e8214694b3e9fcbbfeb0d91d.xml, , 
-0, e7a7d0162b9d446c8140aa8b068927f1, verticals, , , , Problems 8-10, /verticals/e7a7d0162b9d446c8140aa8b068927f1.xml, , 
-0, 8770dcea0ff841b1a3ba5140c04d3c45, verticals, , , , Observables (part 1), /verticals/8770dcea0ff841b1a3ba5140c04d3c45.xml, , 
-0, 0002d6697e3e431e9d5380a9143af88b, verticals, , , , Course staff, /verticals/0002d6697e3e431e9d5380a9143af88b.xml, , 
-0, 41981a309a2d45578128763b34cda6ab, verticals, , , , Problems 6-8, /verticals/41981a309a2d45578128763b34cda6ab.xml, , 
-0, 088dc1f11458432893376a0649dbd206, verticals, , , , Fourier sampling (part 1), /verticals/088dc1f11458432893376a0649dbd206.xml, , 
-0, 010b8c5424674fdb8eca36a8cea71dec, verticals, , , , Problems 9-10, /verticals/010b8c5424674fdb8eca36a8cea71dec.xml, , 
-0, 807e95f1391c4689b0c5fc7f1bb88327, verticals, , , , BQP, /verticals/807e95f1391c4689b0c5fc7f1bb88327.xml, , 
-0, 15f335f61e87403c9de5334bd2553f5c, verticals, , , , Problem 7, /verticals/15f335f61e87403c9de5334bd2553f5c.xml, , 
-0, 9e04b3e8312e4432ae8942673f3d113b, verticals, , , , Double-slit experiment (part 3), /verticals/9e04b3e8312e4432ae8942673f3d113b.xml, , 
-0, f175e8713d7c49e796c6788b3f693811, verticals, , , , Implementing Grover's algorithm, /verticals/f175e8713d7c49e796c6788b3f693811.xml, , 
-0, 5e894789d4a04b1c998b6b8099892912, verticals, , , , Pauli spin matrices, /verticals/5e894789d4a04b1c998b6b8099892912.xml, , 
-0, 99db0bc3740d484f9c8d158d6b6ce207, verticals, , , , Problems 11-12, /verticals/99db0bc3740d484f9c8d158d6b6ce207.xml, , 
-0, 56f713b9be3142abaf8c1da0819034da, verticals, , , , Problems 9-11, /verticals/56f713b9be3142abaf8c1da0819034da.xml, , 
-0, b72d11972a464328b9ee08c609755e23, verticals, , , , Problems 1-3, /verticals/b72d11972a464328b9ee08c609755e23.xml, , 
-0, 85230e968bcf4420ad1d1a7243643514, verticals, , , , Simon's algorithm (part 2), /verticals/85230e968bcf4420ad1d1a7243643514.xml, , 
-0, cf427d837c4c48569efd60d924da3cf1, verticals, , , , Double-slit experiment (part 1), /verticals/cf427d837c4c48569efd60d924da3cf1.xml, , 
-0, 7c88ca65d9e64a2cbe083a229c93e385, verticals, , , , Limits of quantum computers, /verticals/7c88ca65d9e64a2cbe083a229c93e385.xml, , 
-0, ea7a45f4de0a4f9c925170d3b81949ed, verticals, , , , Problems 13-14, /verticals/ea7a45f4de0a4f9c925170d3b81949ed.xml, , 
-0, 116c6e4efbd74019a4f4a5ee7198f2d8, verticals, , , , Geometric representation (part 2), /verticals/116c6e4efbd74019a4f4a5ee7198f2d8.xml, , 
-0, 22c2384ded3049b48320beb9f0032c67, verticals, , , , Observables (part 2), /verticals/22c2384ded3049b48320beb9f0032c67.xml, , 
-0, a6825a06635c48b899bee82400092a47, verticals, , , , Problems 4-6, /verticals/a6825a06635c48b899bee82400092a47.xml, , 
-0, e55576fa8d414a44ad321b79701aaad9, verticals, , , , No cloning theorem, /verticals/e55576fa8d414a44ad321b79701aaad9.xml, , 
-0, 470b1f0255694f579426b27cc78ac3d6, verticals, , , , Spin as a qubit, /verticals/470b1f0255694f579426b27cc78ac3d6.xml, , 
-0, 42b183d00d244bb3a237b4a35d03d1c5, verticals, , , , Problems 3-4, /verticals/42b183d00d244bb3a237b4a35d03d1c5.xml, , 
-0, 78447298305241e8bea2abe2303dcb9f, verticals, , , , Problems 13-14, /verticals/78447298305241e8bea2abe2303dcb9f.xml, , 
-0, feb61831f63c4dc2ad13a2cc1a811c9e, verticals, , , , EPR Paradox, /verticals/feb61831f63c4dc2ad13a2cc1a811c9e.xml, , 
-0, 2efbd032f61e4d889f1c390682f2a04b, verticals, , , , Problem 9, /verticals/2efbd032f61e4d889f1c390682f2a04b.xml, , 
-0, b4912cc6c8344d0a8e041559df9e5e03, verticals, , , , Problems 9-10, /verticals/b4912cc6c8344d0a8e041559df9e5e03.xml, , 
-0, a6906d8410ad429ba85c8aa1a9d9b906, verticals, , , , Measurement, /verticals/a6906d8410ad429ba85c8aa1a9d9b906.xml, , 
-0, 08621d71f12e467da00500af9223ac78, verticals, , , , Problems 12-13, /verticals/08621d71f12e467da00500af9223ac78.xml, , 
-0, f6958f97f8b943d18664fb8904ae4ecd, verticals, , , , Teleportation (part 2), /verticals/f6958f97f8b943d18664fb8904ae4ecd.xml, , 
-0, 693b3884c40b43d086303ca8e5b90cae, verticals, , , , Extended Church-Turing thesis, /verticals/693b3884c40b43d086303ca8e5b90cae.xml, , 
-0, 85dce6d32aae4298ba79548263115ba7, verticals, , , , Problem 9, /verticals/85dce6d32aae4298ba79548263115ba7.xml, , 
-0, adea38fce9c94edfbfd56015934b8cc3, verticals, , , , Course schedule, /verticals/adea38fce9c94edfbfd56015934b8cc3.xml, , 
-0, 97781aed0e054424a440782f65f0ab2f, verticals, , , , Problem 4, /verticals/97781aed0e054424a440782f65f0ab2f.xml, , 
-0, 525ee9d953e545e5b37642acf60fdcf6, verticals, , , , Wrapping up, /verticals/525ee9d953e545e5b37642acf60fdcf6.xml, , 
-0, 98ad6fe8e55443c4a7c580a91484af5f, verticals, , , , Supplementary materials, /verticals/98ad6fe8e55443c4a7c580a91484af5f.xml, , 
-0, e0ff492b7d1942608f8cdc24e0fc9f02, verticals, , , , Recommended reading, /verticals/e0ff492b7d1942608f8cdc24e0fc9f02.xml, , 
-0, e4c29d8d0acf48a2a75568d01b65986c, verticals, , , , Problems 1-2, /verticals/e4c29d8d0acf48a2a75568d01b65986c.xml, , 
-0, 953a3d126dd649b6a3592e0179685878, sequentials, , , , Assignment 1, /sequentials/953a3d126dd649b6a3592e0179685878.xml, , 
-0, 855115e048f04431a7249422256a1d15, sequentials, , , , Overview, /sequentials/855115e048f04431a7249422256a1d15.xml, , 
-0, 4bd68981d3844a81840b975bba45b727, sequentials, , , , Lecture 1: Double-slit experiment, /sequentials/4bd68981d3844a81840b975bba45b727.xml, , 
-0, 9dc41026c152481d86cf67b9be1a9336, sequentials, , , , Lecture 15: Spin, /sequentials/9dc41026c152481d86cf67b9be1a9336.xml, , 
-0, 0deb5213b68d470d89eeb7b0ceeccd5b, sequentials, , , , Lecture 2: Qubits and uncertainty principle, /sequentials/0deb5213b68d470d89eeb7b0ceeccd5b.xml, , 
-0, b12c8c72cfd64474a711ec2ceb6c16a3, sequentials, , , , Supplementary material, /sequentials/b12c8c72cfd64474a711ec2ceb6c16a3.xml, , 
-0, 1a31d9f434324fce9247124ab0ba9517, sequentials, , , , Lecture 8: Early quantum algorithms, /sequentials/1a31d9f434324fce9247124ab0ba9517.xml, , 
-0, fe965e58af034f26af6df00748c5f6e6, sequentials, , , , Assignment 5, /sequentials/fe965e58af034f26af6df00748c5f6e6.xml, , 
-0, 6ef316f64d8b4c1e9fe5f4bcb8e0fccc, sequentials, , , , Assignment 4, /sequentials/6ef316f64d8b4c1e9fe5f4bcb8e0fccc.xml, , 
-0, eca7eedc9c2d41e3af3a55c1e674dcdb, sequentials, , , , Lecture 10: Quantum factoring, /sequentials/eca7eedc9c2d41e3af3a55c1e674dcdb.xml, , 
-0, 17c34778ec554b3f85a9a793bdcffe8c, sequentials, , , , Lecture 9: Quantum Fourier transform, /sequentials/17c34778ec554b3f85a9a793bdcffe8c.xml, , 
-0, ca98e355e7d74c46b5f80c0e4668e65f, sequentials, , , , Midterm Exam, /sequentials/ca98e355e7d74c46b5f80c0e4668e65f.xml, , 
-0, 65e4ae8cb934419c8375ddebfc810637, sequentials, , , , Course staff, /sequentials/65e4ae8cb934419c8375ddebfc810637.xml, , 
-0, 08c9a3f838bc4bb4a42636942cddcaf4, sequentials, , , , Lecture 16: Manipulating spin, /sequentials/08c9a3f838bc4bb4a42636942cddcaf4.xml, , 
-0, 973c0f1ab2ed4bc086fb62c42e96b7c7, sequentials, , , , Lecture 3: Axioms of QM, two qubits, and entanglement, /sequentials/973c0f1ab2ed4bc086fb62c42e96b7c7.xml, , 
-0, d10fefd8741a4a13a4e3fab0795c1c09, sequentials, , , , Assignment 6, /sequentials/d10fefd8741a4a13a4e3fab0795c1c09.xml, , 
-0, 09b4f21aec7c49d693f1a2402dbd1f6e, sequentials, , , , Lecture 11: Quantum search, /sequentials/09b4f21aec7c49d693f1a2402dbd1f6e.xml, , 
-0, 8b9be33ac9a04dee8477448c5f1372f5, sequentials, , , , Assignment 3, /sequentials/8b9be33ac9a04dee8477448c5f1372f5.xml, , 
-0, f9a6ad513a6d444d9d0718058df4383a, sequentials, , , , Assignment 7, /sequentials/f9a6ad513a6d444d9d0718058df4383a.xml, , 
-0, c222716f3d494e2ca46d01ccc95ee6a1, sequentials, , , , Lecture 7: Quantum circuits, /sequentials/c222716f3d494e2ca46d01ccc95ee6a1.xml, , 
-0, a7f4983ab8cc435fbedc920b911bb135, sequentials, , , , Assignment 2, /sequentials/a7f4983ab8cc435fbedc920b911bb135.xml, , 
-0, cb2826db4a1e4de590f0d97fc422f8f0, sequentials, , , , Lecture 14: Quantum complexity theory, /sequentials/cb2826db4a1e4de590f0d97fc422f8f0.xml, , 
-0, 37874f39e5f948b295822515bc87c3ec, sequentials, , , , Lecture 13: Particle in a box & implementing qubits, /sequentials/37874f39e5f948b295822515bc87c3ec.xml, , 
-0, fa43ecce0cd5407086768d9a4785aa5f, sequentials, , , , Lecture 6: Quantum teleportation, /sequentials/fa43ecce0cd5407086768d9a4785aa5f.xml, , 
-0, 91896a6a9cd049398cc35acbd1b65bce, sequentials, , , , Course policy & syllabus, /sequentials/91896a6a9cd049398cc35acbd1b65bce.xml, , 
-0, 668482a2ef8d4cd7aeda654fc3089cf5, sequentials, , , , /sequentials/668482a2ef8d4cd7aeda654fc3089cf5.xml, , 
-0, 36ce5f1087fa42de9f885b9c203ab2fe, sequentials, , , , Final exam, /sequentials/36ce5f1087fa42de9f885b9c203ab2fe.xml, , 
-0, afee3981d7ae4d4c8c07dab88ef5f74d, sequentials, , , , Lecture 4: Bell Inequalities, /sequentials/afee3981d7ae4d4c8c07dab88ef5f74d.xml, , 
-0, b5f57ae24bf149068b277fa9ff5df29c, sequentials, , , , Lecture 5: Quantum gates, /sequentials/b5f57ae24bf149068b277fa9ff5df29c.xml, , 
-0, 6dafcacdec8f428ebfd2cb7ffbdd4627, video, , , , Geometric representation (part 1), /video/6dafcacdec8f428ebfd2cb7ffbdd4627.xml, , 
-0, 2cb259373236489c996d7ab948d6731b, video, , , , Bloch sphere, /video/2cb259373236489c996d7ab948d6731b.xml, , 
-0, f11c3945a59641749ac5bd9229abb22a, video, , , , Overview, /video/f11c3945a59641749ac5bd9229abb22a.xml, , 
-0, 6473a02b784d4d0396298fc79e859b85, video, , , , Unitary transforms, /video/6473a02b784d4d0396298fc79e859b85.xml, , 
-0, f0241891d2d14f98a596a9ae2eba8e47, video, , , , Wrapping up, /video/f0241891d2d14f98a596a9ae2eba8e47.xml, , 
-0, 5b606523e3b44a1e9bbdbcb8d695f9ee, video, , , , Shor's factoring algorithm, /video/5b606523e3b44a1e9bbdbcb8d695f9ee.xml, , 
-0, 81984bf06eaf485b886b1c999a154ecb, video, , , , CHSH Inequality, /video/81984bf06eaf485b886b1c999a154ecb.xml, , 
-0, de6a5cc59d9b42cc8e567261b288bdbe, video, , , , Two qubits, /video/de6a5cc59d9b42cc8e567261b288bdbe.xml, , 
-0, 9acd8f6795e3413badcb852e1d83b597, video, , , , Grover's algorithm, /video/9acd8f6795e3413badcb852e1d83b597.xml, , 
-0, f4b504135bdd41e2b2ebab89621e2cf2, video, , , , Particle in a box, /video/f4b504135bdd41e2b2ebab89621e2cf2.xml, , 
-0, 62be489088f54d94827be42e99f44826, video, , , , Two qubit gates and tensor products, /video/62be489088f54d94827be42e99f44826.xml, , 
-0, 0d03b6e62e454351a8507e62aae08d67, video, , , , EPR Paradox, /video/0d03b6e62e454351a8507e62aae08d67.xml, , 
-0, 5ae8e0de5dfe46d3bf39467546a4c08b, video, , , , QFTn (part 1), /video/5ae8e0de5dfe46d3bf39467546a4c08b.xml, , 
-0, f6216c9576d7420390b83d1f89723ac4, video, , , , Larmor precession, /video/f6216c9576d7420390b83d1f89723ac4.xml, , 
-0, c038c63524fe4128ab11b85b8da87f09, video, , , , Bell and local realism, /video/c038c63524fe4128ab11b85b8da87f09.xml, , 
-0, 868992ac1ad34797866ed84e3aec0301, video, , , , Limits of quantum computers, /video/868992ac1ad34797866ed84e3aec0301.xml, , 
-0, 719a10d85f7748968b001fb1653d43d4, video, , , , Continuous quantum states, /video/719a10d85f7748968b001fb1653d43d4.xml, , 
-0, caba4c5ae62b4101b4c74feb3a7a047b, video, , , , n-th roots of unity, /video/caba4c5ae62b4101b4c74feb3a7a047b.xml, , 
-0, df43e11de53c4a6fb64443875b844fa8, video, , , , Bell and EPR, /video/df43e11de53c4a6fb64443875b844fa8.xml, , 
-0, 5c21a147dd2a4ad78174cc7f575a0ca8, video, , , , Measurement, /video/5c21a147dd2a4ad78174cc7f575a0ca8.xml, , 
-0, e0831578871a4de7a6e4c7fd7a6d1c79, video, , , , Time evolution of a quantum system, /video/e0831578871a4de7a6e4c7fd7a6d1c79.xml, , 
-0, 472e170a5bd644bc8686a09020905ebe, video, , , , No cloning theorem, /video/472e170a5bd644bc8686a09020905ebe.xml, , 
-0, caedd1fea9864634b6588449b67b175f, video, , , , Teleportation (part 1), /video/caedd1fea9864634b6588449b67b175f.xml, , 
-0, 1892a54bdd624a16a738f089a5e9d5fd, video, , , , Entanglement, /video/1892a54bdd624a16a738f089a5e9d5fd.xml, , 
-0, a525c4be16174db2ae7cf0d902e606c9, video, , , , Simon's algorithm (part 1), /video/a525c4be16174db2ae7cf0d902e606c9.xml, , 
-0, 6c3c18562619457db57a73847d40cea8, video, , , , Implementing qubits, /video/6c3c18562619457db57a73847d40cea8.xml, , 
-0, e824b83acd1e451e81561cb8179aec53, video, , , , Adiabatic quantum computation, /video/e824b83acd1e451e81561cb8179aec53.xml, , 
-0, dddaf44f6d5043b7933cd8bf08c2049d, video, , , , Classical control, /video/dddaf44f6d5043b7933cd8bf08c2049d.xml, , 
-0, 114c623c0aca429a83baa45015abca46, video, , , , Double-slit experiment (part 1), /video/114c623c0aca429a83baa45015abca46.xml, , 
-0, e4a6c4c464404eb085589264565ec6a8, video, , , , Properties, /video/e4a6c4c464404eb085589264565ec6a8.xml, , 
-0, 737710a442934c3680d3633cbe7e14d4, video, , , , Fourier sampling (part 2), /video/737710a442934c3680d3633cbe7e14d4.xml, , 
-0, 5e7613fe85e347d3b4852ae525928e63, video, , , , /video/5e7613fe85e347d3b4852ae525928e63.xml, , 
-0, 90c85ad1d2914a7d823b1dcf992078fc, video, , , , Spin as a qubit, /video/90c85ad1d2914a7d823b1dcf992078fc.xml, , 
-0, 69df90feaa6c4c7bbff90c8a20fffb19, video, , , , Single qubit gates, /video/69df90feaa6c4c7bbff90c8a20fffb19.xml, , 
-0, b3f5a434e9f947bb9a7beacfaa8c51cf, video, , , , Universal family of gates, /video/b3f5a434e9f947bb9a7beacfaa8c51cf.xml, , 
-0, 74610a7cbacc46dfafe543f2beff3337, video, , , , Qubits, /video/74610a7cbacc46dfafe543f2beff3337.xml, , 
-0, 5cba8f685b9b410e82e7ce66b83dc525, video, , , , n qubit systems, /video/5cba8f685b9b410e82e7ce66b83dc525.xml, , 
-0, dcd690cd65a64250b971fb12e3b766ec, video, , , , Observables (part 1), /video/dcd690cd65a64250b971fb12e3b766ec.xml, , 
-0, 2fbeeb9007fe4977955247cbd279da0b, video, , , , Double slit experiment, /video/2fbeeb9007fe4977955247cbd279da0b.xml, , 
-0, bba19bae5f9d4aab8d00fee818397224, video, , , , Period finding, /video/bba19bae5f9d4aab8d00fee818397224.xml, , 
-0, 5ee0803de8a44e43981085474a15d749, video, , , , Rotational invariance of Bell state, /video/5ee0803de8a44e43981085474a15d749.xml, , 
-0, 52e36243b5dc43d3a8188a662ada3988, video, , , , Pauli spin matrices, /video/52e36243b5dc43d3a8188a662ada3988.xml, , 
-0, f5abac2584ff4cfc801783078b2de451, video, , , , Double-slit experiment (part 2), /video/f5abac2584ff4cfc801783078b2de451.xml, , 
-0, c2e2bed80f814346ba48b9f76d697867, video, , , , BQP, /video/c2e2bed80f814346ba48b9f76d697867.xml, , 
-0, 843d2696ca17447c9463a80e7cb28d33, video, , , , Reversible computation (part 2), /video/843d2696ca17447c9463a80e7cb28d33.xml, , 
-0, 64e3f3086c2f44018494a11375dc8891, video, , , , Simon's algorithm (part 2), /video/64e3f3086c2f44018494a11375dc8891.xml, , 
-0, df9c75b97e764d448b1f2a1bc0819d69, video, , , , Fourier sampling (part 1), /video/df9c75b97e764d448b1f2a1bc0819d69.xml, , 
-0, f468b1c4c7544c64969fe62d6f177d35, video, , , , QFTn (part 2), /video/f468b1c4c7544c64969fe62d6f177d35.xml, , 
-0, e34a94f1955a482c9324946912a30518, video, , , , Stern-Gerlach, /video/e34a94f1955a482c9324946912a30518.xml, , 
-0, 915672e10ab84fc497246afb85a4360e, video, , , , Implementing Grover's algorithm, /video/915672e10ab84fc497246afb85a4360e.xml, , 
-0, 3f07fa4ae2bc4f2388e614883c37b250, video, , , , k-level systems, bra-ket notation, /video/3f07fa4ae2bc4f2388e614883c37b250.xml, , 
-0, c5b85638288f49d2a453547bb1c8ec5e, video, , , , Geometric representation (part 2), /video/c5b85638288f49d2a453547bb1c8ec5e.xml, , 
-0, f648e6ffd1cf494aa3c8f0b5bd3317b3, video, , , , Bell state circuit, /video/f648e6ffd1cf494aa3c8f0b5bd3317b3.xml, , 
-0, deb32eb77120416b9d05a1899624cd52, video, , , , Extended Church-Turing thesis, /video/deb32eb77120416b9d05a1899624cd52.xml, , 
-0, b0d7709ef78a48938704ac48d6082a7d, video, , , , /video/b0d7709ef78a48938704ac48d6082a7d.xml, , 
-0, c36816450c914951a29473eaa6eb29e6, video, , , , Overview, /video/c36816450c914951a29473eaa6eb29e6.xml, , 
-0, fc49745ddf054c10873ee3621bc61533, video, , , , QFT circuit, /video/fc49745ddf054c10873ee3621bc61533.xml, , 
-0, cd1efc47a2f944a99afc3a8d13a02d56, video, , , , Reversible computation (part 1), /video/cd1efc47a2f944a99afc3a8d13a02d56.xml, , 
-0, 5a50d282541b435a9229330b7cfe02b3, video, , , , Teleportation (part 2), /video/5a50d282541b435a9229330b7cfe02b3.xml, , 
-0, 21eb2d5f68c14e2ebcf33039cd1e923d, video, , , , Needle in a haystack, /video/21eb2d5f68c14e2ebcf33039cd1e923d.xml, , 
-0, d4338130fdf64a73a220aa6397b14421, video, , , , Observables (part 2), /video/d4338130fdf64a73a220aa6397b14421.xml, , 
-0, 78713225865c407c837f91f76231f0db, video, , , , Uncertainty principle, /video/78713225865c407c837f91f76231f0db.xml, , 
-0, 758e3c36ad994a9ea6d6dc466127998c, video, , , , Spin resonance, /video/758e3c36ad994a9ea6d6dc466127998c.xml, , 
-0, 4fadd5dd7fe54c15aed91149aea36a68, video, , , , Double-slit experiment (part 3), /video/4fadd5dd7fe54c15aed91149aea36a68.xml, , 
-0, 96f6caee6eda4d628372fb863ff98c31, problem, , , , Problem 4, /problem/96f6caee6eda4d628372fb863ff98c31.xml, , 
-0, 459eba5ee8e74d17bd0e74d20b52fe1b, problem, , , , Problems 11-13, /problem/459eba5ee8e74d17bd0e74d20b52fe1b.xml, , 
-0, 3b4d81da0f764fe4b63f0ec4a59f4b67, problem, , , , Problems 6-8, /problem/3b4d81da0f764fe4b63f0ec4a59f4b67.xml, , 
-0, 55df735f50cf4701b4833c8d453565b0, problem, , , , Problems 1-6, /problem/55df735f50cf4701b4833c8d453565b0.xml, , 
-0, 776e3e073c064d888e868a69ce751c78, problem, , , , Problem 14, /problem/776e3e073c064d888e868a69ce751c78.xml, , 
-0, 39f24e5f348148ac8e9e48004ed96a6e, problem, , , , Problems 1-6, /problem/39f24e5f348148ac8e9e48004ed96a6e.xml, , 
-0, 9b7688cb86b842e58259d2898cfb5460, problem, , , , Problem 6, /problem/9b7688cb86b842e58259d2898cfb5460.xml, , 
-0, 07751f3b3a8840afa07f3d7ef4d5b45f, problem, , , , Problems 1-5, /problem/07751f3b3a8840afa07f3d7ef4d5b45f.xml, , 
-0, b272aba2f62840918b9fcec253574111, problem, , , , Problems 3-4, /problem/b272aba2f62840918b9fcec253574111.xml, , 
-0, 410471645d24456baa0c8dfb21d7c3c4, problem, , , , Problems 4-5, /problem/410471645d24456baa0c8dfb21d7c3c4.xml, , 
-0, 682fd1ca5c03490d8f26d07bab120a0c, problem, , , , Problem 9, /problem/682fd1ca5c03490d8f26d07bab120a0c.xml, , 
-0, cbcdc74339bc4b1ca23c6c3ee60875a1, problem, , , , Problems 6-8, /problem/cbcdc74339bc4b1ca23c6c3ee60875a1.xml, , 
-0, de91cb0a1163484998bc27076934fd00, problem, , , , Problems 5-7, /problem/de91cb0a1163484998bc27076934fd00.xml, , 
-0, 88a11c90268f48f4ae01ca6c44d2a7ab, problem, , , , Problems 1-6, /problem/88a11c90268f48f4ae01ca6c44d2a7ab.xml, , 
-0, f3ec6a70e4584adc9416c52e8d16fafb, problem, , , , Problem 5, /problem/f3ec6a70e4584adc9416c52e8d16fafb.xml, , 
-0, f63e6eac1be14add9c9e593a39520079, problem, , , , Problem 6, /problem/f63e6eac1be14add9c9e593a39520079.xml, , 
-0, 18c128ca7ef6465a8f668eac67f0ee55, problem, , , , Problem 5, /problem/18c128ca7ef6465a8f668eac67f0ee55.xml, , 
-0, e3b3595e300b435a85b220ac764c6fed, problem, , , , Problems 11-13, /problem/e3b3595e300b435a85b220ac764c6fed.xml, , 
-0, 358fc4db40ce4cd2b293a5339c992ecf, problem, , , , Problems 1-6, /problem/358fc4db40ce4cd2b293a5339c992ecf.xml, , 
-0, b0268c52fa244a329258f668897d69ca, problem, , , , Problem 2, /problem/b0268c52fa244a329258f668897d69ca.xml, , 
-0, c750649f431443ed8c57048dda075a90, problem, , , , Problem 4, /problem/c750649f431443ed8c57048dda075a90.xml, , 
-0, 50191aaa863940f9af2209ec1182fddd, problem, , , , Problems 15-16, /problem/50191aaa863940f9af2209ec1182fddd.xml, , 
-0, 1537e66f8cd14de39aee0c46e5b15e56, problem, , , , Problems 2-3, /problem/1537e66f8cd14de39aee0c46e5b15e56.xml, , 
-0, 7c121957796a42bcae18656734a39ab1, problem, , , , Problems 9-11, /problem/7c121957796a42bcae18656734a39ab1.xml, , 
-0, 0e792e11026d4bb890bbce9e748d022d, problem, , , , Problems 4-5, /problem/0e792e11026d4bb890bbce9e748d022d.xml, , 
-0, 922ae8ab0f2346d3b614334f78355706, problem, , , , Problem 6, /problem/922ae8ab0f2346d3b614334f78355706.xml, , 
-0, 5c1babcb1b3445669c1f8dafc1aaa32a, problem, , , , Problems 1-5, /problem/5c1babcb1b3445669c1f8dafc1aaa32a.xml, , 
-0, eff477828bb34c90aae0306249a9b3d9, problem, , , , Problems 11-12, /problem/eff477828bb34c90aae0306249a9b3d9.xml, , 
-0, a99409ad41ef4270bfd3f3c843f077ce, problem, , , , Problems 11-13, /problem/a99409ad41ef4270bfd3f3c843f077ce.xml, , 
-0, d0d7ba1429994ca8aec4232583024249, problem, , , , Problems 9-10, /problem/d0d7ba1429994ca8aec4232583024249.xml, , 
-0, c4e3d0894530415b88c73b9af17643ae, problem, , , , Problems 6-7, /problem/c4e3d0894530415b88c73b9af17643ae.xml, , 
-0, ed2bf4784f89446096d52602d1877ef5, problem, , , , Problem 3, /problem/ed2bf4784f89446096d52602d1877ef5.xml, , 
-0, e2e4feb743df41ed8310c10521383033, problem, , , , Problems 9-10, /problem/e2e4feb743df41ed8310c10521383033.xml, , 
-0, c2cbf8ada34a42d5aea0005cb0a5501e, problem, , , , Problems 1-6, /problem/c2cbf8ada34a42d5aea0005cb0a5501e.xml, , 
-0, 540c76184ca64d4cbc5fd855ebda014b, problem, , , , Problems 17-18, /problem/540c76184ca64d4cbc5fd855ebda014b.xml, , 
-0, 615c3673f7d4456da32d59a1c6ace408, problem, , , , Problem 3, /problem/615c3673f7d4456da32d59a1c6ace408.xml, , 
-0, 338294240b7a4168bbef6c84abee1cd8, problem, , , , Problems 7-8, /problem/338294240b7a4168bbef6c84abee1cd8.xml, , 
-0, 4ae4b8f6b92b43c4b257be37f94d75f2, problem, , , , Problems 13-14, /problem/4ae4b8f6b92b43c4b257be37f94d75f2.xml, , 
-0, 0854dc49a5264b03a58636fbc63f4e91, problem, , , , Problems 11-12, /problem/0854dc49a5264b03a58636fbc63f4e91.xml, , 
-0, e967df335a9c40708af1e9a98eb751e4, problem, , , , Problems 9-10, /problem/e967df335a9c40708af1e9a98eb751e4.xml, , 
-0, d769027171f143d8819ee00a5b75e1a9, problem, , , , Problems 1-5, /problem/d769027171f143d8819ee00a5b75e1a9.xml, , 
-0, 10f422d66f50420bae9283752fc1d7ea, problem, , , , Problems 3-4, /problem/10f422d66f50420bae9283752fc1d7ea.xml, , 
-0, 09ef965ec6bc40b4ab8248772b978097, problem, , , , Problems 13-14, /problem/09ef965ec6bc40b4ab8248772b978097.xml, , 
-0, fee3d2290d514d2482f9230fb7e6505c, problem, , , , Problem 7, /problem/fee3d2290d514d2482f9230fb7e6505c.xml, , 
-0, 09c8180a657d423ea2817582fd042516, problem, , , , Problem 14, /problem/09c8180a657d423ea2817582fd042516.xml, , 
-0, fe70113c03fc4b06ab833cb5b4e96dd7, problem, , , , Problems 1-6, /problem/fe70113c03fc4b06ab833cb5b4e96dd7.xml, , 
-0, ab5b6de17c544be98495774d21cd9bb9, problem, , , , Problems 17-18, /problem/ab5b6de17c544be98495774d21cd9bb9.xml, , 
-0, a4179cab7d3f4fda89eb6f1db0c571c3, problem, , , , Problems 1-6, /problem/a4179cab7d3f4fda89eb6f1db0c571c3.xml, , 
-0, 95b58877098b4e1396607983583b0270, problem, , , , Problems 1-6, /problem/95b58877098b4e1396607983583b0270.xml, , 
-0, 9d0782a67fa4428bb0208366bb399323, problem, , , , Problems 6-8, /problem/9d0782a67fa4428bb0208366bb399323.xml, , 
-0, f5f2347e0008416abe2ac2fc830885b7, problem, , , , Problems 6-8, /problem/f5f2347e0008416abe2ac2fc830885b7.xml, , 
-0, 2b2da5b7612349229a71a64cfe1ca48d, problem, , , , Problem 12, /problem/2b2da5b7612349229a71a64cfe1ca48d.xml, , 
-0, ad475cbdabd041f0927a723b33c87b81, problem, , , , Problems 10-11, /problem/ad475cbdabd041f0927a723b33c87b81.xml, , 
-0, b15db55fea324528881398b41ac0f8b7, problem, , , , Problems 9-10, /problem/b15db55fea324528881398b41ac0f8b7.xml, , 
-0, e2a42f9c86804b09a2bd2d91a600ee06, problem, , , , Problems 7-8, /problem/e2a42f9c86804b09a2bd2d91a600ee06.xml, , 
-0, 493e42248c5e41aaa852715988878435, problem, , , , Problem 7, /problem/493e42248c5e41aaa852715988878435.xml, , 
-0, b6ff2a2610c34019a4ff538333656428, problem, , , , Problem 13, /problem/b6ff2a2610c34019a4ff538333656428.xml, , 
-0, 1b16bd5e392648d6826552a833033850, problem, , , , Problems 11-12, /problem/1b16bd5e392648d6826552a833033850.xml, , 
-0, 7447935592dc469b9c08a69b2368b049, problem, , , , Problems 1-6, /problem/7447935592dc469b9c08a69b2368b049.xml, , 
-0, 5826c210f46a492e97da4c69ace3dfa3, problem, , , , Problem 3, /problem/5826c210f46a492e97da4c69ace3dfa3.xml, , 
-0, 26654584f08242208f136644dda0252d, problem, , , , Problem 6, /problem/26654584f08242208f136644dda0252d.xml, , 
-0, 2c5c5266f4584dbb826fe06b4d5014af, problem, , , , Problems 1-3, /problem/2c5c5266f4584dbb826fe06b4d5014af.xml, , 
-0, b7bf2348d19c49b5842d4fc04d969506, problem, , , , Problems 6-8, /problem/b7bf2348d19c49b5842d4fc04d969506.xml, , 
-0, bc8cceedee8e492c982db78dd1460bbf, problem, , , , Problems 10-11, /problem/bc8cceedee8e492c982db78dd1460bbf.xml, , 
-0, de38edf9f80942a7859de98ba1e92621, problem, , , , Problems 9-11, /problem/de38edf9f80942a7859de98ba1e92621.xml, , 
-0, 199ac2db50004a648db0bb2ef8395d97, problem, , , , Problems 7-8, /problem/199ac2db50004a648db0bb2ef8395d97.xml, , 
-0, 883f9df0b7c24f3c8d479f4c6c0cda86, problem, , , , Problems 1-2, /problem/883f9df0b7c24f3c8d479f4c6c0cda86.xml, , 
-0, 3e9b4eb9d13e4d7e9fcd76115cbec623, problem, , , , Problem 8, /problem/3e9b4eb9d13e4d7e9fcd76115cbec623.xml, , 
-0, a31290dbbf384fce9e092803d1cc433d, problem, , , , Problems 4-6, /problem/a31290dbbf384fce9e092803d1cc433d.xml, , 
-0, d3c48e1f493b43a5b9fec8f0ba00ad4b, problem, , , , Problems 1-5, /problem/d3c48e1f493b43a5b9fec8f0ba00ad4b.xml, , 
-0, 6b677f835d0d4bd79787d42a50cc38ba, problem, , , , Problems 11-12, /problem/6b677f835d0d4bd79787d42a50cc38ba.xml, , 
-0, fe1ebf5ab0b64fa985257ecd26a88caa, problem, , , , Problems 1-5, /problem/fe1ebf5ab0b64fa985257ecd26a88caa.xml, , 
-0, 44740a3b67b7438d87c628a8529f69c3, problem, , , , Problems 11-13, /problem/44740a3b67b7438d87c628a8529f69c3.xml, , 
-0, 725eb04f36944a0ba185401852d4286b, problem, , , , Problems 8-10, /problem/725eb04f36944a0ba185401852d4286b.xml, , 
-0, 9e99c1d651134b85ab1a48ea9bffc335, problem, , , , Problems 1-6, /problem/9e99c1d651134b85ab1a48ea9bffc335.xml, , 
-0, 4a259fbb418045d58da4e42003a75752, problem, , , , Problems 1-2, /problem/4a259fbb418045d58da4e42003a75752.xml, , 
-0, ea155f1538164fb29aff045960c9267e, problem, , , , Problem 7, /problem/ea155f1538164fb29aff045960c9267e.xml, , 
-0, cc153eb0ec1a4050b41330650831fba1, problem, , , , Problems 9-10, /problem/cc153eb0ec1a4050b41330650831fba1.xml, , 
-0, 02138651379249debae0945a6e3fae71, problem, , , , Problem 5, /problem/02138651379249debae0945a6e3fae71.xml, , 
-0, e9f53e86353e44138f5fc895ec5a8c57, problem, , , , Problems 1-2, /problem/e9f53e86353e44138f5fc895ec5a8c57.xml, , 
-0, 6e59aca922614413b668dab4f337c2af, problem, , , , Problems 7-8, /problem/6e59aca922614413b668dab4f337c2af.xml, , 
-0, e24ba0bee6b14dc586df8fe5901264d7, problem, , , , Problems 11-12, /problem/e24ba0bee6b14dc586df8fe5901264d7.xml, , 
-0, bb74c87991e84e95bd6f4337f0068f2e, problem, , , , Problems 11-13, /problem/bb74c87991e84e95bd6f4337f0068f2e.xml, , 
-0, 136b149115264b75bdf1da49ab6b6671, problem, , , , Problem 6, /problem/136b149115264b75bdf1da49ab6b6671.xml, , 
-0, 006c9f5f408f4a7fb911f1f0c7681358, problem, , , , Problems 2-3, /problem/006c9f5f408f4a7fb911f1f0c7681358.xml, , 
-0, 0487df8ab6d3455aad1f9bee1199095a, problem, , , , Problems 1-3, /problem/0487df8ab6d3455aad1f9bee1199095a.xml, , 
-0, 8c7fd6ed2f344f07a1b9f6af3da460cc, problem, , , , Problems 7-8, /problem/8c7fd6ed2f344f07a1b9f6af3da460cc.xml, , 
-0, d87ccc0a76e5403eb66791a53e6c4c60, problem, , , , Problems 9-11, /problem/d87ccc0a76e5403eb66791a53e6c4c60.xml, , 
-0, b933e085572f4496ae7fbabcede82d41, problem, , , , Problems 9-10, /problem/b933e085572f4496ae7fbabcede82d41.xml, , 
-0, f22d306ac7f5457b815a8d5484ea9029, problem, , , , Problem 4, /problem/f22d306ac7f5457b815a8d5484ea9029.xml, , 
-0, 33f365daa5ce464db2f3f88b9915dda0, problem, , , , Problems 12-13, /problem/33f365daa5ce464db2f3f88b9915dda0.xml, , 
-0, c2356171426d46aabea73f42318243a9, problem, , , , Problems 9-10, /problem/c2356171426d46aabea73f42318243a9.xml, , 
-0, 8a492b38f5fd4051b350e11b686134ae, problem, , , , Problems 12-13, /problem/8a492b38f5fd4051b350e11b686134ae.xml, , 
-0, f5985963ecb54c7cba96a69fdeb1a297, problem, , , , Problem 1, /problem/f5985963ecb54c7cba96a69fdeb1a297.xml, , 
-0, ee899b43c2974b8e9d5753ea0e618aa5, problem, , , , Problems 8-10, /problem/ee899b43c2974b8e9d5753ea0e618aa5.xml, , 
-0, e52562dddd764a5a95ebb7049e363525, problem, , , , Problems 1-3, /problem/e52562dddd764a5a95ebb7049e363525.xml, , 
-0, cb45518018c1468f88aaa548e6698946, problem, , , , Problems 1-3, /problem/cb45518018c1468f88aaa548e6698946.xml, , 
-0, 5691a20b4910455cbc1f1d2adb7dce2f, problem, , , , Problems 13-14, /problem/5691a20b4910455cbc1f1d2adb7dce2f.xml, , 
-0, 8fc2d654f2734eff93c1eb14a2ef4c2c, problem, , , , Problem 4, /problem/8fc2d654f2734eff93c1eb14a2ef4c2c.xml, , 
-0, 0229fbe0d02642069076962387a180e0, problem, , , , Problem 15, /problem/0229fbe0d02642069076962387a180e0.xml, , 
-0, 472d32bee3964e1286858516224af11c, problem, , , , Problem 1, /problem/472d32bee3964e1286858516224af11c.xml, , 
-0, 23cb48d0ef3e497abae6b2d6b65ddbaf, problem, , , , Problem 15, /problem/23cb48d0ef3e497abae6b2d6b65ddbaf.xml, , 
-0, 9f2f326ec6d14a20bff2b9d782783c95, problem, , , , Problems 8-10, /problem/9f2f326ec6d14a20bff2b9d782783c95.xml, , 
-0, 170a609dbd434eb498580bf57decb3d7, problem, , , , Problems 1-3, /problem/170a609dbd434eb498580bf57decb3d7.xml, , 
-0, 67a5ba184eff415c98a1533217cba978, problem, , , , Problems 4-6, /problem/67a5ba184eff415c98a1533217cba978.xml, , 
-0, c7c6139e29f841ad9283b4fb7cf7cf65, problem, , , , Problem 4, /problem/c7c6139e29f841ad9283b4fb7cf7cf65.xml, , 
-0, 1963ab667d2a4895b3c019777eac43d2, problem, , , , Problems 15-16, /problem/1963ab667d2a4895b3c019777eac43d2.xml, , 
-0, 3085b888521e47708f242e47f7661e84, problem, , , , Problems 8-10, /problem/3085b888521e47708f242e47f7661e84.xml, , 
-0, ac394fd4d6ce4d9d8e3310f676c27dce, problem, , , , Problems 6-8, /problem/ac394fd4d6ce4d9d8e3310f676c27dce.xml, , 
-0, 154c2d7274d4431d9a536a4f26ce3edc, problem, , , , Problem 5, /problem/154c2d7274d4431d9a536a4f26ce3edc.xml, , 
-0, 3d1c7bb0a6254a6eb58bd938ac752161, problem, , , , Problems 5-7, /problem/3d1c7bb0a6254a6eb58bd938ac752161.xml, , 
-0, 132807432c3d47d080f7658d2f822c2f, problem, , , , Problems 1-6, /problem/132807432c3d47d080f7658d2f822c2f.xml, , 
-0, 990bfc81540d4c4f8fa6cdd24fc5b871, problem, , , , Problems 1-2, /problem/990bfc81540d4c4f8fa6cdd24fc5b871.xml, , 
-0, 966e072a494e4994b56a1ffb49d41477, problem, , , , Problems 8-10, /problem/966e072a494e4994b56a1ffb49d41477.xml, , 
-0, 817cd8a720a24e5797f550c89fed3bd4, problem, , , , Problems 8-10, /problem/817cd8a720a24e5797f550c89fed3bd4.xml, , 
-0, b7b727fe584b4663909c62bd33bc2ee9, problem, , , , Problem 3, /problem/b7b727fe584b4663909c62bd33bc2ee9.xml, , 
-0, 0109582adad741c1a964fdcd9b45e50c, problem, , , , Problems 4-5, /problem/0109582adad741c1a964fdcd9b45e50c.xml, , 
-0, 541eef1143844159addfa9f013e3f077, problem, , , , Problems 6-7, /problem/541eef1143844159addfa9f013e3f077.xml, , 
-0, 7f68c144333f45a2a5d933bd3c571928, problem, , , , Problems 1-3, /problem/7f68c144333f45a2a5d933bd3c571928.xml, , 
-0, 036d350812804a29abe04726586deacc, problem, , , , Problems 5-7, /problem/036d350812804a29abe04726586deacc.xml, , 
-0, 8c618af7892d4cf7a232c749e740983a, problem, , , , Problem 9, /problem/8c618af7892d4cf7a232c749e740983a.xml, , 
-0, acb3c9cd84dc44ee9d301b6cf06c03f3, problem, , , , Problems 1-6, /problem/acb3c9cd84dc44ee9d301b6cf06c03f3.xml, , 
-0, 8031d50db3304ae3ae7a6df92b8beb52, problem, , , , Problem 5, /problem/8031d50db3304ae3ae7a6df92b8beb52.xml, , 
-0, e1614397f3df4943b931f75022b98186, problem, , , , Problems 11-13, /problem/e1614397f3df4943b931f75022b98186.xml, , 
-0, 14eeb594428e4ab39c582d7bc4e89584, problem, , , , Problems 9-10, /problem/14eeb594428e4ab39c582d7bc4e89584.xml, , 
-0, b3820fef06624474850f593730561d67, problem, , , , Problem 3, /problem/b3820fef06624474850f593730561d67.xml, , 
-0, 267b720b07714b24b112879f4dba5a76, problem, , , , Problems 11-12, /problem/267b720b07714b24b112879f4dba5a76.xml, , 
-0, b7a110bb2b91494c8250e1fd091faf64, problem, , , , Problems 7-8, /problem/b7a110bb2b91494c8250e1fd091faf64.xml, , 
-0, 0f70ef8e618641739824c649155792be, problem, , , , Problems 4-6, /problem/0f70ef8e618641739824c649155792be.xml, , 
-0, 3a5c1b629e0949fe96d47b1586e2ecf9, problem, , , , Problems 13-14, /problem/3a5c1b629e0949fe96d47b1586e2ecf9.xml, , 
+0; 9c4cc94f5cdb4ae1961a393cf3244147; html; ; ; ; Submission; /html/9c4cc94f5cdb4ae1961a393cf3244147.xml; ; 
+0; c3a1701db0e7434ead8d17be89bf2fae; html; ; ; ; Part 2: Start driving changes through specs; /html/c3a1701db0e7434ead8d17be89bf2fae.xml; ; 
+0; d9ddfa62f50a47cbbd0ac118c059f7c4; html; ; ; ; Homework 5 Part 1: Refactoring & Legacy; /html/d9ddfa62f50a47cbbd0ac118c059f7c4.xml; ; 
+0; d5fe54d05f15491a9c31c6d0c0d1b25f; html; ; ; ; Part 0: Getting Set UP; /html/d5fe54d05f15491a9c31c6d0c0d1b25f.xml; ; 
+0; f5c331e92c014a5fbc34a6e3cf651210; html; ; ; ; Part 1: Specify Features; /html/f5c331e92c014a5fbc34a6e3cf651210.xml; ; 
+0; a9e5dae175234b58bda1480f872d51ac; html; ; ; ; Fix the bug; /html/a9e5dae175234b58bda1480f872d51ac.xml; ; 
+0; 7edb9d9646774149ae5623c1f623227c; html; ; ; ; Submission; /html/7edb9d9646774149ae5623c1f623227c.xml; ; 
+0; 64746ad0f2b84ce2af1f1b627c735866; chapters; ; ; ; Advanced Rails; /chapters/64746ad0f2b84ce2af1f1b627c735866.xml; ; 
+0; 43dbb36012b94acc9fa8094242914909; chapters; ; ; ; Enhancing SaaS with JavaScript; /chapters/43dbb36012b94acc9fa8094242914909.xml; ; 
+0; b6b36beffcde4fb4bcbf17bbb3e170c7; chapters; ; ; ; Project Management; /chapters/b6b36beffcde4fb4bcbf17bbb3e170c7.xml; ; 
+0; 167965a7c2104e1fa3b399440abc763d; chapters; ; ; ; Design Patterns for SaaS; /chapters/167965a7c2104e1fa3b399440abc763d.xml; ; 
+0; 5208a178b37d45fba5b592daa35f2c14; chapters; ; ; ; Practical DevOps: Deployment, Upgrades, Performance, Security; /chapters/5208a178b37d45fba5b592daa35f2c14.xml; ; 
+0; 550f86dccc53435dadf9583ae873fce4; chapters; ; ; ; Final Exam; /chapters/550f86dccc53435dadf9583ae873fce4.xml; ; 
+0; 18872bac3b60453bae7c9e00f3660663; chapters; ; ; ; Refactoring & Legacy; /chapters/18872bac3b60453bae7c9e00f3660663.xml; ; 
+0; e9bd437a720e4132a1fc17dd7890360d; verticals; ; ; ; Lecture Video; /verticals/e9bd437a720e4132a1fc17dd7890360d.xml; ; 
+0; 8facf5aa31fb4803aac93cf0db86bf5e; verticals; ; ; ; Lecture Video; /verticals/8facf5aa31fb4803aac93cf0db86bf5e.xml; ; 
+0; 739b064c93334caeb593e82af210bf94; verticals; ; ; ; Peer-Learning Question Video; /verticals/739b064c93334caeb593e82af210bf94.xml; ; 
+0; 2f16bd22a4084864a4845a145b896b37; verticals; ; ; ; Peer-Learning Question; /verticals/2f16bd22a4084864a4845a145b896b37.xml; ; 
+0; 7014b6fff306433b88749db1f5daf735; verticals; ; ; ; Peer-Learning Question Video; /verticals/7014b6fff306433b88749db1f5daf735.xml; ; 
+0; f14e2459249e4cf3b43a96e1e3f643b8; verticals; ; ; ; Peer-Learning Question; /verticals/f14e2459249e4cf3b43a96e1e3f643b8.xml; ; 
+0; 1c3e9fa0671b48078505bc6b1649e271; verticals; ; ; ; Peer-Learning Question; /verticals/1c3e9fa0671b48078505bc6b1649e271.xml; ; 
+0; e8839d729f0f4515b94b34f09406283b; verticals; ; ; ; Lecture Video; /verticals/e8839d729f0f4515b94b34f09406283b.xml; ; 
+0; d472552194514a5886226aaed7d1400b; verticals; ; ; ; Peer-Learning Question; /verticals/d472552194514a5886226aaed7d1400b.xml; ; 
+0; 9155dfcaa2ca4f82b1545139c7395b2c; verticals; ; ; ; Lecture Video; /verticals/9155dfcaa2ca4f82b1545139c7395b2c.xml; ; 
+0; 73e3fa64364c4a60913a9012591efe18; verticals; ; ; ; Peer-Learning Question Video; /verticals/73e3fa64364c4a60913a9012591efe18.xml; ; 
+0; aecd4f282e104f40bd836e7ab99bd082; verticals; ; ; ; Peer-Learning Question Video; /verticals/aecd4f282e104f40bd836e7ab99bd082.xml; ; 
+0; 64c3463042c5403e919487d4c20fbdad; verticals; ; ; ; Lecture Video; /verticals/64c3463042c5403e919487d4c20fbdad.xml; ; 
+0; 4c8899a6e94e4a10a02506032de4361e; verticals; ; ; ; Peer-Learning Question; /verticals/4c8899a6e94e4a10a02506032de4361e.xml; ; 
+0; 67d1887cea124b0799e89fbf6de5bb66; verticals; ; ; ; Peer-Learning Question Video; /verticals/67d1887cea124b0799e89fbf6de5bb66.xml; ; 
+0; 00c6738b98264f0a93a4bea099f01a12; verticals; ; ; ; Peer-Learning Question Video; /verticals/00c6738b98264f0a93a4bea099f01a12.xml; ; 
+0; 9d2363e470e84e2b85907bc4f107f21a; verticals; ; ; ; Peer-Learning Question; /verticals/9d2363e470e84e2b85907bc4f107f21a.xml; ; 
+0; cddd0ebec24f4270999cd1d0c65b5b34; verticals; ; ; ; Peer-Learning Question; /verticals/cddd0ebec24f4270999cd1d0c65b5b34.xml; ; 
+0; fe2687705a3143a09d6576c0d2a044b5; verticals; ; ; ; Peer-Learning Question Video; /verticals/fe2687705a3143a09d6576c0d2a044b5.xml; ; 
+0; 46875ad902fb4ba685759e161e32406f; verticals; ; ; ; Peer-Learning Question; /verticals/46875ad902fb4ba685759e161e32406f.xml; ; 
+0; 9996e9aa19e14a36ba8ddbcc236245d4; verticals; ; ; ; Peer-Learning Question; /verticals/9996e9aa19e14a36ba8ddbcc236245d4.xml; ; 
+0; b015094b690e4ec8a2b77682a3081207; verticals; ; ; ; Lecture Video; /verticals/b015094b690e4ec8a2b77682a3081207.xml; ; 
+0; fdbb33901c364b13b2699baa12e5c804; verticals; ; ; ; Peer-Learning Question; /verticals/fdbb33901c364b13b2699baa12e5c804.xml; ; 
+0; a9c44daf884b4e7c8bbd4adebe75a5e9; verticals; ; ; ; Lecture Video; /verticals/a9c44daf884b4e7c8bbd4adebe75a5e9.xml; ; 
+0; af379d8176294987b135413ba6a3ae9a; verticals; ; ; ; Peer-Learning Question Video; /verticals/af379d8176294987b135413ba6a3ae9a.xml; ; 
+0; 29e1ab81ef2d4817b86e55a7c812488d; verticals; ; ; ; Peer-Learning Question; /verticals/29e1ab81ef2d4817b86e55a7c812488d.xml; ; 
+0; 935d61fd9ed04fcf82bf316bc926d127; verticals; ; ; ; Peer-Learning Question Video; /verticals/935d61fd9ed04fcf82bf316bc926d127.xml; ; 
+0; 15b2b432fc954a078c6da2d822e8b92a; verticals; ; ; ; Lecture Video ; /verticals/15b2b432fc954a078c6da2d822e8b92a.xml; ; 
+0; d5d2f2b330e643338e18105617349c77; verticals; ; ; ; Peer-Learning Question; /verticals/d5d2f2b330e643338e18105617349c77.xml; ; 
+0; ebaf9858b8ce44b7bab0971cee9e23f7; verticals; ; ; ; Lecture Video; /verticals/ebaf9858b8ce44b7bab0971cee9e23f7.xml; ; 
+0; d09dea8629fd446591296ce9b235e305; verticals; ; ; ; Lecture Video; /verticals/d09dea8629fd446591296ce9b235e305.xml; ; 
+0; 51a3eda42637422fa01560e3c75cc74a; verticals; ; ; ; Lecture Video; /verticals/51a3eda42637422fa01560e3c75cc74a.xml; ; 
+0; 842488fd535a4a85927bf1bc5ed96db5; verticals; ; ; ; Lecture Video; /verticals/842488fd535a4a85927bf1bc5ed96db5.xml; ; 
+0; 4c13fb96bb834305b38da081ce499a96; verticals; ; ; ; Lecture Video; /verticals/4c13fb96bb834305b38da081ce499a96.xml; ; 
+0; a5a213779ef14609b1f66bfb939d7b37; verticals; ; ; ; Peer-Learning Question Video; /verticals/a5a213779ef14609b1f66bfb939d7b37.xml; ; 
+0; 3b3ce8ed591c444d8d584c984cb18b5f; verticals; ; ; ; Lecture Video; /verticals/3b3ce8ed591c444d8d584c984cb18b5f.xml; ; 
+0; a916170c3a7e45ac9550819149a3701d; verticals; ; ; ; Lecture Video; /verticals/a916170c3a7e45ac9550819149a3701d.xml; ; 
+0; 2162a15c4c1e40268696b90293e658f4; verticals; ; ; ; Lecture Video; /verticals/2162a15c4c1e40268696b90293e658f4.xml; ; 
+0; 58b4feb50bb94742a85cf5dab0c82360; verticals; ; ; ; Peer-Learning Question; /verticals/58b4feb50bb94742a85cf5dab0c82360.xml; ; 
+0; 381763df5c3d48e4a971ba3e50d857bc; verticals; ; ; ; Lecture Video; /verticals/381763df5c3d48e4a971ba3e50d857bc.xml; ; 
+0; 7829f3480325413f952586598836a532; verticals; ; ; ; Peer-Learning Question Video ; /verticals/7829f3480325413f952586598836a532.xml; ; 
+0; ec91148c76784a61b886639a20bc34f5; verticals; ; ; ; Peer-Learning Question Video; /verticals/ec91148c76784a61b886639a20bc34f5.xml; ; 
+0; 43aee6770a404ee7ae634dd64535b1fa; verticals; ; ; ; Peer-Learning Question Video ; /verticals/43aee6770a404ee7ae634dd64535b1fa.xml; ; 
+0; bae817521eab41888c8da0147b175503; verticals; ; ; ; Peer-Learning Question Video; /verticals/bae817521eab41888c8da0147b175503.xml; ; 
+0; a2ecd82612b44e7dba879e6c3470be89; verticals; ; ; ; Lecture VIdeo; /verticals/a2ecd82612b44e7dba879e6c3470be89.xml; ; 
+0; a351851742824dc8a1b6e88f265d0f7a; verticals; ; ; ; Peer-Learning Question Video; /verticals/a351851742824dc8a1b6e88f265d0f7a.xml; ; 
+0; b57e7ccefbb64b748c94e209a9a96d9b; verticals; ; ; ; Lecture Video; /verticals/b57e7ccefbb64b748c94e209a9a96d9b.xml; ; 
+0; 407a3535d2f74034970d4d57268421f5; verticals; ; ; ; Lecture Video; /verticals/407a3535d2f74034970d4d57268421f5.xml; ; 
+0; ce0aed7d820d44feb8c129c1e3e98a0f; verticals; ; ; ; Peer-Learning Question Video; /verticals/ce0aed7d820d44feb8c129c1e3e98a0f.xml; ; 
+0; 2c7a70b1282f4b48b24437e9d324357c; verticals; ; ; ; Lecture Video; /verticals/2c7a70b1282f4b48b24437e9d324357c.xml; ; 
+0; 048f6d43a3fd4e9c909b0d866223fedd; verticals; ; ; ; Lecture Video; /verticals/048f6d43a3fd4e9c909b0d866223fedd.xml; ; 
+0; 67957c2024f84ac9b56aad2d16c667ca; verticals; ; ; ; Peer-Learning Question; /verticals/67957c2024f84ac9b56aad2d16c667ca.xml; ; 
+0; 465969a1a71c42178760a07a3b83e176; verticals; ; ; ; Peer-Learning Question; /verticals/465969a1a71c42178760a07a3b83e176.xml; ; 
+0; 2b48c23797fe45aab2a47b7b40f0f246; verticals; ; ; ; Peer-Learning Question; /verticals/2b48c23797fe45aab2a47b7b40f0f246.xml; ; 
+0; bdc9ce7d09c246b8bbd5a28812609015; verticals; ; ; ; Peer-Learning Question; /verticals/bdc9ce7d09c246b8bbd5a28812609015.xml; ; 
+0; bf9c782fe6b14a729ccd09c2cd354194; verticals; ; ; ; Peer-Learning Question Video ; /verticals/bf9c782fe6b14a729ccd09c2cd354194.xml; ; 
+0; 8b5cd0acf4cf46db8db9913a84074902; verticals; ; ; ; Part 2: Start driving changes through specs; /verticals/8b5cd0acf4cf46db8db9913a84074902.xml; ; 
+0; 5ea6e1d3b8f64c48b6d1746765e271bb; verticals; ; ; ; Peer-Learning Question; /verticals/5ea6e1d3b8f64c48b6d1746765e271bb.xml; ; 
+0; 4ba86636b4ab46c8b36d659e9df24a31; verticals; ; ; ; Lecture Video; /verticals/4ba86636b4ab46c8b36d659e9df24a31.xml; ; 
+0; bb04b8fbbbd54109ac9969e14fb3e3d8; verticals; ; ; ; Lecture Video; /verticals/bb04b8fbbbd54109ac9969e14fb3e3d8.xml; ; 
+0; 2f5f9b08c1eb486b8b1b33c3da027d48; verticals; ; ; ; Peer-Learning Question; /verticals/2f5f9b08c1eb486b8b1b33c3da027d48.xml; ; 
+0; 03e1a88971c14fbaaf3bb54efdcf77f5; verticals; ; ; ; Peer-Learning Question Video; /verticals/03e1a88971c14fbaaf3bb54efdcf77f5.xml; ; 
+0; 78ba692921c9465e919c8b85a7412c57; verticals; ; ; ; Peer-Learning Question; /verticals/78ba692921c9465e919c8b85a7412c57.xml; ; 
+0; 68407b1db3894861ae38c5e88947ebd8; verticals; ; ; ; Peer-Learning Question; /verticals/68407b1db3894861ae38c5e88947ebd8.xml; ; 
+0; 2bfa1e6ae56a40eab39e50b9b2f6ed0b; verticals; ; ; ; Peer-Learning Question Video; /verticals/2bfa1e6ae56a40eab39e50b9b2f6ed0b.xml; ; 
+0; 3feee80166da4db49932320de76ac1b2; verticals; ; ; ; Lecture Video; /verticals/3feee80166da4db49932320de76ac1b2.xml; ; 
+0; cfd8fc5538964ba9b1dda821ae87f7a2; verticals; ; ; ; Peer-Learning Question; /verticals/cfd8fc5538964ba9b1dda821ae87f7a2.xml; ; 
+0; 3c02fedcbfe745a2baad1748d4379e80; verticals; ; ; ; Lecture Video; /verticals/3c02fedcbfe745a2baad1748d4379e80.xml; ; 
+0; bc1c9651e72a428cb1e8834dc4817e9f; verticals; ; ; ; Peer-Learning Question; /verticals/bc1c9651e72a428cb1e8834dc4817e9f.xml; ; 
+0; cf6234a751824db18a7525e25337150b; verticals; ; ; ; Lecture Video; /verticals/cf6234a751824db18a7525e25337150b.xml; ; 
+0; e00cc97c51d546de86e28564e7d300ee; verticals; ; ; ; Lecture Video; /verticals/e00cc97c51d546de86e28564e7d300ee.xml; ; 
+0; 0190fae14c2f4b52b90f0458bac658a9; verticals; ; ; ; Peer-Learning Question; /verticals/0190fae14c2f4b52b90f0458bac658a9.xml; ; 
+0; f83eaa410d4b4b218351d4fc06f13d46; verticals; ; ; ; Submission; /verticals/f83eaa410d4b4b218351d4fc06f13d46.xml; ; 
+0; 24e06644077f40838a5d06132ba82828; verticals; ; ; ; Peer-Learning Question Video; /verticals/24e06644077f40838a5d06132ba82828.xml; ; 
+0; ae405372768143faa27b8dac11ac1872; verticals; ; ; ; Peer-Learning Question Video; /verticals/ae405372768143faa27b8dac11ac1872.xml; ; 
+0; c7e6488b90fe4afc8109697f4cee0cd7; verticals; ; ; ; Peer-Learning Question; /verticals/c7e6488b90fe4afc8109697f4cee0cd7.xml; ; 
+0; 6b69e72934d4462fb1b40b47f063eb5d; verticals; ; ; ; Peer-Learning Question; /verticals/6b69e72934d4462fb1b40b47f063eb5d.xml; ; 
+0; 6cb01b285b7b4e90a5e83f082b28d0a8; verticals; ; ; ; Peer-Learning Question; /verticals/6cb01b285b7b4e90a5e83f082b28d0a8.xml; ; 
+0; c82f3df3ab3f4e81b0b711431dea3db3; verticals; ; ; ; Peer-Learning Question Video; /verticals/c82f3df3ab3f4e81b0b711431dea3db3.xml; ; 
+0; 7af2cbde2bd84e2e806a637d686a7d95; verticals; ; ; ; Lecture Video; /verticals/7af2cbde2bd84e2e806a637d686a7d95.xml; ; 
+0; ef2d265c74fa434aba25c21e2e53dcd0; verticals; ; ; ; Lecture Video; /verticals/ef2d265c74fa434aba25c21e2e53dcd0.xml; ; 
+0; 4a45e05f4c7a421ba68f85113f0ccaed; verticals; ; ; ; Peer-Learning Question Video; /verticals/4a45e05f4c7a421ba68f85113f0ccaed.xml; ; 
+0; 29f579ed508b47aabea59f9814584763; verticals; ; ; ; Submission; /verticals/29f579ed508b47aabea59f9814584763.xml; ; 
+0; e8de6a3801ec422283eb889f06976e4d; verticals; ; ; ; Peer-Learning Question Video; /verticals/e8de6a3801ec422283eb889f06976e4d.xml; ; 
+0; c2449916b28947b485f32c5722eeb30c; verticals; ; ; ; Peer-Learning Question; /verticals/c2449916b28947b485f32c5722eeb30c.xml; ; 
+0; acf5162900b54e7596901bd4388d57f0; verticals; ; ; ; Peer-Learning Question Video ; /verticals/acf5162900b54e7596901bd4388d57f0.xml; ; 
+0; 7c94017a61aa46f1b20f471f824bdf60; verticals; ; ; ; Lecture Video; /verticals/7c94017a61aa46f1b20f471f824bdf60.xml; ; 
+0; 632ab611e57742fc8df57f772ccc2be3; verticals; ; ; ; Peer-Learning Question; /verticals/632ab611e57742fc8df57f772ccc2be3.xml; ; 
+0; 811f1beca792452eb632c8edadadecf3; verticals; ; ; ; Lecture Video; /verticals/811f1beca792452eb632c8edadadecf3.xml; ; 
+0; 7d920666dfc6419b9de45be924b7b434; verticals; ; ; ; Peer-Learning Question; /verticals/7d920666dfc6419b9de45be924b7b434.xml; ; 
+0; dcca463fca924798b4bfe44f68590074; verticals; ; ; ; Peer-Learning Question; /verticals/dcca463fca924798b4bfe44f68590074.xml; ; 
+0; 3a516868130e44a695f1315ec220f313; verticals; ; ; ; Lecture Video; /verticals/3a516868130e44a695f1315ec220f313.xml; ; 
+0; 19b7d1680d1f49ec894accf0a49d98d8; verticals; ; ; ; Fix the bug; /verticals/19b7d1680d1f49ec894accf0a49d98d8.xml; ; 
+0; 8314b0d6edae49b6a4e55d72b521ab88; verticals; ; ; ; Part 0: Getting Set UP; /verticals/8314b0d6edae49b6a4e55d72b521ab88.xml; ; 
+0; f2daf2ee792b416c9a7889648d3048c5; verticals; ; ; ; Peer-Learning Question Video; /verticals/f2daf2ee792b416c9a7889648d3048c5.xml; ; 
+0; 7a6049377fc94c748de9681ee3eed177; verticals; ; ; ; Lecture Video; /verticals/7a6049377fc94c748de9681ee3eed177.xml; ; 
+0; b3b4185d3fe5464bb9d1466c24bfb990; verticals; ; ; ; Peer-Learning Question; /verticals/b3b4185d3fe5464bb9d1466c24bfb990.xml; ; 
+0; 1b8b5b44df0a4b3687f12f529141df37; verticals; ; ; ; Peer-Learning Question Video; /verticals/1b8b5b44df0a4b3687f12f529141df37.xml; ; 
+0; 438911fd266b40ba84842355dda123ad; verticals; ; ; ; Lecture Video; /verticals/438911fd266b40ba84842355dda123ad.xml; ; 
+0; 4b6ee9870f1e48919ced3ae5911f84f1; verticals; ; ; ; Peer-Learning Question; /verticals/4b6ee9870f1e48919ced3ae5911f84f1.xml; ; 
+0; d0c74ba8dbc54f2f9140df073357b297; verticals; ; ; ; Lecture Video; /verticals/d0c74ba8dbc54f2f9140df073357b297.xml; ; 
+0; 76ffff513f05424f94013b534d5a06f1; verticals; ; ; ; Peer-Learning Question Video; /verticals/76ffff513f05424f94013b534d5a06f1.xml; ; 
+0; 80ce579c8afe48eea6c9554b095e3880; verticals; ; ; ; Peer-Learning Question Video; /verticals/80ce579c8afe48eea6c9554b095e3880.xml; ; 
+0; 85ee25bf01c34e999d21f4765e36acdd; verticals; ; ; ; Lecture Video; /verticals/85ee25bf01c34e999d21f4765e36acdd.xml; ; 
+0; c1c28971e83d4ab19b7d47c64a39db3c; verticals; ; ; ; Lecture Video; /verticals/c1c28971e83d4ab19b7d47c64a39db3c.xml; ; 
+0; 2fd1d56fbdc94fc7842cd93ca2047097; verticals; ; ; ; Lecture Video; /verticals/2fd1d56fbdc94fc7842cd93ca2047097.xml; ; 
+0; 042c56612c60429eba5df47c9500edec; verticals; ; ; ; Peer-Learning Question Video; /verticals/042c56612c60429eba5df47c9500edec.xml; ; 
+0; a941406cc60b4c70a0b956ebebd23d50; verticals; ; ; ; Peer-Learning Question; /verticals/a941406cc60b4c70a0b956ebebd23d50.xml; ; 
+0; ca48f872f28c461c8b518d3af0c8c47b; verticals; ; ; ; Peer-Learning Question; /verticals/ca48f872f28c461c8b518d3af0c8c47b.xml; ; 
+0; 76b5f87366de4165b3583914503ccb27; verticals; ; ; ; Peer-Learning Question Video ; /verticals/76b5f87366de4165b3583914503ccb27.xml; ; 
+0; bc2e7037176c4aa491a29c2a6edaee5e; verticals; ; ; ; Armando's Computer History Minute; /verticals/bc2e7037176c4aa491a29c2a6edaee5e.xml; ; 
+0; 70871889ebd949a1825334065cb1d1b9; verticals; ; ; ; Lecture Video; /verticals/70871889ebd949a1825334065cb1d1b9.xml; ; 
+0; 8c65d40e1ea44ca29c4b75c9e9e253ac; verticals; ; ; ; Peer-Learning Question; /verticals/8c65d40e1ea44ca29c4b75c9e9e253ac.xml; ; 
+0; f46426e080ab498282186b45775e6e24; verticals; ; ; ; Lecture Video; /verticals/f46426e080ab498282186b45775e6e24.xml; ; 
+0; 7c46b0785f9b46b29148874f5b7eb6c0; verticals; ; ; ; Lecture Video; /verticals/7c46b0785f9b46b29148874f5b7eb6c0.xml; ; 
+0; d96eca43c1d3413788f7ff7b5009bfc0; verticals; ; ; ; Peer-Learning Question; /verticals/d96eca43c1d3413788f7ff7b5009bfc0.xml; ; 
+0; d05293e5e7464f1a86f0a39a3628e1b4; verticals; ; ; ; Peer-Learning Question Video; /verticals/d05293e5e7464f1a86f0a39a3628e1b4.xml; ; 
+0; 5d4f5a46a6284aaeb0982dfdd5777658; verticals; ; ; ; Peer-Learning Question; /verticals/5d4f5a46a6284aaeb0982dfdd5777658.xml; ; 
+0; 84c04914b73f4f228e0932f32870b716; verticals; ; ; ; Peer-Learning Question Video; /verticals/84c04914b73f4f228e0932f32870b716.xml; ; 
+0; db225798322c4e0a9a6f7aa27da64a25; verticals; ; ; ; Peer-Learning Question Video; /verticals/db225798322c4e0a9a6f7aa27da64a25.xml; ; 
+0; 5e5aa8fd3d0647759afc4a52a2e76e6d; verticals; ; ; ; Lecture Video; /verticals/5e5aa8fd3d0647759afc4a52a2e76e6d.xml; ; 
+0; 07729f53c1c84c7cb0c89f746d62fe23; verticals; ; ; ; Peer-Learning Question Video; /verticals/07729f53c1c84c7cb0c89f746d62fe23.xml; ; 
+0; 253b56105f78407abe2acbc7b7244ab3; verticals; ; ; ; Peer-Learning Question Video; /verticals/253b56105f78407abe2acbc7b7244ab3.xml; ; 
+0; bd1be04dc3024319b9a074a28e1db864; verticals; ; ; ; Peer-Learning Question; /verticals/bd1be04dc3024319b9a074a28e1db864.xml; ; 
+0; 68d60571dc274266b831dcf0b27b3fc0; verticals; ; ; ; Peer-Learning Question; /verticals/68d60571dc274266b831dcf0b27b3fc0.xml; ; 
+0; e4cfe0f946774ff1817474acae3bb634; verticals; ; ; ; Peer-Learning Question Video; /verticals/e4cfe0f946774ff1817474acae3bb634.xml; ; 
+0; 62cfa8fe180842128b84896ec78c88c3; verticals; ; ; ; Peer-Learning Question; /verticals/62cfa8fe180842128b84896ec78c88c3.xml; ; 
+0; 0fe00ee9b86349aa88a5b7997a100d20; verticals; ; ; ; Lecture Video; /verticals/0fe00ee9b86349aa88a5b7997a100d20.xml; ; 
+0; ed8989cf81274301a5b6b6ab03058e04; verticals; ; ; ; Peer-Learning Video; /verticals/ed8989cf81274301a5b6b6ab03058e04.xml; ; 
+0; d9711e7dfc3d47e99e0eb0776b44ce0c; verticals; ; ; ; Peer-Learning Question Video; /verticals/d9711e7dfc3d47e99e0eb0776b44ce0c.xml; ; 
+0; 2264c5709fa24fe78b2f76d5b7fd4ac1; verticals; ; ; ; Peer-Learning Question; /verticals/2264c5709fa24fe78b2f76d5b7fd4ac1.xml; ; 
+0; 88f72d1cbce64d57aee3c20683144bbd; verticals; ; ; ; Lecture Video; /verticals/88f72d1cbce64d57aee3c20683144bbd.xml; ; 
+0; e08ca03f4ade42599b1ad2d120a56a65; verticals; ; ; ; Peer-Learning Question Video; /verticals/e08ca03f4ade42599b1ad2d120a56a65.xml; ; 
+0; a668ddf2494a4a8caa11b05eabafe4cb; verticals; ; ; ; Part 1: Specify Features; /verticals/a668ddf2494a4a8caa11b05eabafe4cb.xml; ; 
+0; 8d600a31127d4cc19b87f3c44cba8171; verticals; ; ; ; Peer-Learning Question Video; /verticals/8d600a31127d4cc19b87f3c44cba8171.xml; ; 
+0; 1e7dab092ab945b4a475f836ca189e7c; verticals; ; ; ; Homework 5 Part 1: Refactoring & Legacy; /verticals/1e7dab092ab945b4a475f836ca189e7c.xml; ; 
+0; a8cca6dcbdb04ee7b6e74264a01ddfc6; verticals; ; ; ; Peer-Learning Question; /verticals/a8cca6dcbdb04ee7b6e74264a01ddfc6.xml; ; 
+0; 07c92f460c704648a82b577d05502384; verticals; ; ; ; Lecture Video; /verticals/07c92f460c704648a82b577d05502384.xml; ; 
+0; eed27718176643d292f514327b0d006f; verticals; ; ; ; Lecture Video; /verticals/eed27718176643d292f514327b0d006f.xml; ; 
+0; 86f406ccc6b842d8a4c3d04bded9cf47; verticals; ; ; ; Peer-Learning Question; /verticals/86f406ccc6b842d8a4c3d04bded9cf47.xml; ; 
+0; e555be7f40e047f781ba2918a91d7247; verticals; ; ; ; Peer-Learning Question; /verticals/e555be7f40e047f781ba2918a91d7247.xml; ; 
+0; cae0e5fb9bf64cdb90187f24b6ac1030; verticals; ; ; ; Peer-Learning Question Video; /verticals/cae0e5fb9bf64cdb90187f24b6ac1030.xml; ; 
+0; e2112b9343294e5c960db57e8df408b4; verticals; ; ; ; Peer-Learning Question; /verticals/e2112b9343294e5c960db57e8df408b4.xml; ; 
+0; ad2eb5fc6a974f19a22c0d84e5f5e7a7; verticals; ; ; ; Peer Learning Question Video; /verticals/ad2eb5fc6a974f19a22c0d84e5f5e7a7.xml; ; 
+0; b2750bd2b3734f939f95ef495c1596b1; verticals; ; ; ; Peer-Learning Question; /verticals/b2750bd2b3734f939f95ef495c1596b1.xml; ; 
+0; 69a59404edf84c30b0ee9aa14b17ecf3; verticals; ; ; ; Lecture; /verticals/69a59404edf84c30b0ee9aa14b17ecf3.xml; ; 
+0; 07f9144399d14bc78b2b3909c263c14b; verticals; ; ; ; Peer-Learning Question; /verticals/07f9144399d14bc78b2b3909c263c14b.xml; ; 
+0; 0f9588d022fa4a08875560854b351227; verticals; ; ; ; Lecture Video; /verticals/0f9588d022fa4a08875560854b351227.xml; ; 
+0; 7eaa3a72a8384e40ba755f510a7aed49; verticals; ; ; ; Peer-Learning Question; /verticals/7eaa3a72a8384e40ba755f510a7aed49.xml; ; 
+0; a68701d3535c447aa5b5dc761d861c1b; verticals; ; ; ; Lecture Video; /verticals/a68701d3535c447aa5b5dc761d861c1b.xml; ; 
+0; 8abd831c3df44ae1af7c4321aa232a1b; verticals; ; ; ; Peer-Learning Question; /verticals/8abd831c3df44ae1af7c4321aa232a1b.xml; ; 
+0; 3dd1f4c5a9e9454a96d187499aa700c8; verticals; ; ; ; Lecture Video; /verticals/3dd1f4c5a9e9454a96d187499aa700c8.xml; ; 
+0; 23b2508c20bd4865825e3cabd80a4963; verticals; ; ; ; Peer-Learning Question; /verticals/23b2508c20bd4865825e3cabd80a4963.xml; ; 
+0; 0248d79e7c32459a9492614ab13ff9e5; verticals; ; ; ; Peer-Learning Question Video; /verticals/0248d79e7c32459a9492614ab13ff9e5.xml; ; 
+0; 5797446398184659876cbf7923604449; verticals; ; ; ; Peer-Learning Question Video; /verticals/5797446398184659876cbf7923604449.xml; ; 
+0; bece7d2a2b9b401fb3ade5ebebd99069; verticals; ; ; ; Lecture Video; /verticals/bece7d2a2b9b401fb3ade5ebebd99069.xml; ; 
+0; 05258065a61a4b2c900b5eee50844aed; verticals; ; ; ; Peer-Learning Question Video; /verticals/05258065a61a4b2c900b5eee50844aed.xml; ; 
+0; 7d3526131f3d419b8fcc0348f0489473; sequentials; ; ; ; JavaScript: the Big Picture (6.1); /sequentials/7d3526131f3d419b8fcc0348f0489473.xml; ; 
+0; d6798f74bed740fa84dffae34ff77a42; sequentials; ; ; ; /sequentials/d6798f74bed740fa84dffae34ff77a42.xml; ; 
+0; 780d21aa832e4adf84a42d5a3506732b; sequentials; ; ; ; Dealing With Collections: Composite; /sequentials/780d21aa832e4adf84a42d5a3506732b.xml; ; 
+0; c75af2b5dcff43d688a5c56a06495b96; sequentials; ; ; ; Effective Branching (10.6); /sequentials/c75af2b5dcff43d688a5c56a06495b96.xml; ; 
+0; d93e0613535d4cd991a787aabe725b7a; sequentials; ; ; ; Intro to Method-Level Refactoring (9.5); /sequentials/d93e0613535d4cd991a787aabe725b7a.xml; ; 
+0; 423327adcbae4430b3581b97f092749c; sequentials; ; ; ; Quantifying Availability and Responsiveness (12.2); /sequentials/423327adcbae4430b3581b97f092749c.xml; ; 
+0; 75ab2eca1adf4549a9cef652cd48e679; sequentials; ; ; ; RESTful Routes for Associations (5.5); /sequentials/75ab2eca1adf4549a9cef652cd48e679.xml; ; 
+0; dcd7de17527940d0b861d18a026c7ef3; sequentials; ; ; ; The Document Object Model (DOM) & jQuery (6.4); /sequentials/dcd7de17527940d0b861d18a026c7ef3.xml; ; 
+0; 1851635ba4914b078743b4d834916648; sequentials; ; ; ; DRYing Out MVC (5.1); /sequentials/1851635ba4914b078743b4d834916648.xml; ; 
+0; b5a4213f3d954b158ec9cfccbc83bb35; sequentials; ; ; ; "Constructor-style" Functions (6.3); /sequentials/b5a4213f3d954b158ec9cfccbc83bb35.xml; ; 
+0; a77497d217674331a1072aa898afbe98; sequentials; ; ; ; Establishing Ground Truth With Characterization Tests (9.3); /sequentials/a77497d217674331a1072aa898afbe98.xml; ; 
+0; 72ea5c4cbed544f78f1d1e4bf45cde9c; sequentials; ; ; ; Defending Customer Data (12.8); /sequentials/72ea5c4cbed544f78f1d1e4bf45cde9c.xml; ; 
+0; 9b33d666084c48618340e5e62e63e930; sequentials; ; ; ; Just Enough UML (11.2); /sequentials/9b33d666084c48618340e5e62e63e930.xml; ; 
+0; 104501c0d4524785ad9ea1e47f4d1017; sequentials; ; ; ; Dependency Injection (11.6); /sequentials/104501c0d4524785ad9ea1e47f4d1017.xml; ; 
+0; a5d4ab1739b74c059fa64ba702fe8cc2; sequentials; ; ; ; Design Patterns & SOLID Wrapup (11.8-10); /sequentials/a5d4ab1739b74c059fa64ba702fe8cc2.xml; ; 
+0; ebe067ccbbb54789870760ebae7cc5e8; sequentials; ; ; ; Associations: mechanics (5.3); /sequentials/ebe067ccbbb54789870760ebae7cc5e8.xml; ; 
+0; 87baf41bf5794c6ca96ee7f2ed3f2076; sequentials; ; ; ; Intro to Jasmine: TDD for JavaScript and AJAX (6.7); /sequentials/87baf41bf5794c6ca96ee7f2ed3f2076.xml; ; 
+0; 00c8d3b629434973a48983eadce9f858; sequentials; ; ; ; Plan-And-Document Perspective on Design Patterns (11.8); /sequentials/00c8d3b629434973a48983eadce9f858.xml; ; 
+0; f0f696ec03eb42fbb7ab37c27f05241b; sequentials; ; ; ; Demeter Principle (11.7); /sequentials/f0f696ec03eb42fbb7ab37c27f05241b.xml; ; 
+0; c1dabc5ee2634fb08635dcd6daeb81ab; sequentials; ; ; ; HW5 Part 2: Fixing a bug in Typo; /sequentials/c1dabc5ee2634fb08635dcd6daeb81ab.xml; ; 
+0; 4ec098b2404c4dc3a7aee5ffd45aa28f; sequentials; ; ; ; Legacy Code & Refactoring: Reflections, Fallacies, Pitfalls, etc. (9.8-10); /sequentials/4ec098b2404c4dc3a7aee5ffd45aa28f.xml; ; 
+0; 439befe5ead24c3fa1fa8ecf06fa39b8; sequentials; ; ; ; Open/Closed Principle (11.4); /sequentials/439befe5ead24c3fa1fa8ecf06fa39b8.xml; ; 
+0; 1853fd52087a447db6550864057ef709; sequentials; ; ; ; /sequentials/1853fd52087a447db6550864057ef709.xml; ; 
+0; dde977553c564d708342b165da98765d; sequentials; ; ; ; Plan-And-Document Perspective on Software Maintenance (9.7); /sequentials/dde977553c564d708342b165da98765d.xml; ; 
+0; fcdd8b058f184a9db08967978511a44b; sequentials; ; ; ; Avoiding Abusive Queries (12.7); /sequentials/fcdd8b058f184a9db08967978511a44b.xml; ; 
+0; 401174644c72474683411f9e3b7aa19f; sequentials; ; ; ; Plan-And-Document Perspective on Performance, Releases, Reliability, and Security (12.10); /sequentials/401174644c72474683411f9e3b7aa19f.xml; ; 
+0; 1158193b27e74f6cbbdea34ddc4eab97; sequentials; ; ; ; AJAX: Asynchronous JavaScript and XML (6.6); /sequentials/1158193b27e74f6cbbdea34ddc4eab97.xml; ; 
+0; c1746e93356d4d929377bd6acd3a1a47; sequentials; ; ; ; Liskov Substitution Principle (11.5); /sequentials/c1746e93356d4d929377bd6acd3a1a47.xml; ; 
+0; bf841473944647bcb5dbd4220162d5fb; sequentials; ; ; ; Functions (6.3); /sequentials/bf841473944647bcb5dbd4220162d5fb.xml; ; 
+0; c7ae7efe974c4709a96b98c6d7413ed0; sequentials; ; ; ; Version Control: Merging Conflicts (10.4); /sequentials/c7ae7efe974c4709a96b98c6d7413ed0.xml; ; 
+0; d82ff0c3f1e2465a995949d9debc6fd2; sequentials; ; ; ; Single Sign-On Example (5.3); /sequentials/d82ff0c3f1e2465a995949d9debc6fd2.xml; ; 
+0; 05a680079d5d41c1b1960f49fd160a31; sequentials; ; ; ; Monitoring (12.5); /sequentials/05a680079d5d41c1b1960f49fd160a31.xml; ; 
+0; aef5d56575834b6daf6f48d8767c32cf; sequentials; ; ; ; ActiveRecord Association Support (5.3); /sequentials/aef5d56575834b6daf6f48d8767c32cf.xml; ; 
+0; c7028fd384c341169de13a877693319f; sequentials; ; ; ; Fallacies & Pitfalls, Concluding Remarks (10.8-10.9); /sequentials/c7028fd384c341169de13a877693319f.xml; ; 
+0; 59c096f6b7cf4bffba63a1503d8ea8ee; sequentials; ; ; ; Single-page Apps and JSON APIs (6.8); /sequentials/59c096f6b7cf4bffba63a1503d8ea8ee.xml; ; 
+0; 21f33ef3d3ef4b13b4a26729439081da; sequentials; ; ; ; Design Reviews, Code Reviews, Plan-And-Document Perspective on Project Management (10.3, 10.7-9); /sequentials/21f33ef3d3ef4b13b4a26729439081da.xml; ; 
+0; 45859620d03345639b93f03689ef6cbb; sequentials; ; ; ; Events and Callbacks (6.5); /sequentials/45859620d03345639b93f03689ef6cbb.xml; ; 
+0; 2a5c2da605df4ac09265ff845bfa9a88; sequentials; ; ; ; Patterns, Antipatterns, and SOLID (11.1); /sequentials/2a5c2da605df4ac09265ff845bfa9a88.xml; ; 
+0; 23ed123774ab451cb0370cde2505dcb1; sequentials; ; ; ; More Jasmine: Spies & Fixtures (6.7); /sequentials/23ed123774ab451cb0370cde2505dcb1.xml; ; 
+0; e7878a99b7c0456ba0f7cf9bf5fb3dcc; sequentials; ; ; ; Fallacies, Pitfalls & Concluding Remarks (12.9-11); /sequentials/e7878a99b7c0456ba0f7cf9bf5fb3dcc.xml; ; 
+0; f1833d117fca42a7ad530e1ed39a1f2e; sequentials; ; ; ; Single Sign-On and Third-Party Authentication (5.2); /sequentials/f1833d117fca42a7ad530e1ed39a1f2e.xml; ; 
+0; a395e80d26c146ceab3ba3e12b19e801; sequentials; ; ; ; JavaScript Wrapup (6.9-11); /sequentials/a395e80d26c146ceab3ba3e12b19e801.xml; ; 
+0; c8dff00399a34bb1ae469c6c2c9a27fc; sequentials; ; ; ; Client-Side JavaScript for Ruby Programmers (6.2); /sequentials/c8dff00399a34bb1ae469c6c2c9a27fc.xml; ; 
+0; a021f367795247a4999d613f58657ffa; sequentials; ; ; ; From Development to Deployment (12.1); /sequentials/a021f367795247a4999d613f58657ffa.xml; ; 
+0; 511164bac2e14caf9aaa3ec34eed72bf; sequentials; ; ; ; Single Responsibility Principle (11.3); /sequentials/511164bac2e14caf9aaa3ec34eed72bf.xml; ; 
+0; 5469b72fd8cf417988523a0bf9ad3cdd; sequentials; ; ; ; Associations Wrap-Up (5.7-5.9); /sequentials/5469b72fd8cf417988523a0bf9ad3cdd.xml; ; 
+0; ec766c87cbc7467b9a693078eb78d2c8; sequentials; ; ; ; HW5 Part 1: Refactoring & Legacy; /sequentials/ec766c87cbc7467b9a693078eb78d2c8.xml; ; 
+0; 4f770b6229f0481280d7c8b562043556; sequentials; ; ; ; Continuous Integration & Continuous Deployment (12.3); /sequentials/4f770b6229f0481280d7c8b562043556.xml; ; 
+0; 4660f2c65fdd4e2e91ae17e72fae4c2a; sequentials; ; ; ; Associations & Foreign Keys (5.3); /sequentials/4660f2c65fdd4e2e91ae17e72fae4c2a.xml; ; 
+0; 1a45d849cc674854b208fac05247a2ac; sequentials; ; ; ; More Adapter-Like Patterns (11.6); /sequentials/1a45d849cc674854b208fac05247a2ac.xml; ; 
+0; 7ddb0a08e85641c2b45da1dea7e3dfff; sequentials; ; ; ; Caching: Improving Rendering Time & Database Performance (12.6); /sequentials/7ddb0a08e85641c2b45da1dea7e3dfff.xml; ; 
+0; fab7934032564e0097a7cf308251725f; sequentials; ; ; ; Approaching & Exploring Legacy Code (9.2); /sequentials/fab7934032564e0097a7cf308251725f.xml; ; 
+0; 54ac7a621d1e41c1829a007e7ccc75da; sequentials; ; ; ; Upgrades & Feature Flags (12.4); /sequentials/54ac7a621d1e41c1829a007e7ccc75da.xml; ; 
+0; 467ff8114253405487db518231efe212; sequentials; ; ; ; DRYing Out Queries with Reusable Scopes (5.6); /sequentials/467ff8114253405487db518231efe212.xml; ; 
+0; 2accd84dfedb49588d8b318fe1e76f17; sequentials; ; ; ; Homework: Measuring and improving performance using indices; /sequentials/2accd84dfedb49588d8b318fe1e76f17.xml; ; 
+0; 14d32fc87502403dbc5e46573aae6096; sequentials; ; ; ; Through-Associations (5.4); /sequentials/14d32fc87502403dbc5e46573aae6096.xml; ; 
+0; 5272ae89bacb41088aefe55d1e7edb98; sequentials; ; ; ; Final Exam for Part 2; /sequentials/5272ae89bacb41088aefe55d1e7edb98.xml; ; 
+0; 9a653ee6f9534b6cbf9d8e44966634a1; sequentials; ; ; ; Armando's Computer History Minute (Optional); /sequentials/9a653ee6f9534b6cbf9d8e44966634a1.xml; ; 
+0; c3479ed0c32941698cd582ddc58c1c0f; video; ; ; ; Peer-Learning Question Video; /video/c3479ed0c32941698cd582ddc58c1c0f.xml; ; 
+0; 1bdd5e87f2a24d56b012f8dcde6b1be2; video; ; ; ; Lecture Video; /video/1bdd5e87f2a24d56b012f8dcde6b1be2.xml; ; 
+0; 6adcc3213daf497d98967c8f2ba865e1; video; ; ; ; Peer-Learning Question Video; /video/6adcc3213daf497d98967c8f2ba865e1.xml; ; 
+0; 5bbb492fd7434dc189139d8694c6ca5d; video; ; ; ; Lecture Video; /video/5bbb492fd7434dc189139d8694c6ca5d.xml; ; 
+0; ec56a5527309476ea3caa61740845946; video; ; ; ; Lecture Video; /video/ec56a5527309476ea3caa61740845946.xml; ; 
+0; 581c365782134be79c09565f80ae64b0; video; ; ; ; Peer-Learning Question Video; /video/581c365782134be79c09565f80ae64b0.xml; ; 
+0; 67399ca8063d44f68ff0a80af763e7eb; video; ; ; ; Peer-Learning Question Video; /video/67399ca8063d44f68ff0a80af763e7eb.xml; ; 
+0; 113d3ab0d3484ea4a2166dd107880f49; video; ; ; ; Peer-Learning Question Video ; /video/113d3ab0d3484ea4a2166dd107880f49.xml; ; 
+0; 25b6d96918234eda9908262899aea2da; video; ; ; ; Peer Learning Question Video; /video/25b6d96918234eda9908262899aea2da.xml; ; 
+0; 52933941910746e68659555e27077635; video; ; ; ; Peer-Learning Question Video; /video/52933941910746e68659555e27077635.xml; ; 
+0; 3904ff2d55dc47888706c7b1e52a5b64; video; ; ; ; Peer-Learning Question Video; /video/3904ff2d55dc47888706c7b1e52a5b64.xml; ; 
+0; 0fd70f0410a14e029c66932915875836; video; ; ; ; Peer-Learning Question Video; /video/0fd70f0410a14e029c66932915875836.xml; ; 
+0; ae17e577a7ff48bb82245c014f42486d; video; ; ; ; Lecture Video; /video/ae17e577a7ff48bb82245c014f42486d.xml; ; 
+0; 4424f1cb1ceb45a2a93e9c2db6fb959e; video; ; ; ; Lecture Video; /video/4424f1cb1ceb45a2a93e9c2db6fb959e.xml; ; 
+0; 19cc894931274fa283254b669b2a024f; video; ; ; ; Peer-Learning Question Video; /video/19cc894931274fa283254b669b2a024f.xml; ; 
+0; 028b31d9395548f58ce1c8032a404c46; video; ; ; ; Peer-Learning Question Video; /video/028b31d9395548f58ce1c8032a404c46.xml; ; 
+0; 365334a69c1e4e12ab27e2318c03cc8b; video; ; ; ; Peer-Learning Question Video; /video/365334a69c1e4e12ab27e2318c03cc8b.xml; ; 
+0; 0f1e18b242ff4f4099701a96994b194f; video; ; ; ; Peer-Learning Question Video; /video/0f1e18b242ff4f4099701a96994b194f.xml; ; 
+0; 06afb39e2d8444d69d28c85961d36724; video; ; ; ; Lecture Video; /video/06afb39e2d8444d69d28c85961d36724.xml; ; 
+0; 84174729ec1846ae8ed706877d96232d; video; ; ; ; Lecture Video; /video/84174729ec1846ae8ed706877d96232d.xml; ; 
+0; 59028cee673643fc95d0ccf6b43ee706; video; ; ; ; Lecture Video; /video/59028cee673643fc95d0ccf6b43ee706.xml; ; 
+0; a36fd0b77054412797adda44bb695df2; video; ; ; ; Lecture Video; /video/a36fd0b77054412797adda44bb695df2.xml; ; 
+0; 3f305b667ece4731a98c1a5d0c4d163a; video; ; ; ; Peer-Learning Question Video; /video/3f305b667ece4731a98c1a5d0c4d163a.xml; ; 
+0; 0ec669f7cd264b9db5c051e05145fbe9; video; ; ; ; Peer-Learning Question Video; /video/0ec669f7cd264b9db5c051e05145fbe9.xml; ; 
+0; 7c10a2b282d74e4eb198f457750ac036; video; ; ; ; Lecture Video; /video/7c10a2b282d74e4eb198f457750ac036.xml; ; 
+0; 354b321ee6144ac5b7668835b65484ff; video; ; ; ; Lecture Video; /video/354b321ee6144ac5b7668835b65484ff.xml; ; 
+0; 53fae34bdcf54e158c3e0f829776d894; video; ; ; ; Lecture Video; /video/53fae34bdcf54e158c3e0f829776d894.xml; ; 
+0; 3518cdc3616f4d67858d2eb707dece8c; video; ; ; ; Lecture Video; /video/3518cdc3616f4d67858d2eb707dece8c.xml; ; 
+0; d6e8c08914fa4480a485523d10882a59; video; ; ; ; Lecture Video; /video/d6e8c08914fa4480a485523d10882a59.xml; ; 
+0; 7cb163f333bf45df80fe583f48d7d3eb; video; ; ; ; Peer-Learning Question Video; /video/7cb163f333bf45df80fe583f48d7d3eb.xml; ; 
+0; 175e55c757a04469b5667ec40618e404; video; ; ; ; Lecture Video ; /video/175e55c757a04469b5667ec40618e404.xml; ; 
+0; 045b60fc16274c919775961b352ba660; video; ; ; ; Lecture Video; /video/045b60fc16274c919775961b352ba660.xml; ; 
+0; bc51e4081cf949bf87975276bf42e513; video; ; ; ; Lecture Video; /video/bc51e4081cf949bf87975276bf42e513.xml; ; 
+0; 2abbfdc73d0f4a1692008e016c40770f; video; ; ; ; Peer-Learning Question Video; /video/2abbfdc73d0f4a1692008e016c40770f.xml; ; 
+0; 5948f73ae6274b618b9ce5dde98b8f4d; video; ; ; ; Lecture Video; /video/5948f73ae6274b618b9ce5dde98b8f4d.xml; ; 
+0; b4047f40856347308f8c790143457ae6; video; ; ; ; Lecture Video; /video/b4047f40856347308f8c790143457ae6.xml; ; 
+0; 62b3df4e6c154363aa80e6481f7f4254; video; ; ; ; Peer-Learning Question Video; /video/62b3df4e6c154363aa80e6481f7f4254.xml; ; 
+0; 8ed43ad352344f09a7984e477b5fe26c; video; ; ; ; Lecture Video; /video/8ed43ad352344f09a7984e477b5fe26c.xml; ; 
+0; 7644aff1284e4fdca28274be0e3f35b2; video; ; ; ; Lecture Video; /video/7644aff1284e4fdca28274be0e3f35b2.xml; ; 
+0; c5dd600d5f804fd59dcfef090dcdd72e; video; ; ; ; Peer-Learning Question Video; /video/c5dd600d5f804fd59dcfef090dcdd72e.xml; ; 
+0; 2a2336ad11ba4166b97024ed2817a7f6; video; ; ; ; Peer-Learning Question Video; /video/2a2336ad11ba4166b97024ed2817a7f6.xml; ; 
+0; 2d71e6280976405f9056916ee14fb3fc; video; ; ; ; Lecture Video; /video/2d71e6280976405f9056916ee14fb3fc.xml; ; 
+0; a20554ba5954428dbe48953619f5604d; video; ; ; ; Peer-Learning Question Video; /video/a20554ba5954428dbe48953619f5604d.xml; ; 
+0; 301e78b0f64a49518a4761964758ab33; video; ; ; ; Lecture Video; /video/301e78b0f64a49518a4761964758ab33.xml; ; 
+0; d326658e1b114005a95bf025b0a1234c; video; ; ; ; Peer-Learning Question Video; /video/d326658e1b114005a95bf025b0a1234c.xml; ; 
+0; cc1bb04afe094934aa1887834ba229ee; video; ; ; ; Lecture Video; /video/cc1bb04afe094934aa1887834ba229ee.xml; ; 
+0; 0034d2bfc2264efa822b5c2c41cc265c; video; ; ; ; Lecture Video; /video/0034d2bfc2264efa822b5c2c41cc265c.xml; ; 
+0; a0ef278b89814c1fbeb5929c88a3c9f6; video; ; ; ; Peer-Learning Question Video; /video/a0ef278b89814c1fbeb5929c88a3c9f6.xml; ; 
+0; 2547be158def4ea2a6d839f9edfeef36; video; ; ; ; Lecture Video; /video/2547be158def4ea2a6d839f9edfeef36.xml; ; 
+0; ff616fa5161042f7ae33bd143579026f; video; ; ; ; Peer-Learning Question Video; /video/ff616fa5161042f7ae33bd143579026f.xml; ; 
+0; 5246df40a3114bb290faf6b2c3c3375e; video; ; ; ; Peer-Learning Question Video; /video/5246df40a3114bb290faf6b2c3c3375e.xml; ; 
+0; 466fc383b51647d788ec46e69f9226c3; video; ; ; ; Peer-Learning Question Video; /video/466fc383b51647d788ec46e69f9226c3.xml; ; 
+0; 0932153ff6ff436aa0c938b2d33d71fd; video; ; ; ; Lecture Video; /video/0932153ff6ff436aa0c938b2d33d71fd.xml; ; 
+0; d7637f37c901400da59e787ff81747a2; video; ; ; ; Lecture Video; /video/d7637f37c901400da59e787ff81747a2.xml; ; 
+0; 0f978a7db8d749f8b30ed495a38f5b0f; video; ; ; ; Lecture; /video/0f978a7db8d749f8b30ed495a38f5b0f.xml; ; 
+0; 414c10dbe17f4d48a8692d1653f84e0d; video; ; ; ; Lecture Video; /video/414c10dbe17f4d48a8692d1653f84e0d.xml; ; 
+0; 964d6b487b0f45cd9aeea4428aa394d5; video; ; ; ; Lecture Video; /video/964d6b487b0f45cd9aeea4428aa394d5.xml; ; 
+0; d2b6ba4a6c7144fa803034bc41926645; video; ; ; ; Lecture Video; /video/d2b6ba4a6c7144fa803034bc41926645.xml; ; 
+0; 3535d1442bbc423ab7c786d99e7e9b20; video; ; ; ; Lecture Video; /video/3535d1442bbc423ab7c786d99e7e9b20.xml; ; 
+0; b8928a3e978d4ab4a7a7a42f35f01121; video; ; ; ; Lecture Video; /video/b8928a3e978d4ab4a7a7a42f35f01121.xml; ; 
+0; fe89f67b685b4f8e84fd8e772319d11f; video; ; ; ; Peer-Learning Question Video ; /video/fe89f67b685b4f8e84fd8e772319d11f.xml; ; 
+0; 3322dd4401694353b45403066d151fc6; video; ; ; ; Peer-Learning Question Video; /video/3322dd4401694353b45403066d151fc6.xml; ; 
+0; 76f902a5292148c488fa5b3ac6d7388d; video; ; ; ; Peer-Learning Question Video; /video/76f902a5292148c488fa5b3ac6d7388d.xml; ; 
+0; 347000a2e95f411ba612e189b2606845; video; ; ; ; Lecture Video; /video/347000a2e95f411ba612e189b2606845.xml; ; 
+0; 9fedf460435041158300782ec65f442a; video; ; ; ; Lecture Video; /video/9fedf460435041158300782ec65f442a.xml; ; 
+0; 914ae7218f36411a99b1def537bcbf0e; video; ; ; ; Lecture Video; /video/914ae7218f36411a99b1def537bcbf0e.xml; ; 
+0; 10a18d38b44545d4a57268f31c7900ca; video; ; ; ; Peer-Learning Question Video; /video/10a18d38b44545d4a57268f31c7900ca.xml; ; 
+0; b730cfbd0a7f4ba3b717e2f84d8e6d90; video; ; ; ; Peer-Learning Question Video; /video/b730cfbd0a7f4ba3b717e2f84d8e6d90.xml; ; 
+0; 8783ea591da747f1bccd6974eb3628f2; video; ; ; ; Lecture Video; /video/8783ea591da747f1bccd6974eb3628f2.xml; ; 
+0; f667eee1d7b74d018293c4be639bc1e4; video; ; ; ; Lecture Video; /video/f667eee1d7b74d018293c4be639bc1e4.xml; ; 
+0; 13562747b5be40039cd18cec8a1061ec; video; ; ; ; Lecture Video; /video/13562747b5be40039cd18cec8a1061ec.xml; ; 
+0; f4e3e195662f463bb487bada4bb0924d; video; ; ; ; Peer-Learning Question Video ; /video/f4e3e195662f463bb487bada4bb0924d.xml; ; 
+0; d4d404cec25f4d368a76e690b3e1c30f; video; ; ; ; Lecture Video; /video/d4d404cec25f4d368a76e690b3e1c30f.xml; ; 
+0; a0a715ae658c404290c3a16c775347a1; video; ; ; ; Lecture Video; /video/a0a715ae658c404290c3a16c775347a1.xml; ; 
+0; 54d48c455caa42cd8cd5aff4c37e9dff; video; ; ; ; Peer-Learning Question Video; /video/54d48c455caa42cd8cd5aff4c37e9dff.xml; ; 
+0; de3e2e91212242bdabdb3994ae865cce; video; ; ; ; Lecture Video; /video/de3e2e91212242bdabdb3994ae865cce.xml; ; 
+0; 82be03ec1af34e00a26449096f75ed31; video; ; ; ; Peer-Learning Question Video; /video/82be03ec1af34e00a26449096f75ed31.xml; ; 
+0; 41c341df41bf45d7b344600edd37e4f7; video; ; ; ; Lecture Video; /video/41c341df41bf45d7b344600edd37e4f7.xml; ; 
+0; 58ca61277a464df990b8a65b9c59bc7b; video; ; ; ; Lecture VIdeo; /video/58ca61277a464df990b8a65b9c59bc7b.xml; ; 
+0; 2a23f447696948e6bb797c302966e8bb; video; ; ; ; Lecture Video; /video/2a23f447696948e6bb797c302966e8bb.xml; ; 
+0; f0dabdd443c84ccc82978bf2474bb101; video; ; ; ; Peer-Learning Question Video; /video/f0dabdd443c84ccc82978bf2474bb101.xml; ; 
+0; 8cb2fe12b2b04e49ba9e797f7f96fc3e; video; ; ; ; Lecture Video; /video/8cb2fe12b2b04e49ba9e797f7f96fc3e.xml; ; 
+0; 9a720644e75941518f1b33ee655ab252; video; ; ; ; Peer-Learning Video; /video/9a720644e75941518f1b33ee655ab252.xml; ; 
+0; 8e8950ddb85f40d7a95ea3ba31889e6d; video; ; ; ; Lecture Video; /video/8e8950ddb85f40d7a95ea3ba31889e6d.xml; ; 
+0; 51a0374b581945ca816480fcecdbe21f; video; ; ; ; Peer-Learning Question Video; /video/51a0374b581945ca816480fcecdbe21f.xml; ; 
+0; 08f2c0fdf6d64bc0b1812ac0655c6f96; video; ; ; ; Armando's Computer History Minute; /video/08f2c0fdf6d64bc0b1812ac0655c6f96.xml; ; 
+0; 89785e00b43947b08cfc7e00dba23d87; video; ; ; ; Lecture Video; /video/89785e00b43947b08cfc7e00dba23d87.xml; ; 
+0; bbb8d7ce45a74d7589261883185583d4; video; ; ; ; Lecture Video; /video/bbb8d7ce45a74d7589261883185583d4.xml; ; 
+0; 501cbd09fe384191bd7e3e54885f7b96; video; ; ; ; Peer-Learning Question Video ; /video/501cbd09fe384191bd7e3e54885f7b96.xml; ; 
+0; c9cb872a7dce47549b9094e56ad92e91; video; ; ; ; Peer-Learning Question Video; /video/c9cb872a7dce47549b9094e56ad92e91.xml; ; 
+0; 034f12955ecf47d9b14fa6e48fd085e2; video; ; ; ; Peer-Learning Question Video; /video/034f12955ecf47d9b14fa6e48fd085e2.xml; ; 
+0; 9d6ae3c045a9413288ad593c99b2b387; video; ; ; ; Peer-Learning Question Video; /video/9d6ae3c045a9413288ad593c99b2b387.xml; ; 
+0; 6b9569c2f73a42999862c9cf26241e1f; video; ; ; ; Peer-Learning Question Video ; /video/6b9569c2f73a42999862c9cf26241e1f.xml; ; 
+0; 7c7d4d1903c64aabace440100092329f; video; ; ; ; Lecture Video; /video/7c7d4d1903c64aabace440100092329f.xml; ; 
+0; 74b77039b98441909b7241e9c4e4255f; video; ; ; ; Peer-Learning Question Video; /video/74b77039b98441909b7241e9c4e4255f.xml; ; 
+0; 235c3f39973841f485a1f65665bec6f1; video; ; ; ; Peer-Learning Question Video; /video/235c3f39973841f485a1f65665bec6f1.xml; ; 
+0; 28f94f07dad44a7994b1efa3fbf4818a; video; ; ; ; Peer-Learning Question Video; /video/28f94f07dad44a7994b1efa3fbf4818a.xml; ; 
+0; 306a99dd19c649b3b8e7d42bb3105884; video; ; ; ; Peer-Learning Question Video; /video/306a99dd19c649b3b8e7d42bb3105884.xml; ; 
+0; 5f877de0e41a48ebafb009357088e344; video; ; ; ; Lecture Video; /video/5f877de0e41a48ebafb009357088e344.xml; ; 
+0; e89ffe6295534ce183c31e0a427e1241; problem; ; ; ; Peer-Learning Question; /problem/e89ffe6295534ce183c31e0a427e1241.xml; ; 
+0; c6871140c37c458bae449f69729867a4; problem; ; ; ; Peer-Learning Question; /problem/c6871140c37c458bae449f69729867a4.xml; ; 
+0; 0d09ed30011e4b12910adb2ef03f1b7f; problem; ; ; ; Peer-Learning Question; /problem/0d09ed30011e4b12910adb2ef03f1b7f.xml; ; 
+0; 4f6b8560a3dc4a0f9edecb26522d8d6e; problem; ; ; ; Peer-Learning Question; /problem/4f6b8560a3dc4a0f9edecb26522d8d6e.xml; ; 
+0; e012c2dcf24a436bb0ffa243c94a9eef; problem; ; ; ; Peer-Learning Question; /problem/e012c2dcf24a436bb0ffa243c94a9eef.xml; ; 
+0; 08aa0a5f296b4a3493a771b88f51808c; problem; ; ; ; Peer-Learning Question; /problem/08aa0a5f296b4a3493a771b88f51808c.xml; ; 
+0; 5ca9e9cb5517461fb8841545dc4cebda; problem; ; ; ; Peer-Learning Question; /problem/5ca9e9cb5517461fb8841545dc4cebda.xml; ; 
+0; 28b70c4b5ae145b4931d67617d3a2fd9; problem; ; ; ; Peer-Learning Question; /problem/28b70c4b5ae145b4931d67617d3a2fd9.xml; ; 
+0; 908446baf8514ee096b10625061b3373; problem; ; ; ; Peer-Learning Question; /problem/908446baf8514ee096b10625061b3373.xml; ; 
+0; f7bb9416335940e49f1652498b0afa12; problem; ; ; ; Peer-Learning Question; /problem/f7bb9416335940e49f1652498b0afa12.xml; ; 
+0; dbbe015f91034468803e143e168fc50d; problem; ; ; ; Peer-Learning Question; /problem/dbbe015f91034468803e143e168fc50d.xml; ; 
+0; 9cf43bd8a5f847ff8fce0e8b0f35f91f; problem; ; ; ; Peer-Learning Question; /problem/9cf43bd8a5f847ff8fce0e8b0f35f91f.xml; ; 
+0; e9f3689e359a41eba46d1832955dfeeb; problem; ; ; ; Peer-Learning Question; /problem/e9f3689e359a41eba46d1832955dfeeb.xml; ; 
+0; 04dda7cd1fe244edaec1759b47a644c7; problem; ; ; ; Peer-Learning Question; /problem/04dda7cd1fe244edaec1759b47a644c7.xml; ; 
+0; 43ed8a2729d5484fbd50f3bc2a36c37d; problem; ; ; ; Peer-Learning Question; /problem/43ed8a2729d5484fbd50f3bc2a36c37d.xml; ; 
+0; f2164f962b6440f285464e4a5065094a; problem; ; ; ; Peer-Learning Question; /problem/f2164f962b6440f285464e4a5065094a.xml; ; 
+0; cb2399d77f894703aca97395b8cf8696; problem; ; ; ; Peer-Learning Question; /problem/cb2399d77f894703aca97395b8cf8696.xml; ; 
+0; c465fab1d8044083a21c4a85680bc69f; problem; ; ; ; Peer-Learning Question; /problem/c465fab1d8044083a21c4a85680bc69f.xml; ; 
+0; 541505d244ec4d149ab166af86af854d; problem; ; ; ; Peer-Learning Question; /problem/541505d244ec4d149ab166af86af854d.xml; ; 
+0; 6f1bc24005df4e5d8ac51521a68343c5; problem; ; ; ; Peer-Learning Question; /problem/6f1bc24005df4e5d8ac51521a68343c5.xml; ; 
+0; 6be2d2e1b8ea4407a1671b4befebc1fe; problem; ; ; ; Peer-Learning Question; /problem/6be2d2e1b8ea4407a1671b4befebc1fe.xml; ; 
+0; 0cb282389b7a45bcbfd6d0f424a7ecbc; problem; ; ; ; Peer-Learning Question; /problem/0cb282389b7a45bcbfd6d0f424a7ecbc.xml; ; 
+0; b05a4296764042ae9ee4b0fa8ad8e5f4; problem; ; ; ; Peer-Learning Question; /problem/b05a4296764042ae9ee4b0fa8ad8e5f4.xml; ; 
+0; c37a10ad18bf4ffcb3316d9426a32f54; problem; ; ; ; Peer-Learning Question; /problem/c37a10ad18bf4ffcb3316d9426a32f54.xml; ; 
+0; 474e821e0ece429daba123612395d584; problem; ; ; ; Peer-Learning Question; /problem/474e821e0ece429daba123612395d584.xml; ; 
+0; 4799ad93afea4bf791cf54c382e73371; problem; ; ; ; Peer-Learning Question; /problem/4799ad93afea4bf791cf54c382e73371.xml; ; 
+0; d5930cfd1f0b45919ded08c0aec52142; problem; ; ; ; Peer-Learning Question; /problem/d5930cfd1f0b45919ded08c0aec52142.xml; ; 
+0; 4a88ddefd52446ee8299cece793fabde; problem; ; ; ; Peer-Learning Question; /problem/4a88ddefd52446ee8299cece793fabde.xml; ; 
+0; 5877a4857fb74ee1ba02fe8453bf5d1e; problem; ; ; ; Peer-Learning Question; /problem/5877a4857fb74ee1ba02fe8453bf5d1e.xml; ; 
+0; 0d2d6c8e98194193ba1a3aeec2546c77; problem; ; ; ; Peer-Learning Question; /problem/0d2d6c8e98194193ba1a3aeec2546c77.xml; ; 
+0; f0f7c90321fb4eb795b148f85ac5eb42; problem; ; ; ; Submission; /problem/f0f7c90321fb4eb795b148f85ac5eb42.xml; ; 
+0; 0067101aad7b400780bf61b42e2bd50b; problem; ; ; ; Peer-Learning Question; /problem/0067101aad7b400780bf61b42e2bd50b.xml; ; 
+0; 80495d725bbe4feb979d96cad9a66388; problem; ; ; ; Peer-Learning Question; /problem/80495d725bbe4feb979d96cad9a66388.xml; ; 
+0; 01a8c9ebd7fb409bbfda15d07f46f174; problem; ; ; ; Peer-Learning Question; /problem/01a8c9ebd7fb409bbfda15d07f46f174.xml; ; 
+0; 012a63a429924468b2845d35922ca69d; problem; ; ; ; Peer-Learning Question; /problem/012a63a429924468b2845d35922ca69d.xml; ; 
+0; 22158178fe65477f8d94771a8bea062c; problem; ; ; ; Peer-Learning Question; /problem/22158178fe65477f8d94771a8bea062c.xml; ; 
+0; c1742ee9e89e41c7bcac83ba524b7877; problem; ; ; ; Peer-Learning Question; /problem/c1742ee9e89e41c7bcac83ba524b7877.xml; ; 
+0; 8738c2be780f41c4bdcaeb1f015c650b; problem; ; ; ; Peer-Learning Question; /problem/8738c2be780f41c4bdcaeb1f015c650b.xml; ; 
+0; 651a301cf7a74aff86927b977db1335b; problem; ; ; ; Peer-Learning Question; /problem/651a301cf7a74aff86927b977db1335b.xml; ; 
+0; df3fd49e920b4396b44bdd383c5c0e86; problem; ; ; ; Peer-Learning Question; /problem/df3fd49e920b4396b44bdd383c5c0e86.xml; ; 
+0; 99e2db37907e42629d49f3077c0395e3; problem; ; ; ; Submission; /problem/99e2db37907e42629d49f3077c0395e3.xml; ; 
+0; 53c4c12b47894593b33f273defd64f0d; problem; ; ; ; Peer-Learning Question; /problem/53c4c12b47894593b33f273defd64f0d.xml; ; 
+0; 29fb7aaa66654e55818255d452ce8877; problem; ; ; ; Peer-Learning Question; /problem/29fb7aaa66654e55818255d452ce8877.xml; ; 
+0; 0d5eb19011184369b7db5497831e7dcf; problem; ; ; ; Peer-Learning Question; /problem/0d5eb19011184369b7db5497831e7dcf.xml; ; 
+0; 1d8476a806564383af4b3f370d2ee155; problem; ; ; ; Peer-Learning Question; /problem/1d8476a806564383af4b3f370d2ee155.xml; ; 
+0; a088696cd29d4a02b590e11fe0a41426; problem; ; ; ; Peer-Learning Question; /problem/a088696cd29d4a02b590e11fe0a41426.xml; ; 
+0; 9edab37818394fe89e4ef33b989ecaa3; problem; ; ; ; Peer-Learning Question; /problem/9edab37818394fe89e4ef33b989ecaa3.xml; ; 
+0; 8007928e44814fb7a157840269c4c0a3; problem; ; ; ; Peer-Learning Question; /problem/8007928e44814fb7a157840269c4c0a3.xml; ; 
+0; a80c6ab575f649d98571070eb5078d3e; problem; ; ; ; Peer-Learning Question; /problem/a80c6ab575f649d98571070eb5078d3e.xml; ; 
+0; 6a1eadac1f9043c09bfc5be582196798; problem; ; ; ; Peer-Learning Question; /problem/6a1eadac1f9043c09bfc5be582196798.xml; ; 
+0; 6e3894ed22cc4fd69fe725d5cf7e25d3; problem; ; ; ; Peer-Learning Question; /problem/6e3894ed22cc4fd69fe725d5cf7e25d3.xml; ; 
+0; 95e87d32e9384b73b69012c2e47dcec8; problem; ; ; ; Peer-Learning Question; /problem/95e87d32e9384b73b69012c2e47dcec8.xml; ; 
+0; 483b834a679d4403a4fae53d5aadb42b; problem; ; ; ; Peer-Learning Question; /problem/483b834a679d4403a4fae53d5aadb42b.xml; ; 
