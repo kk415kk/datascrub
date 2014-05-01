@@ -15,6 +15,7 @@ The outputted modulestore file will be in the same folder as the parsing script,
 
 updates
 ---
+v0.02b (5/1/14): Fixed a bug involving how course exports store information (chapters and sequentials can store modules)
 v0.01b (4/30/14): Added support for for .tar.gz files so no extraction is necessary. Also added support for multiple extractions in one run. Fixed bug regarding bad JSON output format.  
 v0.01a (4/26/14): Initial alpha version of script, capable of parsing one extracted course export folder.  
 

@@ -8,8 +8,8 @@
 # Author: Kevin Kao
 # Email: kkao@berkeley.edu
 # Creation Date: 4/26/14
-# Last Updated: 4/30/14
-# Version: 0.01b
+# Last Updated: 5/1/14
+# Version: 0.02b
 
 
 import sys, os, glob, json, tarfile, shutil
@@ -50,7 +50,10 @@ def info(help=False):
 # To better understand parser:
 #	- a COURSE has a list of CHAPTERS --> ('course' folder)
 #	- each CHAPTER has a list of SEQUENTIALS --> ('chapter' folder)
+#		- NOTE: it's possible that a CHAPTER contains modules as well
 #	- each SEQUENTIAL has a list of verticals --> ('sequential' folder)
+#		- NOTE: it's possible that a SEQUENTIAL contains modules as well
+#	- each VERTICAL has a list of modules --> ('video, 'html', etc..)
 #############################################################################
 
 ###### MAIN METHOD #####
@@ -121,25 +124,25 @@ def main():
 
 	for course_export in courses:
 		if os.path.isdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export)):
-			#########################################################################################
+			######################################################################################################
 			## This dictionary is used for linking purposes
 			## INFORMATION:
-			## 	"chapters" stores a dictionary in this format:
-			##		{ chapterHash : [chapterDisplayName, [list of sequentials]] }
-			## 	"sequentials" stores a dictionary in this format:
-			##		{ sequentialHash : [seqDisplayName, [list of verticals], chapterHash] }
-			## 	"verticals" stores a dictionary in this format:
-			##		{ verticalHash : [verDisplayName, [list of html/prob], seqHash] }
+			## 	"chapter" stores a dictionary in this format:
+			##		{ chapterHash : [chapterDisplayName, [list of sequentials/modules]] }
+			## 	"sequential" stores a dictionary in this format:
+			##		{ sequentialHash : [seqDisplayName, [list of verticals/modules], ("chapter", chapterHash)] }
+			## 	"vertical" stores a dictionary in this format:
+			##		{ verticalHash : [verDisplayName, [list of modules], ("sequential", seqHash)] }
 			##	
 			## For modules, there are several kinds, including problems, videos, html, etc...
 			## To generalize for the future, these are not explicitly added into the dictionary.
 			## They will be added dynamically as the parser discovers new module types in the export.
 			##	"module_type" stores a dictionary in this format:
-			##		{ moduleHash : [moduleDisplayName, verticalHash] }
+			##		{ moduleHash : [moduleDisplayName, [], ("chapter/seq/vert", chapHash/seqHash/vertHash )] }
 			##
 			## Module types will be kept track of in a list to dynamically find folders in exports
-			#########################################################################################
-			content_linker = { "chapters" : {},	"sequentials" : {},	"verticals" : {} }
+			#######################################################################################################
+			content_linker = { "chapter" : {},	"sequential" : {},	"vertical" : {} }
 			module_list = []
 
 			# grab root folder of course export
@@ -186,14 +189,19 @@ def main():
 				entry_dict["metadata"]["xml_attributes"]["filename"].append("chapter/" + chapter_file)
 				
 				# update content_linker
-				content_linker["chapters"][chapter] = [ root.attrib["display_name"], []]
+				content_linker["chapter"][chapter] = [ root.attrib["display_name"], []]
 
-				for sequential in root:
+				for child_elem in root:
 					# update content_linker
-					content_linker["chapters"][chapter][1].append(sequential.attrib["url_name"])
-					content_linker["sequentials"][sequential.attrib["url_name"]] = [ None, [], chapter]
+					content_linker["chapter"][chapter][1].append(child_elem.attrib["url_name"])
+					if not child_elem.tag in content_linker:
+						content_linker[child_elem.tag] = {}
+						# add to list of module_types if not there
+						if not child_elem.tag in module_list:
+							module_list.append(child_elem.tag)
+					content_linker[child_elem.tag][child_elem.attrib["url_name"]] = [ None, [], ("chapter", chapter)]
 
-					child = tag + "://" + org + "/" + course + "/sequential/" + sequential.attrib["url_name"]
+					child = tag + "://" + org + "/" + course + "/"+ child_elem.tag +"/" + child_elem.attrib["url_name"]
 					entry_dict["definition"]["children"].append(child)
 				output.append(entry_dict)
 			sys.stdout.write("success!\n")
@@ -282,16 +290,21 @@ def main():
 						{ "filename" : ["sequential/" + sequential_file] }, "display_name" : display_name } }
 
 				# update content_linker
-				content_linker["sequentials"][sequential][0] = display_name
+				content_linker["sequential"][sequential][0] = display_name
 
 				# store verticals into children of entry
-				for vertical in root:
-					child = tag + "://" + org + "/" + course + "/vertical/" + vertical.attrib["url_name"]
+				for child_elem in root:
+					child = tag + "://" + org + "/" + course + "/" + child_elem.tag + "/" + child_elem.attrib["url_name"]
 					entry_dict["definition"]["children"].append(child)
 					
 					# update content_linker
-					content_linker["sequentials"][sequential][1].append(vertical.attrib["url_name"])
-					content_linker["verticals"][vertical.attrib["url_name"]] = [ None, [], sequential]
+					content_linker["sequential"][sequential][1].append(child_elem.attrib["url_name"])
+					if not child_elem.tag in content_linker:
+						content_linker[child_elem.tag] = {}
+						# add to list of module_types if not there
+						if not child_elem.tag in module_list: 
+							module_list.append(child_elem.tag)
+					content_linker[child_elem.tag][child_elem.attrib["url_name"]] = [ None, [], ("sequential", sequential)]
 				output.append(entry_dict)
 			sys.stdout.write("success!\n")
 
@@ -315,7 +328,9 @@ def main():
 						{ "filename" : ["vertical/" + vertical_file] }, "display_name" : display_name } }
 
 				# update content_linker
-				content_linker["verticals"][vertical][0] = display_name
+				if not vertical in content_linker["vertical"]:
+					content_linker["vertical"][vertical] = [ None, [], None ]
+				content_linker["vertical"][vertical][0] = display_name
 
 				# store modules into children of entry
 				for module in root:
@@ -326,12 +341,12 @@ def main():
 					entry_dict["definition"]["children"].append(child)
 					
 					# update content_linker
-					content_linker["verticals"][vertical][0] = display_name
-					content_linker["verticals"][vertical][1].append(module_name)
+					content_linker["vertical"][vertical][0] = display_name
+					content_linker["vertical"][vertical][1].append(module_name)
 					if not module_type in content_linker:
 						content_linker[module_type] = {}
-					content_linker[module_type][module_name] = [ None, vertical] 
-
+					content_linker[module_type][module_name] = [ None, [], ("vertical", vertical)] 
+					
 					# add to list of module_types if not there
 					if not module_type in module_list: 
 						module_list.append(module_type)
@@ -369,8 +384,9 @@ def main():
 								pass
 
 							# display_name of a module is the display_name of its vertical
-							vertical = content_linker[module_type][name][1]
-							display_name = content_linker["verticals"][vertical][0]
+							module_parent = content_linker[module_type][name][2][0]
+							module_parent_hash = content_linker[module_type][name][2][1]
+							display_name = content_linker[module_parent][module_parent_hash][0]
 							content_linker[module_type][name][0] = display_name
 
 							f = open(os.path.join(os.getcwd(), EXTRACT_TO, course_export, module_type, module_file), "r")
