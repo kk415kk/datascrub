@@ -1,7 +1,7 @@
 #!/usr/bin/python
-# Course export parsing script to create 'modulestore' file by scraping course export data 
-# from edX; to be used to sync with Stanford's data scrubbing scripts if you don't want to
-# spin up your own OpenEdX instance just to get modulestore information
+# Course export parsing script to create 'course_axis.csv' file by scraping course export data 
+# from edX; to be used to sync with Harvard's data scrubbing scripts due to a missing 
+# component "course_axis.csv"
 #
 # Developed in Python 2.7. Please report any bugs to the author.
 # 
@@ -9,7 +9,7 @@
 # Email: kkao@berkeley.edu
 # Creation Date: 4/26/14
 # Last Updated: 5/1/14
-# Version: 0.02b
+# Version: 0.03a
 
 
 import sys, os, glob, json, tarfile, shutil
@@ -45,6 +45,21 @@ def info(help=False):
 
 	if help:
 		print "==========================="
+
+def course_axis_write(row):
+	entry = ""
+	for i in range(len(row)):
+		if i != len(row)-1:
+			try:
+				entry = entry + str(row[i]) + ";"
+			except UnicodeEncodeError:
+				pass
+		else: 
+			try:
+				entry = entry + str(row[i])
+			except UnicodeEncodeError:
+				pass
+	return entry
 
 #############################################################################
 # To better understand parser:
@@ -409,9 +424,140 @@ def main():
 			else:
 				json.dump( output, outfile, sort_keys=True )
 
+
+			#### FOR COURSE_AXIS ####
+			### Needs to be refactored for readability and abstraction... ###
+			print "Generating CSV file now...\t"
+			course_axis = file("course_axis.csv", "w")
+
+			for chapterHash in content_linker["chapter"]:
+				chapterEntry = content_linker["chapter"][chapterHash]
+
+				entry = formatEntry(chapterHash, "chapter", chapterEntry[0], [])
+				output = course_axis_write(entry)
+				course_axis.write(output + "\n")
+
+				# iterate through all child elements of a chapter entry
+				for chapterChildTuple in chapterEntry[1]:
+					chapterChildCategory = chapterChildTuple[0]
+					chapterChildHash = chapterChildTuple[1]
+
+					# if the child element is a module
+					if chapterChildCategory in module_list:
+						moduleEntry = content_linker[chapterChildCategory][chapterChildHash]
+						moduleHash = chapterChildHash
+
+						formatEntry(moduleHash, chapterChildCategory, moduleEntry[0], [chapterHash])
+						output = course_axis_write(entry)	
+						course_axis.write(output + "\n")
+					# if the child element is a sequential					
+					elif chapterChildCategory == "sequential":
+						sequentialEntry = content_linker[chapterChildCategory][chapterChildHash]
+						sequentialHash = chapterChildHash
+
+						entry = formatEntry(sequentialHash, "sequential", sequentialEntry[0], [chapterHash])
+						output = course_axis_write(entry)
+						course_axis.write(output + "\n")
+
+						# iterate through all child elements of a sequential entry
+						for sequentialChildTuple in sequentialEntry[1]:
+							sequentialChildCategory = sequentialChildTuple[0]
+							sequentialChildHash = sequentialChildTuple[1]
+
+							# if the child of the sequential is a module:
+							if sequentialChildCategory in module_list:
+								moduleEntry = content_linker[sequentialChildCategory][sequentialChildHash]
+								moduleHash = sequentialChildHash
+
+								formatEntry(moduleHash, sequentialChildCategory, moduleEntry[0], [chapterHash, sequentialHash])
+								output = course_axis_write(entry)	
+								course_axis.write(output + "\n")
+
+							# if the child of the sequential is a vertical
+							elif sequentialChildCategory == "vertical":
+								verticalEntry = content_linker[sequentialChildCategory][sequentialChildHash]
+								verticalHash = sequentialChildHash
+
+								entry = formatEntry(verticalHash, "vertical", verticalEntry[0], [chapterHash, sequentialHash])
+								output = course_axis_write(entry)
+								course_axis.write(output + "\n")
+
+								# all children of verticals must be a module
+								for verticalChildTuple in verticalEntry[1]:
+									verticalChildCategory = verticalChildTuple[0]
+									verticalChildHash = verticalChildTuple[1]
+
+									if verticalChildCategory in module_list:
+										moduleEntry = content_linker[verticalChildCategory][verticalChildHash]
+										moduleHash = verticalChildHash
+
+										formatEntry(moduleHash, verticalChildCategory, moduleEntry[0], [chapterHash, sequentialHash, verticalHash])
+										output = course_axis_write(entry)	
+										course_axis.write(output + "\n")
+
+							else:
+								print "Strange error..."
+								exit(1)
+
+					# if the child element is a vertical
+					elif chapterChildCategory == "vertical":
+						verticalEntry = content_linker[chapterChildCategory][chapterChildHash]
+						verticalHash = chapterChildHash
+
+						entry = formatEntry(verticalHash, "vertical", verticalEntry[0], [chapterHash])
+						output = course_axis_write(entry)
+						course_axis.write(output + "\n")
+
+						# all children of verticals must be a module
+						for verticalChildTuple in verticalEntry[1]:
+							verticalChildCategory = verticalChildTuple[0]
+							verticalChildHash = verticalChildTuple[1]
+
+							if verticalChildCategory in module_list:
+								moduleEntry = content_linker[verticalChildCategory][verticalChildHash]
+								moduleHash = verticalChildHash
+
+								formatEntry(moduleHash, verticalChildCategory, moduleEntry[0], [chapterHash, verticalHash])
+								output = course_axis_write(entry)	
+								course_axis.write(output + "\n")
+					else:
+						print "Strange error..."
+						exit(1)
+
+
 	# remove unzipped course export folder from disk to clear space	
 	sys.stdout.write("Clearing space from extracted course exports...\t")
 	shutil.rmtree(os.path.join(os.getcwd(), EXTRACT_TO))
 	print "success!\n"
+
+
+def formatEntry(urlhash, categoryname, displayname, filepath=[] ):
+	entry = []
+	index = 0
+	url_name = str(urlhash)
+	category = str(categoryname)
+	gformat = ""
+	start = ""
+	due = ""
+	name = str(displayname)
+	path = ""
+	module_id = ""
+	data = ""
+
+	for f in filepath:
+		path = path + "/" + str(f)
+	path = path + "/" + urlhash
+
+	entry.append(index)
+	entry.append(url_name)
+	entry.append(category)
+	entry.append(gformat)
+	entry.append(start)
+	entry.append(due)
+	entry.append(name)
+	entry.append(path)
+	entry.append(module_id)
+	entry.append(data)
+	return entry
 
 if __name__ == '__main__': main()
