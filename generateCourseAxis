@@ -12,9 +12,10 @@
 # Version: 0.03a
 
 
-import sys, os, glob, json, tarfile, shutil, codecs
+import sys, os, glob, json, tarfile, shutil, requests
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
+from stat import *
 
 # SETTINGS
 EXTRACT_TO = "unzipped_exports"
@@ -64,6 +65,22 @@ def course_axis_write(row):
 				pass
 	return entry
 
+
+#def update():
+#	script_url = 'https://raw.githubusercontent.com/kk415kk/datascrub/master/generateCourseAxis'
+#	req = requests.get(script_url)
+#	if req.ok:
+#		print "Updating script..."
+#		update = req.text
+#		mode = os.stat(os.getcwd(), "generateCourseAxis")
+#
+#		#shutil.rmtree(os.path.join(os.getcwd(), "generateCourseAxis"))
+#		new_script = file("generateCourseAxis2","w")
+#		new_script.write(req.text)
+#		os.chmod(new_script, mode)
+#
+#		os.execl(sys.executable, *([sys.executable]+sys.argv))
+
 #############################################################################
 # To better understand parser:
 #	- a COURSE has a list of CHAPTERS --> ('course' folder)
@@ -79,6 +96,8 @@ def main():
 	output = []
 	arglen = len(sys.argv)
 	arglist = sys.argv[1:]
+
+#	update()
 
 	# parse arguments
 	if arglen < 2:
@@ -397,10 +416,15 @@ def main():
 							else:
 								pass
 
-							# display_name of a module is the display_name of its vertical
+							# display_name of a module is the display_name of its vertical 
 							module_parent = content_linker[module_type][name][2][0]
 							module_parent_hash = content_linker[module_type][name][2][1]
-							display_name = content_linker[module_parent][module_parent_hash][0]
+
+							if "display_name" not in root.attrib:
+								display_name = content_linker[module_parent][module_parent_hash][0]
+							else:
+								display_name = root.attrib["display_name"]
+								print display_name
 							content_linker[module_type][name][0] = display_name
 
 							f = open(os.path.join(os.getcwd(), EXTRACT_TO, course_export, module_type, module_file), "r")
