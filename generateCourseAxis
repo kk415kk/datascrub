@@ -32,7 +32,7 @@ def clean(word):
 def info(help=False):
 	if not help:
 		print "Invalid arguments. " \
-			"Usage: ./parse [arg || -m arg1 arg2 ...]"
+			"Usage: ./generateCourseAxis [arg || -m arg1 arg2 ...]"
 	else:
 		print "=========== HELP =========="
 	print "[Options]:"
@@ -40,8 +40,8 @@ def info(help=False):
 	print "-h\t: Used for help page"
 	print "NOTE: If no options are specified, the script defaults to -az\n"
 	print "Example usages:"
-	print "./parse folder"
-	print "./parse -m folder/courseExport1.zip folder/courseExport2.zip ..."
+	print "./generateCourseAxis folder"
+	print "./generateCourseAxis -m folder/courseExport1.zip folder/courseExport2.zip ..."
 
 	if help:
 		print "==========================="
@@ -94,7 +94,8 @@ def main():
 		global OPTION
 		OPTION = True
 
-	print "Starting modulestore generator..."
+	print "Starting course axis generator..."
+	print "Note that the course axis generator possibly does not support multiple files yet..."
 
 	# make a directory for tar files to be extracted to
 	try:
@@ -128,14 +129,13 @@ def main():
 			if os.path.isdir(path_to_archive):
 				print "Invalid file path: " + path_to_archive
 				print "File path should be to a specific .zip file, not a folder. Perhaps you meant to run without the -m parameter?"
-				print "Run ./parse --help for help"
+				print "Run ./generateCourseAxis --help for help"
 				exit(1)
 			print "Extracting course " + path_to_archive + "..."
 			archive = tarfile.open(path_to_archive, 'r:gz')
 			archive.extractall(os.getcwd() + "/" + EXTRACT_TO)
 
 	courses = os.listdir(os.getcwd() + "/" +  EXTRACT_TO)
-	outfile = file("test_modulestore.json", "w")
 
 	for course_export in courses:
 		if os.path.isdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export)):
