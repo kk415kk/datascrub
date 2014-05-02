@@ -17,7 +17,6 @@ import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
 
 # SETTINGS
-PRETTIFY_JSON = False
 EXTRACT_TO = "unzipped_exports"
 OPTION = False
 
@@ -182,7 +181,6 @@ def main():
 			entry_dict = { "_id" : {"tag" : tag, "org" : org, "course" : course, "category" : "about", \
 						"name" : "overview", "revision" : None }, "definition" : { "children" : [], \
 						"data": f.read() }, "metadata" : {} }
-			output.append(entry_dict)
 			sys.stdout.write("success!\n")
 
 			# parse 'chapter' folder of course export
@@ -218,7 +216,6 @@ def main():
 
 					child = tag + "://" + org + "/" + course + "/"+ child_elem.tag +"/" + child_elem.attrib["url_name"]
 					entry_dict["definition"]["children"].append(child)
-				output.append(entry_dict)
 			sys.stdout.write("success!\n")
 
 			# parse 'course' folder of course export
@@ -284,7 +281,6 @@ def main():
 					print "Please contact author of script and include name of the file."
 					exit(1)
 				json_data.close()
-			output.append(entry_dict)
 			sys.stdout.write("success!\n")
 
 			# parse 'sequential' folder of course export
@@ -320,7 +316,6 @@ def main():
 						if not child_elem.tag in module_list: 
 							module_list.append(child_elem.tag)
 					content_linker[child_elem.tag][child_elem.attrib["url_name"]] = [ None, [], ("sequential", sequential)]
-				output.append(entry_dict)
 			sys.stdout.write("success!\n")
 
 			
@@ -365,7 +360,6 @@ def main():
 					# add to list of module_types if not there
 					if not module_type in module_list: 
 						module_list.append(module_type)
-				output.append(entry_dict)
 			sys.stdout.write("success!\n")
 
 			# parse each module type's folder of course export
@@ -413,16 +407,10 @@ def main():
 							for attribute in root.attrib:
 								entry_dict["metadata"]["xml_attributes"][attribute] = root.attrib[attribute]
 							
-							output.append(entry_dict)
 					sys.stdout.write("success!\n")					
 				except OSError:
 					print "No '" + module_type + "' folder in this course..."
 					pass
-
-			if PRETTIFY_JSON:
-				json.dump( output, outfile, sort_keys=True, indent=4, separators=(',', ': ') )
-			else:
-				json.dump( output, outfile, sort_keys=True )
 
 
 			#### FOR COURSE_AXIS ####
@@ -534,12 +522,12 @@ def main():
 def formatEntry(urlhash, categoryname, displayname, filepath=[] ):
 	entry = []
 	index = 0
-	url_name = str(urlhash)
-	category = str(categoryname)
+	url_name = urlhash
+	category = categoryname
 	gformat = ""
 	start = ""
 	due = ""
-	name = str(displayname)
+	name = displayname
 	path = ""
 	module_id = ""
 	data = ""
