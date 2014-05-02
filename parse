@@ -341,8 +341,8 @@ def main():
 					entry_dict["definition"]["children"].append(child)
 					
 					# update content_linker
-					content_linker["vertical"][vertical][0] = display_name
-					content_linker["vertical"][vertical][1].append((child_elem.tag, module_name))
+					# content_linker["vertical"][vertical][0] = display_name
+					content_linker["vertical"][vertical][1].append((module_type, module_name))
 					if not module_type in content_linker:
 						content_linker[module_type] = {}
 					content_linker[module_type][module_name] = [ None, [], ("vertical", vertical)] 
