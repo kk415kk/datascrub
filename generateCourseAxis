@@ -12,7 +12,7 @@
 # Version: 0.03a
 
 
-import sys, os, glob, json, tarfile, shutil
+import sys, os, glob, json, tarfile, shutil, codecs
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
 
@@ -52,11 +52,15 @@ def course_axis_write(row):
 			try:
 				entry = entry + str(row[i]) + ";"
 			except UnicodeEncodeError:
+				decoded = u''.join(row[i]).encode('utf-8').strip()
+				entry = entry + str(decoded) + ";"
 				pass
 		else: 
 			try:
 				entry = entry + str(row[i])
 			except UnicodeEncodeError:
+				decoded = u''.join(row[i]).encode('utf-8').strip()
+				entry = entry + str(row[i])
 				pass
 	return entry
 
