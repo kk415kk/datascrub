@@ -316,7 +316,7 @@ def main():
 
 				sequential = sequential_file.replace(".xml", "")
 				display_name = sequential
-				if display_name in root.attrib:
+				if "display_name" in root.attrib:
 					display_name = root.attrib["display_name"]
 
 				entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "sequential", \
@@ -546,6 +546,7 @@ def main():
 	shutil.rmtree(os.path.join(os.getcwd(), EXTRACT_TO))
 	print "success!\n"
 
+	print content_linker["sequential"]
 
 def formatEntry(urlhash, categoryname, displayname, filepath=[] ):
 	entry = []

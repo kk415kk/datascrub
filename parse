@@ -9,12 +9,12 @@
 # Email: kkao@berkeley.edu
 # Creation Date: 4/26/14
 # Last Updated: 5/1/14
-# Version: 0.02b
-
-
-import sys, os, glob, json, tarfile, shutil
+# Version: 0.03b
+import sys, os, glob, json, tarfile, shutil, requests
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
+import stat
+from stat import *
 
 # SETTINGS
 PRETTIFY_JSON = False
@@ -46,6 +46,28 @@ def info(help=False):
 	if help:
 		print "==========================="
 
+def update():
+	script_url = 'https://raw.githubusercontent.com/kk415kk/datascrub/master/generateCourseAxis'
+	req = requests.get(script_url)
+	if req.ok:
+		print "Updating script..."
+		update = req.text
+		original_script = file("generateCourseAxis", "r")
+		if update == original_script.read():
+			print "No updates necessary!"
+			pass
+		else:
+			mode = int(os.stat(os.path.join(os.getcwd(), "generateCourseAxis"))[ST_MODE])
+
+			new_script = file("generateCourseAxis","w")
+			new_script.write(req.text)
+
+			fd = os.open("generateCourseAxis", os.O_RDWR)
+			os.fchmod(fd, mode)
+			os.close(fd)
+			print "Updated successfully!"
+        #os.execl(sys.executable, *([sys.executable]+sys.argv))
+
 #############################################################################
 # To better understand parser:
 #	- a COURSE has a list of CHAPTERS --> ('course' folder)
@@ -73,6 +95,9 @@ def main():
 		if arglist[0] == "-h" or arglist[0] == "--help":
 			info(True)
 			exit(0)
+		if arglist[0] == "-u" or arglist[0] == "--update":
+			update()
+			exit()
 		pass
 	else:
 		assert arglist[0] == "-m"
@@ -281,7 +306,7 @@ def main():
 
 				sequential = sequential_file.replace(".xml", "")
 				display_name = sequential
-				if display_name in root.attrib:
+				if "display_name" in root.attrib:
 					display_name = root.attrib["display_name"]
 
 				entry_dict = { "_id" : { "tag" : tag, "org" : org, "course" : course, "category" : "sequential", \
