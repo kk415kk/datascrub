@@ -14,14 +14,14 @@ There are two ways of running this script:
 The outputted modulestore file will be in the same folder as the parsing script, named "test_modulestore.json".
 
 To update the script without pulling the entire Github repo, simply run the command:
-	`./parse -u` or `./parse --update`
+    `./parse -u` or `./parse --update`
 
 updates
 ---
-	v0.05b (5/9/14): Fixed a bug where course exports have missing folders. Added a script self-update feature as well as logging.
-	v0.02b (5/1/14): Fixed a bug involving how course exports store information (chapters and sequentials can store modules)
-	v0.01b (4/30/14): Added support for for .tar.gz files so no extraction is necessary. Also added support for multiple extractions in one run. Fixed bug regarding bad JSON output format.  
-	v0.01a (4/26/14): Initial alpha version of script, capable of parsing one extracted course export folder.  
+    v0.05b (5/9/14): Fixed a bug where course exports have missing folders. Added a script self-update feature as well as logging.
+    v0.02b (5/1/14): Fixed a bug involving how course exports store information (chapters and sequentials can store modules)
+    v0.01b (4/30/14): Added support for for .tar.gz files so no extraction is necessary. Also added support for multiple extractions in one run. Fixed bug regarding bad JSON output format.  
+    v0.01a (4/26/14): Initial alpha version of script, capable of parsing one extracted course export folder.  
 
 roadmap
 ---
