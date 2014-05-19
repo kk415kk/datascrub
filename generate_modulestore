@@ -47,8 +47,8 @@ def info(help=False):
 	print "[Options]:"
 	print "-m args\t: Used to specify multiple file paths to single course export folders"
 	print "-h\t: Used for help page"
-	print "NOTE: If no options are specified, the script defaults to taking in a single folder
-			with all archives in folder\n"
+	print "NOTE: If no options are specified, the script defaults to taking in a single folder" \
+			" with all archives in folder\n"
 	print "Example usages:"
 	print "./generate_modulestore folder"
 	print "./generate_modulestore -m folder/courseExport1.zip folder/courseExport2.zip ..."
