@@ -12,7 +12,7 @@
 # Version: 0.03a
 
 
-import sys, os, glob, json, tarfile, shutil, requests
+import sys, os, glob, json, tarfile, shutil, requests, traceback
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
 import stat
@@ -67,19 +67,26 @@ def course_axis_write(row):
 
 
 def update():
-	script_url = 'https://raw.githubusercontent.com/kk415kk/datascrub/master/generateCourseAxis'
-	req = requests.get(script_url)
-	if req.ok:
-		print "Updating script..."
-		update = req.text
-		mode = os.stat(os.getcwd(), "generateCourseAxis")
+    script_url = 'https://raw.githubusercontent.com/kk415kk/datascrub/master/generateCourseAxis'
+    req = requests.get(script_url)
+    if req.ok:
+        print "Updating script..."
+        update = req.text
+        original_script = file("generateCourseAxis", "r")
+        if update == original_script.read():
+            print "No updates necessary!"
+            pass
+        else:
+            mode = int(os.stat(os.path.join(os.getcwd(), "generateCourseAxis"))[ST_MODE])
 
-		#shutil.rmtree(os.path.join(os.getcwd(), "generateCourseAxis"))
-		new_script = file("generateCourseAxis","w")
-		new_script.write(req.text)
-		os.chmod(new_script, mode)
+            new_script = file("generateCourseAxis","w")
+            new_script.write(req.text)
 
-		os.execl(sys.executable, *([sys.executable]+sys.argv))
+            fd = os.open("generateCourseAxis", os.O_RDWR)
+            os.fchmod(fd, mode)
+            os.close(fd)
+            print "Updated successfully!"
+
 
 #############################################################################
 # To better understand parser:
@@ -97,6 +104,9 @@ def main():
 	arglen = len(sys.argv)
 	arglist = sys.argv[1:]
 
+#	print stat.S_IXOTH
+#	update()
+
 	# parse arguments
 	if arglen < 2:
 		info()
@@ -105,9 +115,6 @@ def main():
 		if arglist[0] == "-m":
 			info()
 			exit(1)
-		if arglist[0] == "-u" or arglist[0] == "--update":
-			update()
-			exit(0)
 		if arglist[0] == "-h" or arglist[0] == "--help":
 			info(True)
 			exit(0)
@@ -160,7 +167,11 @@ def main():
 
 	courses = os.listdir(os.getcwd() + "/" +  EXTRACT_TO)
 
+
+        os.system("rm axis.error")
 	for course_export in courses:
+          try:
+                print "COURSE = ", course_export
 		if os.path.isdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export)):
 			######################################################################################################
 			## This dictionary is used for linking purposes
@@ -196,6 +207,7 @@ def main():
 			root = tree.getroot()
 			course = root.attrib["course"]
 			org = root.attrib["org"]
+                        course_url_name = root.attrib["url_name"]
 			tag = "i4x"
 			sys.stdout.write(str(course) + "...\n")
 
@@ -445,7 +457,7 @@ def main():
 			#### FOR COURSE_AXIS ####
 			### Needs to be refactored for readability and abstraction... ###
 			print "Generating CSV file now...\t"
-			course_axis = file("course_axis.csv", "w")
+			course_axis = file(course_export + "_axis.csv", "w")
 
 			for chapterHash in content_linker["chapter"]:
 				chapterEntry = content_linker["chapter"][chapterHash]
@@ -541,12 +553,29 @@ def main():
 						print "Strange error..."
 						exit(1)
 
+                        # parse 'course' folder of course export
+			sys.stdout.write("Parsing 'course' folder...\t")
+			tree = ET.parse(os.path.join(EXTRACT_TO, course_export, "course", course_url_name + ".xml"))
+                        root = tree.getroot()
+                        start = root.attrib["start"][:10]
+                        end = root.attrib["end"][:10]
+                        f = open("info.csv","a")
+                        f.write(course_export + "," + start + "," + end + "\n")
+			sys.stdout.write("success!\n")
+
+          except Exception as e:
+            f = open("axis.error", "a")
+            f.write("COURSE " + course_export)
+            traceback.print_exc(file=f)
+            f.close()
+            
+
 	# remove unzipped course export folder from disk to clear space	
 	sys.stdout.write("Clearing space from extracted course exports...\t")
 	shutil.rmtree(os.path.join(os.getcwd(), EXTRACT_TO))
 	print "success!\n"
 
-	print content_linker["sequential"]
+	#print content_linker["sequential"]
 
 def formatEntry(urlhash, categoryname, displayname, filepath=[] ):
 	entry = []

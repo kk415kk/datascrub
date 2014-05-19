@@ -48,7 +48,7 @@ def info(help=False):
 		print "==========================="
 
 def update():
-	script_url = 'https://raw.githubusercontent.com/kk415kk/datascrub/master/generateCourseAxis'
+	script_url = 'https://raw.githubusercontent.com/kk415kk/datascrub/master/parse'
 	req = requests.get(script_url)
 	if req.ok:
 		print "Updating script..."
