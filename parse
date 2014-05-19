@@ -12,8 +12,9 @@
 # Version: 0.05b
 import sys, os, glob, json, tarfile, shutil, requests
 import xml.etree.ElementTree as ET
-from xml.etree.ElementTree import tostring
 import stat
+from multiprocessing import Pool
+from xml.etree.ElementTree import tostring
 from stat import *
 
 # SETTINGS
@@ -52,17 +53,17 @@ def update():
 	if req.ok:
 		print "Updating script..."
 		update = req.text
-		original_script = file("generateCourseAxis", "r")
+		original_script = file("parse", "r")
 		if update == original_script.read():
 			print "No updates necessary!"
 			pass
 		else:
-			mode = int(os.stat(os.path.join(os.getcwd(), "generateCourseAxis"))[ST_MODE])
+			mode = int(os.stat(os.path.join(os.getcwd(), "parse"))[ST_MODE])
 
-			new_script = file("generateCourseAxis","w")
+			new_script = file("parse","w")
 			new_script.write(req.text)
 
-			fd = os.open("generateCourseAxis", os.O_RDWR)
+			fd = os.open("parse", os.O_RDWR)
 			os.fchmod(fd, mode)
 			os.close(fd)
 			print "Updated successfully!"
@@ -70,6 +71,10 @@ def update():
 def log(logfile, entry):
 	logfile.write(str(entry))
 	logfile.write("\n")
+
+def processFiles():
+	print ""
+
 
 #############################################################################
 # To better understand parser:
@@ -156,6 +161,10 @@ def main():
 	except:
 		print "Error in creating modulestore.json and logfile. Please check permissions."
 		exit(1)
+
+
+	# pool = Pool(processes=4)
+	# pool.map(processFiles, courses)
 
 	for course_export in courses:
 		if os.path.isdir(os.path.join(os.getcwd(), EXTRACT_TO, course_export)):
