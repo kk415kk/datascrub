@@ -7,14 +7,14 @@ instructions
 ---
 There are two ways of running this script:  
 1. If all the course export .tar.gz files are in one folder, simply run the command:  
-    `./parse path/allCourseExports`  
+    `./generate_modulestore path/allCourseExports`  
 2. If you want to specify one or more paths to various course export .tar.gz files, run with the parameter -m:  
-	`./parse -m path/courseExport1.zip path/courseExport2.zip ...`  
+	`./generate_modulestore -m path/courseExport1.zip path/courseExport2.zip ...`  
 
-The outputted modulestore file will be in the same folder as the parsing script, named "test_modulestore.json".
+The outputted modulestore file will be in the same folder as the parsing script, named "modulestore.json".
 
 To update the script without pulling the entire Github repo, simply run the command:
-<br>`./parse -u` or `./parse --update`
+<br>`./generate_modulestore -u` or `./generate_modulestore --update`
 
 updates
 ---
