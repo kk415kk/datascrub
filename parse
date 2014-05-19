@@ -5,6 +5,11 @@
 #
 # Developed in Python 2.7. Please report any bugs to the author.
 # 
+# Github repo: https://github.com/kk415kk/datascrub
+# README: https://github.com/kk415kk/datascrub/README.md
+# NOTES: If the script does not have run permissions, please run "chmod +x parse" to give it
+# executable permissions.
+# 
 # Author: Kevin Kao
 # Email: kkao@berkeley.edu
 # Creation Date: 4/26/14
