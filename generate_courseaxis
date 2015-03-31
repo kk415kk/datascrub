@@ -22,6 +22,8 @@ EXTRACT_TO = "unzipped_exports"
 CSV_FILES = "csv_files"
 OPTION = False
 
+IDX = 0
+
 # Removes all slashes from file path
 def clean(word):
 	if word[0] == "/":
@@ -564,12 +566,13 @@ def main():
                         f = open(os.path.join(os.getcwd(), CSV_FILES, "info.csv"),"a")
                         f.write(course_export + "," + start + "," + end + "\n")
 			sys.stdout.write("success!\n")
-
+            IDX = 0
           except Exception as e:
             f = open("axis.error", "a")
             f.write("COURSE " + course_export)
             traceback.print_exc(file=f)
             f.close()
+            IDX = 0 # RESET INDEX
             
 
 	# remove unzipped course export folder from disk to clear space	
@@ -581,7 +584,7 @@ def main():
 
 def formatEntry(urlhash, categoryname, displayname, filepath=[] ):
 	entry = []
-	index = 0
+	index = IDX
 	url_name = urlhash
 	category = categoryname
 	gformat = ""
@@ -611,6 +614,8 @@ def formatEntry(urlhash, categoryname, displayname, filepath=[] ):
 	entry.append(path)
 	entry.append(module_id)
 	entry.append(data)
+
+        IDX += 1 # increment index
 	return entry
 
 if __name__ == '__main__': main()
